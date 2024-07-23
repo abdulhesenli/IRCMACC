@@ -1,3 +1,12 @@
+.container{
+    max-width: 1392px;
+    padding-right: 0; 
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin: inherit !important;
+}
+
 #home{
     position: relative;
 }
@@ -7,7 +16,7 @@
     width: 1361px;
     height: 550px;
     margin-left: 39px;
-    margin-bottom: 139px;
+    margin-bottom: 97px;
   }
 
 .circle{
@@ -19,7 +28,7 @@
     background-color: #01344b54;
     position: absolute;
     z-index: 0;
-    right: 40px;
+    right: -7px;
 }
 
 #vector_1{
@@ -81,9 +90,58 @@
     top: 200px;
     width: 385px;
     color: #ffffff;
-    right: 200px;
+    right: 150px;
     font-size: 52px;
     line-height: 65px;
     text-align: right;
     z-index: 1;
 }
+
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 160px;
+    border-radius: 20px;
+    background-color: #F7F7FA;
+}
+
+.group2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 503px;
+    right: 110px;
+    width: 92px;
+    height: 92px;
+    border-radius: 90px;
+    background-color: #F32735;
+   
+
+}
+
+.title{
+    position: absolute;
+    left: 159px;
+    width: 448px;
+    height: 332px;
+}
+.title1{
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 43.88px;
+    color: #002D74;
+}
+.title2{
+    width: 389px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #002D74;
+}
+
+
