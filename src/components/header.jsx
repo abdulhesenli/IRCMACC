@@ -1,6 +1,6 @@
-// import  from "react";
+// import React from "react";
 import "../assets/header.css"
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { CiSearch } from "react-icons/ci";
 import irtmac from '../assets/Irtmac.svg'
 import Home from "./home/home.jsx";

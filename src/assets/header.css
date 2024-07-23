@@ -1,7 +1,4 @@
-.header{
-    background-color: #002D74;
-    padding: 20px;
-}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -64,6 +61,12 @@ form:hover input{
 form:hover .fa{
     background: #8c52ff;
     color: white;
+}
+
+.header{
+  background-color: #002D74;
+  padding: 20px;
+  max-width: 1452px
 }
 
 .vl{
