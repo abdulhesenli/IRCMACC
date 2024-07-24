@@ -101,6 +101,29 @@ function Home(){
                     </p>
                 </div>
 
+                <div className="box row">
+                    <div className="inbox col-6">
+                        <h1 className="boxtext">36+</h1>
+                        <p className="boxtext1">Təlim sayı</p>
+                    </div>
+                    <div className="inbox col-6">
+                        <h1 className="boxtext">12+</h1>
+                        <p className="boxtext1">Təlimçi sayı</p>
+                    </div>
+                    <div className="inbox col-6">
+                        <h1 className="boxtext">256+</h1>
+                        <p className="boxtext1">Məzun sayı</p>
+                    </div>
+                    <div className="inbox col-6">
+                        <h1 className="boxtext">10+</h1>
+                        <p className="boxtext1">Təcrübə</p>
+                    </div>
+
+                    {/* <hr className="line" /> */}
+                    <div className="line"></div>
+                   <hr className="line2" />
+                </div>
+
                
                
         </div>

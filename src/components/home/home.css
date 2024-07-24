@@ -129,6 +129,7 @@
     left: 159px;
     width: 448px;
     height: 332px;
+    top: 980px;
 }
 .title1{
     font-weight: 500;
@@ -143,5 +144,57 @@
     line-height: 17.07px;
     color: #002D74;
 }
+
+.box{
+    width: 550px;
+    height: 360px;
+    border-radius: 30px;
+    background-color: #009ADE;
+    position: absolute;
+    right: 90px;
+}
+
+.inbox{
+    width: 142px;
+    height: 122px;
+    background-color: transparent;
+    color: #ffffff;
+    margin: auto;
+    margin-left: 100px;
+}
+
+.boxtext{
+    font-family: 64px;
+    font-weight: 700;
+    line-height: 78.02px;
+}
+
+.boxtext1{
+    font-family: 16px;
+    font-weight: 500;
+    line-height: 19.05px;
+}
+.line{
+    border-left: 1px solid #002D74;
+    height: 300px;
+    position: absolute;
+    left: 275px;
+    top: 30px;
+    width: 0;
+    opacity: 20%;
+}
+
+.line2{
+    position: absolute;
+    width: 440px;
+    background: #002D74;
+    top: 50%;
+    left: 8%;
+    opacity: 20%;
+
+
+}
+
+
 
 
