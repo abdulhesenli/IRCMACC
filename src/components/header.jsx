@@ -1,14 +1,10 @@
 // import React from "react";
-import "../assets/header.css"
+import '../header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CiSearch } from "react-icons/ci";
 import irtmac from '../assets/Irtmac.svg'
 import Home from "./home/home.jsx";
-// import Logo from '../assets/Layer_1.svg'
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 
 function Header(){
