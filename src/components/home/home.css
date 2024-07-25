@@ -128,7 +128,7 @@
     position: absolute;
     left: 159px;
     width: 448px;
-    height: 332px;
+    height: 290px;
     top: 980px;
 }
 .title1{
@@ -195,6 +195,59 @@
 
 }
 
-
+.banner{
+    position: absolute;
+    width: 1350px;
+    height: 307px;
+    background-color: #002856;
+    top: 1300px;
+    border-radius: 30px;
+    left: 46px;
+}
+.HRline{
+    border-left: 1px solid #0071CE;
+    height: 241px;
+    position: absolute;
+    left: 385px;
+    top: 36px;
+    width: 0
+}
+.BanTitle{
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43.88px;
+    color: #FFFFFF;
+}
+.BanTitle2{
+    position: absolute;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #ffffff;
+    top: 120px;
+    left: 450px;
+    width: 778px;
+}
+.Ban-btn{
+    position: absolute;
+    top: 220px;
+    left: 455px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 137px;
+    height: 52px;
+    border: none;
+    color: #ffffff;
+    border-radius: 60px;
+    background: #0071CE;
+    gap: 12px;
+    padding: 12px 31px 12px 31px;
+    text-align: left;
+    
+}
 
 
