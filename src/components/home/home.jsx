@@ -13,6 +13,7 @@ import Group4 from '../../assets/Group4.svg'
 import Arrow from '../../assets/arrow-right.svg'
 import Trainers from "../Trainers/trainers";
 import Training from "../training/training";
+import Registration from "../registration/registration";
 
 
 
@@ -161,6 +162,7 @@ function Home(){
           
             <Training/>
             <Trainers/>
+            <Registration/>
            
 
  </div>
