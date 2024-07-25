@@ -1,0 +1,86 @@
+.register{
+    width: 1156px;
+    height: 344px;
+    border-radius: 30px;
+    background-color: #F0F6F9;
+    margin-top: 180px;
+    margin-left: 150px;
+    background-image: url(../../assets/registerban.svg);
+
+}
+
+#name{
+    width: 448px;
+    height: 58px;
+    border: none;
+    border-radius: 70px;
+    padding-left: 40px;
+
+}
+
+#name:focus::placeholder{
+ color: #FFFFFF;
+}
+
+#name:Onf{
+    color: #FFFFFF;
+   }
+#text{
+    width: 448px;
+    height: 58px;
+    border: none;
+    border-radius: 70px;
+    padding-left: 40px;
+    
+}
+.registerForm{
+    position: absolute;
+    width: 448px;
+    left: 764px;
+    margin-top: 50px;
+   
+}
+
+#message{
+    width: 448px;
+    height: 58px;
+    border: none;
+    border-radius: 70px;
+
+}
+
+#name::placeholder{
+    color: #5B748D;
+    font-weight: 400;
+    font-size: 14px;
+    /* padding-left: 40px; */
+}
+#text::placeholder{
+    color: #5B748D;
+    font-weight: 400;
+    font-size: 14px;
+    /* padding-left: 40px; */
+}
+#message::placeholder{
+    color: #5B748D;
+    font-weight: 400;
+    font-size: 14px;
+    /* padding-left: 40px; */
+}
+
+select::placeholder{
+    padding-right: 30px;
+}
+.RegisterBtn{
+    width: 212px;
+    height: 52px;
+    border-radius: 60px;
+    Padding: 12px 31px 12px 31px;
+    gap: 12px;
+    background-color: #002D74;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    margin-left: 235px;
+}
