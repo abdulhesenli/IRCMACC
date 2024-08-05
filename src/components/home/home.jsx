@@ -14,6 +14,7 @@ import Arrow from '../../assets/arrow-right.svg'
 import Trainers from "../Trainers/trainers";
 import Training from "../training/training";
 import Registration from "../registration/registration";
+import Testimonials from "../Testimonials/testimonials";
 
 
 
@@ -163,6 +164,7 @@ function Home(){
             <Training/>
             <Trainers/>
             <Registration/>
+            <Testimonials/>
            
 
  </div>

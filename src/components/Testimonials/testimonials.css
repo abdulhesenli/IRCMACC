@@ -1,0 +1,85 @@
+.TestimonialsTitle{
+    font-weight: 600;
+    font-size: 36px;
+    color: #002D74;
+    text-align: center;
+    padding-top: 50px;
+}
+.TestimonialsText{
+    /* width: 638px; */
+    height: 34px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #002D74;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.TestimonialsCard{
+    position: relative;
+    width: 369px;
+    height: 199px;
+    border-radius: 20px;
+    border: 0 0 1px 0;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #009ADE;
+}
+.TestimonialsCardText{
+    margin: auto;
+    width: 265px;
+    padding-top: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #002D74;
+   
+}
+.BottomCircle{
+    width: 24px;
+    height: 24px;
+    background-color: #009ADE;
+    border-radius: 50%;
+    position: absolute;
+    top: 183px;
+    left: 173px;
+}
+.CardTitle{
+    font-weight: 600;
+    font-size: 18px;
+    color: #002D74;
+    text-align: center;
+    padding-top: 20px;
+}
+.CardText{
+    font-weight: 500;
+    font-size: 16px;
+    color: #009ADE;
+    text-align: center;
+}
+.Comma{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+  
+}
+.RedCircle{
+    position: absolute;
+    top: -48px;
+    left: 50px;
+}
+.WhiteComma{
+    position: absolute;
+    top: -16px;
+    left: 78px;
+}
+.ArrowCircleRight{
+    position: absolute;
+    top: 285px;
+    right: 62px;
+ 
+}
+.ArrowCircleLeft{
+    position: absolute;
+    top: 285px;
+    left: 62px;
+ 
+}
