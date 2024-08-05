@@ -5,8 +5,8 @@ function Registration (){
     return(
         <div>
             <div className='register'>
-            <form className='registerForm'>
-            <div className="form-group">
+              <form className='registerForm'>
+              <div className="form-group">
        
                 <input type="text" name="name" id="name" placeholder="Ad, Soyad"/>
  
@@ -25,6 +25,16 @@ function Registration (){
             </div>
             <button type="submit" className='RegisterBtn'>Göndər</button>
         </form>
+        <div style={{width:"400px", marginLeft:"110px", paddingTop:"50px"}}>
+            <h1 className='registerTitle'>Müraciət et</h1>
+                <p className='registerText'>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Duis massa nisl, porta ac erat quis, semper sollicitudin mi 
+                 Lorem ipsum dolor sit amet, 
+                 consectetur adipiscing elit. Duis massa nisl, porta ac erat
+                 quis, semper sollicitudin mi.
+                </p>
+        </div>
 
             </div>
         </div>

@@ -84,3 +84,15 @@ select::placeholder{
     border: none;
     margin-left: 235px;
 }
+
+.registerText{
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 20px;
+    color: #002D74;
+}
+.registerTitle{
+    font-weight: 600;
+    font-size: 36px;
+    color: #003B71;
+}
