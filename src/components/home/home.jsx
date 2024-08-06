@@ -15,6 +15,7 @@ import Trainers from "../Trainers/trainers";
 import Training from "../training/training";
 import Registration from "../registration/registration";
 import Testimonials from "../Testimonials/testimonials";
+import News from "../News/news";
 
 
 
@@ -165,6 +166,7 @@ function Home(){
             <Trainers/>
             <Registration/>
             <Testimonials/>
+            <News/>
            
 
  </div>
