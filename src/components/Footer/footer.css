@@ -1,0 +1,26 @@
+.Footertext{
+    font-size: 12px;
+    font-weight: 400;
+    color: #C5CEE0;
+    padding-left: 38px;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002D74;
+    height: 120px;
+    margin-top: 50px;
+    border-radius: 20px 20px 0 0;
+}
+
+#footer ul{
+    display: flex;
+    padding-right: 38px;
+}
+
+#footer li{
+    list-style: none;
+    margin-left: 10px;
+}
