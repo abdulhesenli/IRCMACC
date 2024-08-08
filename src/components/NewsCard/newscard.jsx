@@ -7,6 +7,7 @@ import ArrowIcon from '../../assets/Icon-right.svg'
 
 
 
+
 function NewsCard(){
     
     return(
@@ -31,7 +32,7 @@ function NewsCard(){
                         <h6 className="Newtext">Xəbər / 17.04.24</h6>
 
                             <div style={{display:'flex', alignItems:'center'}}>
-                            <a href="#" className="Continue">Ətraflı</a>
+                            <a href="#" className="NewsContinue">Ətraflı</a>
                             <img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" style={{marginLeft:"10px"}}/>
                             </div>
                         </div>

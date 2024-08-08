@@ -65,7 +65,7 @@
 
 
 
-.Continue::after {
+.NewsContinue::after {
     content: "";
     display: block;
     width: 40px;

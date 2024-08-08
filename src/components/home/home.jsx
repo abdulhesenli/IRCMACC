@@ -16,6 +16,8 @@ import Training from "../training/training";
 import Registration from "../registration/registration";
 import Testimonials from "../Testimonials/testimonials";
 import News from "../News/news";
+// import NewsPage from "../NewsPage/newspage";
+import Footer from "../Footer/footer";
 
 
 
@@ -167,6 +169,9 @@ function Home(){
             <Registration/>
             <Testimonials/>
             <News/>
+
+            {/* <NewsPage/> */}
+            <Footer/>
            
 
  </div>

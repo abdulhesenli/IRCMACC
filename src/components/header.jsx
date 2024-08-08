@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { CiSearch } from "react-icons/ci";
 import irtmac from '../assets/Irtmac.svg'
 import Home from "./home/home.jsx";
+// import Error from './error/error';
+
 
 
 
@@ -59,7 +61,7 @@ function Header(){
              </div>
              </div>
             </nav>
-
+{/* <Error/> */}
 <Home/>
          
 
