@@ -1,0 +1,147 @@
+:root{
+    --titlecolor:#002D74
+
+}
+.Media-Title{
+    width: 782px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-title{
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--titlecolor);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.media-text{
+    /* width: 782; */
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--titlecolor);
+    text-align: center;
+  
+}
+
+.MediaCard{
+    width: 430px;
+    height: 440px;
+    border-radius: 20px;
+    border: 0 0 1px 0;
+    background-color:#F0F6F9;
+    margin-top: 20px;
+}
+.Media1,.Media2,.Media3{
+    width: 430px;
+}
+.MediaCard h2 {
+    width: 367px;
+    height: 58px;
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #003B71;
+    padding-top: 35px;
+    /* padding-bottom: 10px; */
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+
+.MediaCard p {
+    width: 380px;
+    height: 42px;
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #003B71;
+    text-align: left;
+    
+}
+
+.Medtext{
+    font-size: 16px;
+    color: #5B748D;
+}
+
+.Mediatext{
+    width: 368px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 45px;
+}
+
+
+
+
+
+.Mediatext a{
+    display: block;
+    /* float: left; */
+    /* padding-left: 58px; */
+    /* margin-top: 17px; */
+    font-weight: 400;
+    color: #5B748D;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+
+
+.MediaContinue::after {
+    content: "";
+    display: block;
+    width: 40px;
+    top: 391px;
+    left: 317px;
+    position: absolute;
+    background: #009ADE;
+    transition: width 0.3s;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 20%;
+}
+
+.mediabtn{
+    font-weight: 400;
+    font-size: 16px;
+    width: 134px;
+    height: 40px;
+    background-color: #009ADE;
+    border: none;
+    color: #ffffff;
+    border-radius: 70px;
+}
+
+.mbtn{
+    font-weight: 400;
+    font-size: 16px;
+    width: 212px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #009ADE;
+    /* color: #ffffff; */
+    border-radius: 60px; 
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+.mbtn:hover{
+   
+    background-color: #009ADE;
+    color: #ffffff;
+    transition: all 0.7s ease-in-out
+    
+}
+
+

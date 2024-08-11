@@ -1,0 +1,61 @@
+
+:root{
+    --titlecolor:#002D74
+
+}
+
+.ques-title{
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--titlecolor);
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1rem auto;
+  }
+  .accordion-item {
+    position: relative;
+    width: 900px;
+    height: 56px;
+    border-radius: 90px !important;
+    background-color: #F0F6F9;
+    margin-left: 84px;
+    
+  }
+
+
+
+  .accordion-item-active {
+    position: relative;
+    width: 900px;
+    height: 212px;
+    border-radius: 20px !important;
+    background-color: #F0F6F9;
+    margin-left: 84px;
+    border: 1px solid #009ADE;
+    
+  }
+  .accordion-item-body{
+    width: 706px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #5B748D;
+    margin-left: 29px;
+  }
+  .accordion-item-header {
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?' url(../../assets/plus-circle.svg);
+    font-weight: 500;
+    font-size: 16px;
+    color: #002D74;
+    margin-left: 30px;
+    margin-top: 13px;
+  }
+.Plus{
+    position: absolute;
+    right: 40px;
+}
