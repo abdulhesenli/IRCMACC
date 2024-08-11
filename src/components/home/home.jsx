@@ -11,14 +11,14 @@ import Group2 from '../../assets/Group2.svg'
 import Group3 from '../../assets/Group3.svg'
 import Group4 from '../../assets/Group4.svg'
 import Arrow from '../../assets/arrow-right.svg'
-// import Trainers from "../Trainers/trainers";
-// import Training from "../training/training";
-// import Registration from "../registration/registration";
-// import Testimonials from "../Testimonials/testimonials";
-// import News from "../News/news";
+import Trainers from "../Trainers/trainers";
+import Training from "../training/training";
+import Registration from "../registration/registration";
+import Testimonials from "../Testimonials/testimonials";
+import News from "../News/news";
 // import NewsPage from "../NewsPage/newspage";
 // import Questions from "../Questions/questions";
-import Footer from "../Footer/footer";
+// import Footer from "../Footer/footer";
 
 
 
@@ -165,17 +165,16 @@ function Home(){
 
             </div>
           
-            {/* <Training/>
+            <Training/> 
             <Trainers/>
             <Registration/>
             <Testimonials/>
-            <News/> */}
+            <News/> 
 
             {/* <Questions/> */}
-            <Footer/>
-           
-
+            
  </div>
+ 
 
       
 

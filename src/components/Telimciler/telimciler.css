@@ -1,0 +1,29 @@
+:root{
+    --titlecolor:#002D74
+
+}
+.Telimci-Title{
+    width: 782px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.telimci-title{
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--titlecolor);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.telimci-text{
+    /* width: 782; */
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--titlecolor);
+    text-align: center;
+  
+}

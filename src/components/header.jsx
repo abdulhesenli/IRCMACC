@@ -3,11 +3,17 @@ import '../header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CiSearch } from "react-icons/ci";
 import irtmac from '../assets/Irtmac.svg'
-// import Home from "./home/home.jsx";
+// import { Link } from 'react-router-dom';
+import Home from "./home/home.jsx";
 // import InsideNews from './İnsideNews/insidenews';
-import Telimlər from './Telimler/telimler';
+import Fouter from './Footer/footer.jsx'
+// import { Link,  } from 'react-router-dom';
 
+// import TelimDaxili from './Telimler daxili/telimdaxili';
+// import Telimci from './Telimciler/telimciler'
+// import TelimciDaxili from './Telimcidaxili/telimcidaxili';
 
+// import Media from './Media/media'
 
 
 
@@ -23,7 +29,10 @@ function Header(){
            <div className="text col-6">INTERNATIONAL RESEARCH TRAINING MEDICAL ASSEMBLY CENTER</div>
 
            <div className=" h-text col-6 d-flex">
+      
            <div className="me-2">< CiSearch className="fa" /></div>
+           {/* <input type="text" name="text" id="text"  /> */}
+           
            <div className="vl"></div>
                  <p className="text">AZ</p>
            </div>
@@ -43,7 +52,9 @@ function Header(){
                                    <a  id="navlink"  className=" nav nav-link" aria-current="page" href="#">ANA SƏHİFƏ</a>
                                 </li>
                                  <li className="nav-item">
+                                  {/* <Link to='/about' className=" nav nav-link" >HAQQIMIZDA</Link> */}
                                    <a className=" nav nav-link" href="#">HAQQIMIZDA</a>
+                                   {/* <Link to='/about' >HAQQIMIZDA</Link> */}
                                  </li>
                                  <li className="nav-item">
                                    <a className=" nav nav-link" href="#">TƏLİM</a>
@@ -67,9 +78,12 @@ function Header(){
              </div>
             </div>
       {/* <InsideNews/>   */}
-      <Telimlər/> 
+      {/* <TelimDaxili/>  */}
+      {/* <Telimci/>  */}
+      {/* <TelimciDaxili/>  */}
    
-      { /* <Home/> */}
+      { <Home/>}
+      <Fouter/>
          
 
     </div>
