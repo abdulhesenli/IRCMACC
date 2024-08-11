@@ -1,0 +1,34 @@
+:root{
+    --titlecolor:#002D74
+
+}
+.Intelimci-Title{
+    width: 757px;
+    margin-top: 40px;
+    margin-left: 40px;
+   
+}
+
+.intelimci-title{
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--titlecolor);
+ 
+}
+.TelimciImg{
+    border-radius: 20px;
+}
+.intelimci-text{
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--titlecolor);
+
+  
+}
+
+#TelimciDaxili{
+    margin: auto;
+    display: flex;
+    width: 1156px;
+    margin-top: 80px;
+}

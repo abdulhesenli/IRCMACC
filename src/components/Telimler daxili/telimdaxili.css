@@ -1,0 +1,71 @@
+:root{
+    --titlecolor:#002D74
+
+}
+.Telim-Title{
+    width: 782px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.telim-title{
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--titlecolor);
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+.Telimbtn{
+    font-weight: 400;
+    font-size: 16px;
+    width: 448px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #009ADE;
+    /* color: #ffffff; */
+    border-radius: 60px; 
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+.Telimbtn:hover{
+   
+    background-color: #009ADE;
+    color: #ffffff;
+    transition: all 0.7s ease-in-out
+    
+}
+
+#table{
+    width: 1158px;
+    height: 200px;
+    border: 1px solid #009ADE;
+    text-align: center;
+    border-radius: 20px !important;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+tr,td{
+    border: 1px solid #009ADE;
+    text-align: center;
+    padding: 10px;
+    /* border-radius: 20px !important; */
+
+}
+
+
+td{
+    height: 90px;
+}
+td:nth-child(2){
+    text-align: start;
+    padding-left: 25px;
+}
