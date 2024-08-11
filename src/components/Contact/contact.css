@@ -1,0 +1,138 @@
+:root{
+    --titlecolor:#002D74
+
+}
+.Contact-Title{
+    width: 482px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title{
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--titlecolor);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.contact-text{
+    /* width: 782; */
+    font-weight: 400;
+    font-size: 24px;
+    color: #009ADE;
+    text-align: center;
+  
+}
+.Contactregister{
+    width: 1156px;
+    height: 350px;
+    background-color: #F0F6F9;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.ContactForm{
+    position: absolute;
+    width: 448px;
+    left: 245px;
+    margin-top: 50px;
+   
+}
+.ContactForm input{
+    width: 448px;
+    height: 58px;
+    border: none;
+    border-radius: 70px;
+    padding-left: 40px;
+
+
+}
+
+
+#name::placeholder{
+    color: #5B748D;
+    font-weight: 400;
+    font-size: 14px;
+    /* padding-left: 40px; */
+    
+}
+#text::placeholder{
+    color: #5B748D;
+    font-weight: 400;
+    font-size: 14px;
+    /* padding-left: 40px; */
+}
+#email::placeholder{
+    color: #5B748D;
+    font-weight: 400;
+    font-size: 14px;
+    /* padding-left: 40px; */
+}
+#textarea::placeholder{
+    color: #5B748D;
+    font-weight: 400;
+    font-size: 14px;
+    /* padding-left: 40px; */
+}
+#textarea{
+    position: absolute;
+    top: 2px;
+    left:  490px;
+    width: 448px;
+    height: 194px;
+    border: none;
+    resize: none;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.ContactBtn{
+    width: 153px;
+    height: 48px;
+    border-radius: 60px;
+    Padding: 12px 31px 12px 31px;
+    gap: 12px;
+    background-color: #002D74;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    position: absolute;
+    left: 783px;
+   margin-top: 15px;
+}
+
+.Adress{
+    display: flex;
+    justify-content: space-around;
+    width: 930px;
+    height: 218px;
+    margin: auto;
+    background-color: #009ADE;
+    border-radius: 0 0 30px 30px;
+}
+.contactimg{
+    margin-bottom: 10px;
+}
+
+.adress-text{
+    width: 187px;
+    margin-top: 35px;
+}
+.adress-text1{
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.adress-title{
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+

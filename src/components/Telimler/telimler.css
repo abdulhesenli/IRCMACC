@@ -1,0 +1,23 @@
+:root{
+    --titlecolor:#002D74
+
+}
+
+
+.Telim-Title{
+    /* width: 920px; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Telimlər-title{
+    width: 920px;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--titlecolor);
+    text-align: center;
+    margin-top: 70px;
+}

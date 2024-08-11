@@ -1,0 +1,81 @@
+:root{
+    --titlecolor:#002D74
+
+}
+.About-Title{
+    width: 782px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.about-title{
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--titlecolor);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.Name-title{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--titlecolor);
+    text-align: center;
+
+}
+
+.about-text{
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--titlecolor);
+    text-align: center;
+    margin-bottom: 0 !important;
+  
+}
+
+.aboutcircle{
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    background-color: #009ADE;
+    border-radius: 50%;
+    left: 133px;
+}
+.AboutImage{
+    position: absolute;
+    width: 330px;
+    height: 330px;
+
+}
+.about{
+    background: #F0F6F9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1150px;
+    height: 334px;
+    border-radius: 165px 20px 20px 165px;
+    margin: auto;
+}
+.aboutText2{
+    width: 620px;
+    height: 231px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #003B71;
+    margin-left: 220px;
+}
+
+.abouttext3{
+    width: 1089px;
+    margin: auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #003B71;
+    margin-top: 70px;
+}

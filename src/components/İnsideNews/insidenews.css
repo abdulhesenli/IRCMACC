@@ -1,0 +1,66 @@
+:root{
+    --titlecolor:#002D74
+
+}
+.InsideNews-Title{
+    /* width: 920px; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.insidenews-title{
+    width: 920px;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--titlecolor);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.insidenews-text{
+    width: 1156px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #009ADE;
+    text-align: center;
+    margin-top: 20px;
+}
+.InsideImage{
+    display: flex;
+    width: 920px;
+    margin: auto;
+
+}
+.ContactIcon{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.ContactIcon a{
+    margin-right: 20px;
+}
+.ContactSosial{
+    width: 94px;
+    height: 209px;
+    border: 1px solid #C5CEE0;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+.sosialtext{
+    font-weight: 400;
+    font-size: 14px;
+    color: #002D74;
+    padding: 20px 20px 5px 20px;
+}
+.ContactSosial li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.ContactSosial ul{
+  padding-left: 29px !important;
+}

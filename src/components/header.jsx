@@ -3,8 +3,13 @@ import '../header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CiSearch } from "react-icons/ci";
 import irtmac from '../assets/Irtmac.svg'
-import Home from "./home/home.jsx";
-// import Error from './error/error';
+// import Home from "./home/home.jsx";
+// import InsideNews from './İnsideNews/insidenews';
+import Telimlər from './Telimler/telimler';
+
+
+
+
 
 
 
@@ -13,7 +18,7 @@ import Home from "./home/home.jsx";
 function Header(){
     return(
 
- <div>
+    <div>
            <div className="header row">
            <div className="text col-6">INTERNATIONAL RESEARCH TRAINING MEDICAL ASSEMBLY CENTER</div>
 
@@ -25,7 +30,7 @@ function Header(){
            
            </div>
 
-           <nav className=" header-nav navbar navbar-expand-lg bg-body-tertiary">
+           <div className=" header-nav navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 
                  <img src={irtmac}  alt="Irtmac" className="irtmac" />
@@ -60,17 +65,19 @@ function Header(){
    
              </div>
              </div>
-            </nav>
-{/* <Error/> */}
-<Home/>
+            </div>
+      {/* <InsideNews/>   */}
+      <Telimlər/> 
+   
+      { /* <Home/> */}
          
 
- </div>
+    </div>
 
       
 
-    )
-}
+  )
+ }
 
-export default Header
+ export default Header
 
