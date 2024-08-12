@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --titlecolor:#002D74
 
 }
 .Media-Title{
-    width: 782px;
+    width: 793px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -17,6 +19,8 @@
     color: var(--titlecolor);
     text-align: center;
     margin-top: 70px;
+    font-family: "Montserrat", sans-serif;
+
 }
 
 .media-text{
@@ -25,6 +29,7 @@
     font-size: 24px;
     color: var(--titlecolor);
     text-align: center;
+    font-family: "Montserrat", sans-serif;
   
 }
 
@@ -43,6 +48,7 @@
     width: 367px;
     height: 58px;
     margin-left: 40px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 24px;
     color: #003B71;
@@ -57,6 +63,7 @@
     width: 380px;
     height: 42px;
     margin-left: 40px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-align: center;
@@ -88,6 +95,7 @@
     /* float: left; */
     /* padding-left: 58px; */
     /* margin-top: 17px; */
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #5B748D;
     text-decoration: none;
@@ -112,6 +120,7 @@
 }
 
 .mediabtn{
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
     width: 134px;
@@ -123,6 +132,7 @@
 }
 
 .mbtn{
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
     width: 212px;

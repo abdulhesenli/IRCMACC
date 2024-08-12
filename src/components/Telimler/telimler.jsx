@@ -18,13 +18,6 @@ function Telim(){
       
 
 
-            
-            
-           
-
-            
-            
-
 
         </div>
   

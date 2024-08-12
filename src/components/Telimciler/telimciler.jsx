@@ -4,7 +4,7 @@ import Trainerscard from '../Trainerscard/trainerscard';
 
 
 
-function Telimci(){
+function Telimciler(){
     return(
         <div style={{maxWidth:'1392px', margin:'auto'}}>
             <div className='Telimci-Title'>
@@ -23,4 +23,4 @@ function Telimci(){
     )
 }
 
-export default Telimci
+export default Telimciler
