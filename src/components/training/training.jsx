@@ -4,11 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TrainingCard from '../TrainingCard/trainingcard';
 import Ellipse from '../../assets/Ellipse.svg'
 import IconRight from '../../assets/Icon-right.svg'
+import {useTranslation} from "react-i18next";
 // import Doctor1 from '../../assets/doctor1.png'
 
 
 
 function Training(){
+    const {t} = useTranslation();
     
    return(
 
@@ -18,7 +20,7 @@ function Training(){
          
 
          <div>
-        <h1 className="Traning-text">Təlimlər</h1>
+        <h1 className="Traning-text"> {t('education')} </h1>
         <hr className="traning-hr" />
         <div className="tr-circle">
         <img src={Ellipse} alt="Ellipse" className="Ellipse"  style={{width:"45px", height:"45px"}}/>

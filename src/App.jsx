@@ -1,17 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Home from './components/home/Home';
-import About from './components/About/About';
-import Footer from "./components/Footer/Footer"
-import Telimler from "./components/Telimler/Telimler"
-import Telimciler from './components/Telimciler/Telimciler';
-import Media from './components/Media/Media';
-import Contact from './components/Contact/Contact';
-import Error from './components/error/Error';
-import Questions from './components/Questions/Questions';
-import Mission from './components/Mission/Mission';
+import Header from './components/header.jsx';
+import Home from './components/home/home.jsx';
+import About from './components/About/about.jsx';
+import Footer from "./components/Footer/footer.jsx"
+import Telimler from "./components/Telimler/telimler.jsx"
+import Telimciler from './components/Telimciler/telimciler.jsx';
+import Media from './components/Media/media.jsx';
+import Contact from './components/Contact/contact.jsx';
+import Error from './components/error/error.jsx';
+import Questions from './components/Questions/questions.jsx';
+import Mission from './components/Mission/mission.jsx';
 
 function App() {
   return (
@@ -19,8 +19,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Telimler" element={<Telimler />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/telimler" element={<Telimler />} />
         <Route path="/Telimciler" element={<Telimciler />} />
         <Route path="/Media" element={<Media />} />
         <Route path="/Contact" element={<Contact />} />
