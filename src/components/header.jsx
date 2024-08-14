@@ -9,6 +9,7 @@ import irtmac from '../assets/Irtmac.svg'
 // import Fouter from './Footer/Footer.jsx'
 import {Link} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
+import {useState} from "react";
 // import { Link,  } from 'react-router-dom';
 
 // import TelimDaxili from './Telimler daxili/telimdaxili';
@@ -20,6 +21,7 @@ import {useTranslation} from "react-i18next";
 
 function Header() {
     const {t, i18n} = useTranslation();
+    const [isOpenSearch, setIsOpenSearch ] = useState(false);
 
     const handleChange = (e) => {
         {
@@ -27,17 +29,21 @@ function Header() {
         }
     }
 
+
+    const handleClick = ()=>{
+        setIsOpenSearch(true);
+    }
     return (
 
         <div>
-            <div className="header row m-0">
+           <div className="header row m-0">
                 <div className="text col-6">INTERNATIONAL RESEARCH TRAINING MEDICAL ASSEMBLY CENTER</div>
 
                 <div className=" h-text col-6 d-flex">
 
-                    <div className="me-2">< CiSearch className="fa"/></div>
-                    {/* <input type="text" name="text" id="text"  /> */}
-
+                    <div onClick={handleClick} className="me-4">
+                        <CiSearch className="fa"/>
+                    </div>
                     <div className="vl"></div>
                     <select onChange={handleChange} name="" id="">
                         <option value="az">AZ</option>
@@ -46,6 +52,9 @@ function Header() {
                     </select>
                 </div>
 
+            </div>
+            <div className={`row m-0 header-search ${isOpenSearch && 'active'}`}>
+                <input type="text"/>
             </div>
 
             <div className=" header-nav navbar navbar-expand-lg bg-body-tertiary">

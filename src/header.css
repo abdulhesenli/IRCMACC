@@ -197,6 +197,23 @@
 
 
 
+.header-search{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    transition: all 0.4s linear;
+}
+
+.header-search.active{
+    opacity: 1;
+    pointer-events: auto;
+    height: 66px;
+}
+
+
 @media (max-width: 480px) {
   .header {
       padding: 10px;
