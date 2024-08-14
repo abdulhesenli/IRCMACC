@@ -51,13 +51,17 @@ function Contact (){
 
             </div>
 
-            
-            
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12156.609233436639!2d49.861909999999995!3d40.38331685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307db76b4bb377%3A0xd02c5ca432b069fd!2sSharg%20restaurant!5e0!3m2!1sru!2saz!4v1723662080569!5m2!1sru!2saz"
+                    width="600" height="450" style={{border : 0}} allowFullScreen="" loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
 
         </div>
-  
-        
+
+
     )
 }
 
