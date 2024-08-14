@@ -31,7 +31,7 @@ function App() {
 
   return (
       <>
-          {/*{loading &&  <Loading/>}*/}
+          {loading &&  <Loading/>}
           <div>
               <Header/>
               <Routes>
