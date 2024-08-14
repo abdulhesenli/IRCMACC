@@ -11,14 +11,7 @@ function Telim(){
                 <h1 className='Telimlər-title'>Təlimlər</h1>
                
             </div>
-
             <Trainingcard/>
-
-           
-      
-
-
-
         </div>
   
         
