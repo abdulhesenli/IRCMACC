@@ -1,6 +1,7 @@
 import './error.css'
 import Error404 from '../../assets/Error-404.svg'
 import ArrowError from '../../assets/arrow-error.svg'
+import { Link } from 'react-router-dom';
 
 function Error (){
     return(
@@ -10,7 +11,7 @@ function Error (){
             <p className='errortext'>Səhifəni tapmaqda çətinlik çəkirik. <br />
             Daha sonra yenidən cəhd edin və ya şəbəkə bağlantınızı yoxlayın.
             </p>
-            <button className='errorbtn'>Əsas səhifə <img src={ArrowError} alt="ArrowError" className='ArrowError' /> </button>
+            <Link to="/" >  <button className='errorbtn'>Əsas səhifə <img src={ArrowError} alt="ArrowError" className='ArrowError' /> </button> </Link>
 
         </div>
     )

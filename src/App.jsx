@@ -1,7 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
 import Home from './components/home/Home';
 import About from './components/About/About';
 import Footer from "./components/Footer/Footer"
@@ -12,6 +10,8 @@ import Contact from './components/Contact/Contact';
 import Error from './components/error/Error';
 import Questions from './components/Questions/Questions';
 import Mission from './components/Mission/Mission';
+import Header from './components/header';
+import { Routes , Route} from 'react-router-dom';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/About" element={<About />} />
         <Route path="/Telimler" element={<Telimler />} />
         <Route path="/Telimciler" element={<Telimciler />} />
         <Route path="/Media" element={<Media />} />
@@ -28,7 +28,7 @@ function App() {
         <Route path="/Mission" element={<Mission />} />
         <Route path="*" element={<Error />} />
       </Routes>
-
+    
 
       <Footer /> 
     </div>
