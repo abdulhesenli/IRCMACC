@@ -16,28 +16,21 @@ import Mission from './components/Mission/Mission';
 function App() {
   return (
     <div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Telimler" element={<Telimler />} />
+        <Route path="/Telimciler" element={<Telimciler />} />
+        <Route path="/Media" element={<Media />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Questions" element={<Questions />} />
+        <Route path="/Mission" element={<Mission />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
 
-      <Header/>
 
-      {/* <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Routes>
-          <Route path="/" element={<Home />} /> 
-          <Route path="/about" element={<About />} /> 
-        </Routes>
-      </div> */}
-   
-  
+      <Footer /> 
     </div>
   );
 }
