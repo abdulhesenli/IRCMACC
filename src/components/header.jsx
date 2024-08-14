@@ -26,7 +26,7 @@ function Header(){
     return(
 
     <div>
-           <div className="header row">
+           <div className="header row m-0">
            <div className="text col-6">INTERNATIONAL RESEARCH TRAINING MEDICAL ASSEMBLY CENTER</div>
 
            <div className=" h-text col-6 d-flex">
