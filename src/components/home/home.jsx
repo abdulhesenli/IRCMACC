@@ -1,21 +1,23 @@
 // import  from "react";
+import { useState, useEffect } from 'react';
 import "../../header.css"
 import './home.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Rectangle from '../../assets/Rectangle.png'
 import Image from '../../assets/image.svg'
 import LogoIpsum from '../../assets/image1.svg'
+import LogoIpsum2 from '../../assets/image2.svg'
 import LogoIpsum3 from '../../assets/image3.svg'
 import LogoIpsum4 from '../../assets/image4.svg'
 import Group2 from '../../assets/Group2.svg'
 import Group3 from '../../assets/Group3.svg'
 import Group4 from '../../assets/Group4.svg'
 import Arrow from '../../assets/arrow-right.svg'
-import Trainers from "../Trainers/trainers";
-import Training from "../training/training";
+// import Trainers from "../Trainers/trainers";
+// import Training from "../training/training";
 import Registration from "../registration/registration";
-import Testimonials from "../Testimonials/testimonials";
-import News from "../News/news";
+// import Testimonials from "../Testimonials/testimonials";
+// import News from "../News/news";
 // import NewsPage from "../NewsPage/newspage";
 // import Questions from "../Questions/questions";
 // import Footer from "../Footer/footer";
@@ -24,22 +26,35 @@ import News from "../News/news";
 
 function Home(){
     
+    const [counter, setCounter] = useState(0);
+
+    useEffect(() => {
+        if (counter < 36) {
+            const interval = setInterval(() => {
+                setCounter((prevCounter) => prevCounter + 1);
+              
+            
+            }, 10);
+            return () => clearInterval(interval);
+        }
+    }, [counter]);
+
     return(
 
    
 
- <div style={{maxWidth:'1392px', margin:'auto'}}>
+ <div>
          
 
-            <div id="home" className="container">
+            <div id="home">
 
                 <img id="Rec_img" src={Rectangle}  alt="Rectangle" className="Rectangle" />
              <svg id="vector_1" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
                 <circle r="83" cx="83" cy="14" fill="#0074a75c" />
              </svg> 
-             <svg id="vector_2" height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
+             {/* <svg id="vector_2" height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
                 <circle r="83" cx="83" cy="14" fill="#0074a75c" />
-                </svg> 
+                </svg>  */}
                 <svg id="vector_3" clipPath="flat-bottom" height="200" width="200"xmlns="http://www.w3.org/2000/svg" >
                 <circle r="83" cx="83" cy="14" fill="#0074a75c" />
              </svg> 
@@ -77,35 +92,35 @@ function Home(){
                     <img src={Group2}  alt="Group2" className="Group2" />
                 </div>
 
-                <div className="row" style={{marginLeft:"40px", marginBottom:"100px"}}>
-                    <div className="col-3">
+                <div id='Homelogo'>
+                    <div >
                      <div className="logo">
                         <img src={LogoIpsum}  alt="LogoIpsum" className="LogoIpsum" />
                     </div>                  
                     </div>
-                     <div className="col-3">
+                     <div >
                         <div className="logo">
-                         <img src={LogoIpsum4}  alt="LogoIpsum4" className="LogoIpsum4" />
+                         <img src={LogoIpsum2}  alt="LogoIpsum4" className="LogoIpsum4" />
                         </div>                   
                     </div>
-                    <div className="col-3">
+                    <div >
                         <div className="logo">
                          <img src={LogoIpsum3}  alt="LogoIpsum3" className="LogoIpsum3" />
                          </div>                   
                     </div>
-                     <div className="col-3">
+                     <div >
                          <div className="logo">
                          <img src={LogoIpsum4}  alt="LogoIpsum4" className="LogoIpsum4" />
                         </div>                 
                     </div>
                 </div>
 
-                <div style={{height:"365px"}}>
-                <div className="title">
-                    <h1 className="title1">
+                <div id='HomeGroup' style={{height:"365px"}}>
+                <div className='HomeBox' >
+                    <h1 className="title">
                     Mauris laoreet ante at nunc dictum Mauris laoreet ante at.
                     </h1>
-                    <p className="title2"> 
+                    <p className="title1"> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Duis massa nisl, porta ac erat quis, semper sollicitudin mi Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit.
@@ -115,7 +130,7 @@ function Home(){
 
                 <div className="box row">
                     <div className="inbox col-6">
-                        <h1 className="boxtext">36+</h1>
+                        <h1 className="boxtext">{counter}+</h1>
                         <p className="boxtext1">Təlim sayı</p>
                     </div>
                     <div className="inbox col-6">
@@ -138,38 +153,51 @@ function Home(){
                 </div>
 
                
-               <div style={{height:"400px"}}>
-               <div className="banner">
+
+            <div className="banner">
+
+
+                <div>
+                <img src={Group4} alt="Group4" className="Group4" />
+
+                </div>
                 
-                <img src={Group4} style={{marginLeft:"130px", marginTop:"40px"}} alt="Group4" className="Group4" />
                 <div className="HRline"></div>
-                <img src={Group3} style={{marginLeft:"862px", marginTop:"-115px"}} alt="Group3" className="Group3" />
-    
-                <h1 className="BanTitle">Mauris laoreet ante at nunc dictum.</h1>
-                <p className="BanTitle2"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Vivamus luctus, neque at posuere tincidunt, nibh lorem hendrerit lectus, 
-                ac facilisis sem diam eget sapien. Sed justo enim, rutrum sit amet rutrum non, 
-                luctus vel magna.   Nam quis blandit odio. Mauris maximus diam a enim consequat lacinia. 
-                Mauris at auctor neque. 
-                </p>
-    
-                <button className="Ban-btn">Ətraflı
-                </button>
-                <img src={Arrow} alt="Arrow" style={{position:"absolute", bottom:"47px" , left:"545px"}} className="Arrow" />
-                    </div>
-               </div>
+
+                <div id='BanText'>
+
+                    <h1 className="BanTitle">Mauris laoreet ante at nunc dictum.</h1>
+                    <p className="BanTitle2"> 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Vivamus luctus, neque at posuere tincidunt, nibh lorem hendrerit lectus, 
+                      ac facilisis sem diam eget sapien. Sed justo enim, rutrum sit amet rutrum non, 
+                      luctus vel magna.   Nam quis blandit odio. Mauris maximus diam a enim consequat lacinia. 
+                      Mauris at auctor neque. 
+                    </p>
+
+                        <button className="Ban-btn">Ətraflı <span>
+                        <img src={Arrow} alt="Arrow"  className="Arrow" />
+                        </span> </button>
+
+
+                </div>
+
+                <img src={Group3} style={{marginLeft:"-23px", marginTop:"-155px"}} alt="Group3" className="Group3" />
+
+
+            </div>
+     
            
 
                
 
             </div>
           
-            <Training/> 
-            <Trainers/>
+            {/* <Training/>  */}
+            {/* <Trainers/> */}
             <Registration/>
-            <Testimonials/>
-            <News/> 
+            {/* <Testimonials/> */}
+            {/* <News/>  */}
 
             {/* <Questions/> */}
             

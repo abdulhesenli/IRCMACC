@@ -1,33 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.TraningTop{
+    max-width: 1392px;
+    margin: auto;
+    margin-top: 85px;
+
+}
+#TraningTop{
+
+    display: flex;
+    align-items: center;
+}
 .Traning-text{
-    width: 212px;
-    margin-left: 50px;
+    /* width: 212px; */
+    margin-right: 90px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 43.88px;
     color: #003B71;
 }
 .Traning-text2{
-    width: 800px;
-    margin-left: 50px;
+    /* width: 800px;
+    margin-left: 50px; */
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 29.26px;
     color: #002D74;
 }
 .traning-hr{
-    width: 1103px;
+    width: 1107px;
     border: 1px solid #B4C1D9;
-    position: absolute;
-    top: 1866px;
-    left: 246px;
+ 
 }
 
 .tr-circle{
     width: 45px;
     height: 45px;
-    position: absolute;
-    top: 1860px;
-    right: 44px;
+    position: relative;
     border-radius: 50px;
 }
 

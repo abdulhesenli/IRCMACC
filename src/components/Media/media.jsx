@@ -20,24 +20,28 @@ function Media (){
             </div>
 
 
-             <div className="row" style={{marginTop:"40px", marginLeft:" 0px"}}>
-            <div className="col-4">
+             <div id='Media' style={{marginTop:"40px", marginLeft:" 18px"}}>
+            <div>
             <div className="MediaCard">
                 <img src={Media1} alt="Media1" className="Media1"/>
                     
                     <h2>Ümummilli lider və milli səhiyyəmizin inkişafı</h2>
                     
-                    <div className="Mediatext">
-                        <button className='mediabtn'>Məqalə</button>
+                        <div className="Mediatext">
+                          <button className='mediabtn'>Məqalə</button>
 
-                            <div style={{display:'flex', alignItems:'center'}}>
-                            <a href="#" className="MediaContinue">Ətraflı</a>
-                            <img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" style={{marginLeft:"10px"}}/>
+                            <div>
+                            <a href="#" className="circle-button">
+                             <span className="text">Ətrafli</span>
+                              <span className="arrow"><img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" />
+                              </span>
+                            </a>
+
                             </div>
                         </div>
                 </div>
             </div>
-            <div className="col-4">
+            <div>
             <div className="MediaCard">
                 <img src={Media2} alt="Media2" className="Media2"/>
                     
@@ -45,15 +49,19 @@ function Media (){
                     
                     <div className="Mediatext">
                         <button className='mediabtn'>Video dərslik</button>
+                     
+                        <div>
+                            <a href="#" className="circle-button">
+                             <span className="text">Ətrafli</span>
+                              <span className="arrow"><img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" />
+                              </span>
+                            </a>
 
-                            <div style={{display:'flex', alignItems:'center'}}>
-                            <a href="#" className="MediaContinue">Ətraflı</a>
-                            <img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" style={{marginLeft:"10px"}}/>
                             </div>
                         </div>
                 </div>
             </div>
-            <div className="col-4">
+            <div>
             <div className="MediaCard">
                 <img src={Media3} alt="Media3" className="Media3"/>
                     
@@ -61,15 +69,19 @@ function Media (){
                     
                     <div className="Mediatext">
                         <button className='mediabtn'>Təqdimat</button>
+                     
+                        <div>
+                            <a href="#" className="circle-button">
+                             <span className="text">Ətrafli</span>
+                              <span className="arrow"><img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" />
+                              </span>
+                            </a>
 
-                            <div style={{display:'flex', alignItems:'center'}}>
-                            <a href="#" className="MediaContinue">Ətraflı</a>
-                            <img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" style={{marginLeft:"10px"}}/>
                             </div>
                         </div>
                 </div>
             </div>
-            <div className="col-4">
+            <div>
             <div className="MediaCard">
                 <img src={Media1} alt="Media1" className="Media1"/>
                     
@@ -78,14 +90,19 @@ function Media (){
                     <div className="Mediatext">
                         <button className='mediabtn'>Məqalə</button>
 
-                            <div style={{display:'flex', alignItems:'center'}}>
-                            <a href="#" className="MediaContinue">Ətraflı</a>
-                            <img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" style={{marginLeft:"10px"}}/>
+                     
+                        <div>
+                            <a href="#" className="circle-button">
+                             <span className="text">Ətrafli</span>
+                              <span className="arrow"><img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" />
+                              </span>
+                            </a>
+
                             </div>
                         </div>
                 </div>
             </div>
-            <div className="col-4">
+            <div>
             <div className="MediaCard">
                 <img src={Media2} alt="Media2" className="Media2"/>
                     
@@ -94,14 +111,19 @@ function Media (){
                     <div className="Mediatext">
                         <button className='mediabtn'>Video dərslik</button>
 
-                            <div style={{display:'flex', alignItems:'center'}}>
-                            <a href="#" className="MediaContinue">Ətraflı</a>
-                            <img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" style={{marginLeft:"10px"}}/>
+                    
+                        <div>
+                            <a href="#" className="circle-button">
+                             <span className="text">Ətrafli</span>
+                              <span className="arrow"><img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" />
+                              </span>
+                            </a>
+
                             </div>
                         </div>
                 </div>
             </div>
-            <div className="col-4">
+            <div>
             <div className="MediaCard">
                 <img src={Media3} alt="Media3" className="Media3"/>
                     
@@ -110,9 +132,13 @@ function Media (){
                     <div className="Mediatext">
                         <button className='mediabtn'>Təqdimat</button>
 
-                            <div style={{display:'flex', alignItems:'center'}}>
-                            <a href="#" className="MediaContinue">Ətraflı</a>
-                            <img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" style={{marginLeft:"10px"}}/>
+                        <div>
+                            <a href="#" className="circle-button">
+                             <span className="text">Ətrafli</span>
+                              <span className="arrow"><img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" />
+                              </span>
+                            </a>
+
                             </div>
                         </div>
                 </div>

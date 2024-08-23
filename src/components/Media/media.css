@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --titlecolor:#002D74
 
 }
 .Media-Title{
-    width: 793px;
+    width: 920px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -40,6 +45,7 @@
     border: 0 0 1px 0;
     background-color:#F0F6F9;
     margin-top: 20px;
+    margin-right: 20px;
 }
 .Media1,.Media2,.Media3{
     width: 430px;
@@ -57,7 +63,14 @@
     margin-bottom: 55px;
     text-align: center;
 }
-
+#Media{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    max-width: 1392px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .MediaCard p {
     width: 380px;
@@ -78,6 +91,7 @@
 }
 
 .Mediatext{
+    position: relative;
     width: 368px;
     display: flex;
     align-items: center;
@@ -90,11 +104,8 @@
 
 
 
-.Mediatext a{
-    display: block;
-    /* float: left; */
-    /* padding-left: 58px; */
-    /* margin-top: 17px; */
+.span{
+    /* display: block; */
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #5B748D;
@@ -103,21 +114,38 @@
 
 }
 
+.span:hover{
+
+    color: #fc0000 !important;
 
 
-.MediaContinue::after {
-    content: "";
-    display: block;
+}
+.MediaContinue{
+    position: relative;
     width: 40px;
-    top: 391px;
-    left: 317px;
-    position: absolute;
-    background: #009ADE;
-    transition: width 0.3s;
     height: 40px;
+    background: #009ADE;
     border-radius: 50%;
     opacity: 20%;
+    text-align: none;
+    margin: auto;
+    padding: 18px 22px;
+    transition: all 0.2s ease;
 }
+
+.MediaContinue:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(46,202,127,0.2);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+
 
 .mediabtn{
     font-family: "Montserrat", sans-serif;
@@ -153,5 +181,90 @@
     transition: all 0.7s ease-in-out
     
 }
+
+
+
+
+/* Butonun varsayılan hali */
+.circle-button {
+    position: absolute;
+    left: 260px;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    background-color: #009ADE; /* Soluk yeşil */
+    /* color: #5B748D !important; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 20%;
+    text-decoration: none;
+    border-radius: 50%; /* Daire şekli */
+    transition: all 0.4s ease; /* Tüm değişiklikler için geçiş süresi */
+
+}
+.ArrowIcon{
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    color: #a0a0a0;
+}
+
+.text{
+    position: absolute;
+    top: 7px;
+    left: 19px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    /* color: black; */
+}
+.arrow{
+  position:absolute;
+  left:75px;
+  font-size:14px;
+  /* color:black; */
+}
+/* Metin ve ok simgesinin varsayılan görünümü */
+/* .circle-button .text {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    margin-left:20px;
+    z-index:3;
+} */
+
+
+
+/* Hover durumunda butonun genişlemesi ve metnin görünmesi */
+.circle-button:hover {
+    width: 134px;
+    left: 230px;
+    border-radius: 50px; /* Tam buton şekline geçiş */
+    background-color: #009ADE; /* Yeşil */
+    justify-content: space-between; /* Metin ve ok simgesini ayırır */
+    opacity: 100%;
+    color: #ffffff;
+}
+
+.circle-button:hover  .text {
+    left: 29px;
+    color: #ffffff;
+}
+
+.circle-button:hover  .arrow {
+    left: 82px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 

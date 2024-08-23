@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
 .News-text{
     width: 212px;
     margin-left: 50px;
     padding-top: 34px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 43.88px;
@@ -10,6 +19,7 @@
 .News-text2{
     width: 800px;
     margin-left: 50px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 29.26px;

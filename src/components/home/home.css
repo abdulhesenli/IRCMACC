@@ -1,26 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
 .container{
-    max-width: 1392px;
-    padding-right: 0; 
-    padding-left: 0;
-    margin-right: 0;
-    margin-left: 0;
-    margin: inherit !important;
+    font-family: "Montserrat", sans-serif;
+    
 }
 
 #home{
-    position: relative;
+    /* display: none; */
+    max-width: 1392px;
+    margin: auto;
 }
 
 
 #Rec_img{
-    width: 1361px;
+    width: 100%;
     height: 550px;
-    margin-left: 39px;
-    margin-bottom: 97px;
+
   }
 
 .circle{
-    top: 142px;
+    top: 289px;
     width: 232px;
     height: 349px;
     border-radius: 250px 0 0 250px;
@@ -28,12 +34,12 @@
     background-color: #01344b54;
     position: absolute;
     z-index: 0;
-    right: -7px;
+    right: 24px;
 }
 
 #vector_1{
     position: absolute;
-    top: 0px;
+    top: 184px;
     left: 500px;
 }
 
@@ -45,40 +51,40 @@
 
 #vector_3{
     position: absolute;
-    top: 0px;
+    top: 184px;
     left: 700px;
 }
 #image{
     position: absolute;
-    top: 52px;
+    top: 236px;
     left: 200px;
     z-index: 2;
 }
 
 #vector_4{
     position: absolute;
-    top: 170px;
+    top: 365px;
     left: 550px;
     z-index: 1;
 }
 
 #vector_4_1{
     position: absolute;
-    top: 181px;
+    top: 360px;
     left: 351px;
     z-index: 1;
 }
 
 #vector_4_2{
     position: absolute;
-    top: 395px;
+    top: 579px;
     left: 500px;
     z-index: 1;
 }
 
 #vector_5{
     position: absolute;
-    top: 350px;
+    top: 534px;
     left: 715px;
     z-index: 1;
     rotate: 180deg;
@@ -87,7 +93,7 @@
 
 .text-h{
     position: absolute;
-    top: 200px;
+    top: 364px;
     width: 385px;
     color: #ffffff;
     right: 150px;
@@ -97,7 +103,13 @@
     z-index: 1;
 }
 
-
+#Homelogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 79px;
+    margin-bottom: 79px;
+}
 
 .logo{
     display: flex;
@@ -114,35 +126,44 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 503px;
+    top: 686px;
     right: 110px;
     width: 92px;
     height: 92px;
     border-radius: 90px;
     background-color: #F32735;
+    z-index: 5;
    
 
 }
 
-.title{
-    position: absolute;
-    left: 159px;
-    width: 448px;
-    height: 290px;
-    top: 980px;
+#HomeGroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 79px;
 }
-.title1{
+
+.HomeBox{
+    width: 448px;
+    
+}
+
+
+.title{
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 38px;
     line-height: 43.88px;
     color: #002D74;
 }
-.title2{
-    width: 389px;
+.title1{
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 17.07px;
     color: #002D74;
+    width: 389px;
 }
 
 .box{
@@ -150,8 +171,7 @@
     height: 360px;
     border-radius: 30px;
     background-color: #009ADE;
-    position: absolute;
-    right: 90px;
+    position: relative;
 }
 
 .inbox{
@@ -160,17 +180,19 @@
     background-color: transparent;
     color: #ffffff;
     margin: auto;
-    margin-left: 100px;
+    margin-left: 75px;
 }
 
 .boxtext{
-    font-family: 64px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 64px;
     font-weight: 700;
     line-height: 78.02px;
 }
 
 .boxtext1{
-    font-family: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
     font-weight: 500;
     line-height: 19.05px;
 }
@@ -178,7 +200,7 @@
     border-left: 1px solid #002D74;
     height: 300px;
     position: absolute;
-    left: 275px;
+    left: 280px;
     top: 30px;
     width: 0;
     opacity: 20%;
@@ -196,50 +218,50 @@
 }
 
 .banner{
-    position: absolute;
-    width: 1350px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
     height: 307px;
     background-color: #002856;
-    top: 1300px;
     border-radius: 30px;
-    left: 46px;
+
 }
 .HRline{
     border-left: 1px solid #0071CE;
     height: 241px;
-    position: absolute;
-    left: 385px;
-    top: 36px;
-    width: 0
+    margin-left: 80px;
+}
+.Group4{
+    margin-left: 118px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+}
+#BanText{
+    margin-left: 80px;
 }
 .BanTitle{
-    position: absolute;
-    top: 50px;
-    left: 450px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 43.88px;
     color: #FFFFFF;
 }
 .BanTitle2{
-    position: absolute;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 17.07px;
     color: #ffffff;
-    top: 120px;
-    left: 450px;
     width: 778px;
+    margin-bottom: 30px;
 }
 .Ban-btn{
-    position: absolute;
-    top: 220px;
-    left: 455px;
     display: flex;
     align-items: center;
-    gap: 12px;
-    width: 137px;
-    height: 52px;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
     border: none;
     color: #ffffff;
     border-radius: 60px;

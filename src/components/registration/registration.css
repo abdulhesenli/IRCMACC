@@ -1,41 +1,61 @@
 .register{
+    margin: auto;
     width: 1156px;
-    height: 344px;
+    height: 393px;
     border-radius: 30px;
     background-color: #F0F6F9;
-    margin-top: 180px;
-    margin-left: 150px;
+    margin-top: 80px;
     background-image: url(../../assets/registerban.svg);
 
 }
 
+#register{
+    display: flex;
+
+   
+
+}
 #name{
     width: 448px;
     height: 58px;
     border: none;
     border-radius: 70px;
-    padding-left: 40px;
+    padding-left: 32px;
 
 }
-
+/* 
 #name:focus::placeholder{
  color: #FFFFFF;
+ outline: none;
+ border-color: #007bff;
+} */
+#name:focus{
+    outline: none;
+    border-color: #007bff;
 }
 
-
+#text:focus{
+    outline: none;
+    border-color: #007bff;
+}
+#message:focus{
+    outline: none;
+    border-color: #007bff;
+}
 #text{
     width: 448px;
     height: 58px;
     border: none;
     border-radius: 70px;
-    padding-left: 40px;
+    padding-left: 32px;
     
 }
 .registerForm{
-    position: absolute;
+    /* position: absolute;
     width: 448px;
-    left: 764px;
+    left: 764px; */
     margin-top: 50px;
+    margin-left: 90px;
    
 }
 
@@ -44,53 +64,100 @@
     height: 58px;
     border: none;
     border-radius: 70px;
+    padding-left: 32px;
+    
 
 }
 
 #name::placeholder{
     color: #5B748D;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    /* padding-left: 40px; */
+    outline: none;
+    border-color: #007bff;
 }
 #text::placeholder{
     color: #5B748D;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    /* padding-left: 40px; */
+    outline: none;
+    border-color: #007bff;
 }
 #message::placeholder{
     color: #5B748D;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    /* padding-left: 40px; */
+    outline: none;
+    border-color: #007bff;
 }
 
 select::placeholder{
     padding-right: 30px;
 }
 .RegisterBtn{
-    width: 212px;
-    height: 52px;
+
     border-radius: 60px;
-    Padding: 12px 31px 12px 31px;
+    Padding: 15px 35px 15px 41px;
     gap: 12px;
     background-color: #002D74;
     color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
     border: none;
-    margin-left: 235px;
+    margin-left: 875px;
+    margin-top: 39px;
 }
 
 .registerText{
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    padding-top: 20px;
+    padding-top: 24px;
     color: #002D74;
+    width: 354px;
 }
 .registerTitle{
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 36px;
     color: #003B71;
 }
+
+
+/* lllll */
+
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Select'in genişliği */
+  }
+  
+  .custom-select {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Sağda simge için yer bırakıldı */
+    appearance: none; /* Varsayılan oku gizler */
+    color: #5B748D;
+    border: 1px solid #ccc;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-image: url('../../assets/registerdown.svg');
+    background-repeat: no-repeat;
+    background-position: right 32px center; /* Simgenin sağa hizalanması */
+    background-size: 24px 24px; /* Simgenin boyutu */
+  }
+  
+  .custom-select:focus {
+    outline: none;
+    /* border-color: #007bff; */
+  }
+  
+  .custom-select::-ms-expand {
+    display: none; /* Eski tarayıcılarda ok simgesini gizler */
+  }
+  

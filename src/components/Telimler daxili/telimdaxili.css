@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 :root{
     --titlecolor:#002D74
 
@@ -12,6 +20,7 @@
 }
 
 .telim-title{
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 36px;
     color: var(--titlecolor);
@@ -21,6 +30,7 @@
 
 
 .Telimbtn{
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
     width: 448px;

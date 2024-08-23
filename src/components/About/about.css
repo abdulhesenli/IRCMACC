@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
 :root{
     --titlecolor:#002D74
 
@@ -13,6 +23,7 @@
 }
 
 .about-title{
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 36px;
     color: var(--titlecolor);
@@ -21,6 +32,7 @@
 }
 
 .Name-title{
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 24px;
     color: var(--titlecolor);
@@ -29,6 +41,7 @@
 }
 
 .about-text{
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: var(--titlecolor);
@@ -43,7 +56,7 @@
     height: 330px;
     background-color: #009ADE;
     border-radius: 50%;
-    left: 133px;
+    left: -13px;
 }
 .AboutImage{
     position: absolute;
@@ -52,6 +65,7 @@
 
 }
 .about{
+    position: relative;
     background: #F0F6F9;
     display: flex;
     align-items: center;
@@ -62,8 +76,9 @@
     margin: auto;
 }
 .aboutText2{
-    width: 620px;
+    width: 665px;
     height: 231px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #003B71;
@@ -74,6 +89,7 @@
     width: 1089px;
     margin: auto;
     text-align: center;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #003B71;

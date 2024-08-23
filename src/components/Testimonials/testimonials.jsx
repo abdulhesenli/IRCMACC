@@ -8,7 +8,7 @@ import ArrowCircleLeft from '../../assets/arrow-circle-left.svg'
 
 function Testimonials (){
     return(
-        <div style={{backgroundColor:"#F0F6F9", height:'498px', marginTop:'120px', position:'relative'}}>
+        <div id='TestsBG' style={{backgroundColor:"#F0F6F9", height:'px', marginTop:'120px', position:'relative'}}>
 
 
             <h1 className='TestimonialsTitle'>Testimonials</h1>
@@ -17,7 +17,8 @@ function Testimonials (){
             </p>
 
 
-            <div className="row" style={{marginTop:"70px", display:'flex', justifyContent:"center"}}>
+            <div id='Testimonials' className="row" style={{display:'flex', justifyContent:"center"}}>
+             
              <div className="col-4" style={{ width:'400px'}} >
                 <div className="TestimonialsCard">
                     <img src={Comma} alt="Comma" className='Comma' />
@@ -67,12 +68,6 @@ function Testimonials (){
                 <h6 className='CardTitle'>Name Surname</h6>
                 <h6 className='CardText'>Student</h6>
             </div>
-
-            </div>
-
-            <img src={RedCircle} alt="RedCircle" className='RedCircle' />
-
-            <img src={WhiteComma} alt="WhiteComma" className='WhiteComma' />
             <a href="#">
             <img src={ArrowCircleRight} alt="ArrowCircleRight" className='ArrowCircleRight' />
             </a>
@@ -80,6 +75,12 @@ function Testimonials (){
             <img src={ArrowCircleLeft} alt="ArrowCircleLeft" className='ArrowCircleLeft' />
 
             </a>
+            </div>
+
+            <img src={RedCircle} alt="RedCircle" className='RedCircle' />
+
+            <img src={WhiteComma} alt="WhiteComma" className='WhiteComma' />
+           
       
 
 
@@ -90,3 +91,72 @@ function Testimonials (){
 
 export default Testimonials
 
+
+
+// import { useState } from 'react';
+// import { Carousel } from 'react-responsive-carousel';
+// import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+// const CarouselComponent = () => {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+
+//   const testimonials = [
+//     {
+//       image: 'https://via.placeholder.com/400x300',
+//       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa nisl, porta ac erat quis, semper sollicitudin mi Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+//       name: 'John Doe',
+//       title: 'Student'
+//     },
+//     {
+//       image: 'https://via.placeholder.com/400x300',
+//       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa nisl, porta ac erat quis, semper sollicitudin mi Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+//       name: 'Jane Doe',
+//       title: 'Teacher'
+//     },
+//     {
+//       image: 'https://via.placeholder.com/400x300',
+//       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa nisl, porta ac erat quis, semper sollicitudin mi Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+//       name: 'Bob Smith',
+//       title: 'Developer'
+//     }
+//   ];
+
+//   const handlePrev = () => {
+//     setCurrentIndex(currentIndex - 1);
+//   };
+
+//   const handleNext = () => {
+//     setCurrentIndex(currentIndex + 1);
+//   };
+
+//   return (
+//     <div className="carousel-container">
+//       <Carousel
+//         showArrows={true}
+//         onChange={index => setCurrentIndex(index)}
+//         selectedItem={currentIndex}
+//       >
+//         {testimonials.map((testimonial, index) => (
+//           <div key={index} className="carousel-item">
+//             <img src={testimonial.image} alt={testimonial.name} />
+//             <div className="carousel-text">
+//               <p>{testimonial.text}</p>
+//               <h6>{testimonial.name}</h6>
+//               <h6>{testimonial.title}</h6>
+//             </div>
+//           </div>
+//         ))}
+
+        
+//       </Carousel>
+//       <button className="prev" onClick={handlePrev}>
+//         <img src={ArrowCircleLeft} alt="Previous" />
+//       </button>
+//       <button className="next" onClick={handleNext}>
+//         <img src={ArrowCircleRight} alt="Next" />
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default CarouselComponent;

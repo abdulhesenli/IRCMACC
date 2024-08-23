@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.TopHeader{
+    max-width: 1392px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 17px;
+    justify-content: space-between;
+}
+
+.topheader-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0;
+    /* padding: 20px; */
+   
+}
+
+.SearchIcon{
+    box-sizing: border-box;
+    width: 25.5px;
+    height: 25.5px;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+
+.TopHeader select{
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.07px;
+}
+.TopHeader option{
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.vl{
+    border-left: 1px solid #009ADE;
+    height: 25px;
+    padding-left: 17px;
+}
+.me-4{
+    margin-right: 16px;
+}
+
+.header-search{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.header-search.active{
+    opacity: 1;
+    pointer-events: auto;
+    height: 66px;
+    cursor: pointer;
+}
+

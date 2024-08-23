@@ -1,18 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.TestsBG{
+    position: relative;
+    margin-top: 127px;
+    width: 100%;
+    height: 498px;
+    background-color: #F0F6F9;
+}
+#Testimonials{
+    max-width: 1392px;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
 .TestimonialsTitle{
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 36px;
     color: #002D74;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
+    margin-bottom: 0;
 }
 .TestimonialsText{
     /* width: 638px; */
-    height: 34px;
+    /* height: 34px; */
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    line-height: 17.07px;
     color: #002D74;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 24px;
 }
 
 .TestimonialsCard{
@@ -26,10 +54,12 @@
 }
 .TestimonialsCardText{
     margin: auto;
-    width: 265px;
-    padding-top: 24px;
+    width: 289px;
+    padding-top: 37px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    line-height: 17.07px;
     color: #002D74;
    
 }
@@ -43,15 +73,19 @@
     left: 173px;
 }
 .CardTitle{
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 18px;
+    line-height: 21.94px;
     color: #002D74;
     text-align: center;
     padding-top: 20px;
 }
 .CardText{
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
+    line-height: 19.5px;
     color: #009ADE;
     text-align: center;
 }
@@ -73,13 +107,13 @@
 }
 .ArrowCircleRight{
     position: absolute;
-    top: 285px;
-    right: 62px;
+    top: 116px;
+    right: 22px;
  
 }
 .ArrowCircleLeft{
     position: absolute;
-    top: 285px;
-    left: 62px;
+    top: 116px;
+    left: 22px;
  
 }

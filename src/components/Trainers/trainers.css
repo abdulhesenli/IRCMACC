@@ -1,34 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Trainers{
+    max-width: 1392px;
+    margin: auto;
+}
+
+#Trainers{
+    display: flex;
+    align-items: center;
+}
+
 .Traniners-text{
-    width: 212px;
-    margin-left: 50px;
-    padding-top: 34px;
+    margin-right: 90px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 43.88px;
     color: #003B71;
 }
 .Traniners-text2{
-    width: 800px;
-    margin-left: 50px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 29.26px;
     color: #002D74;
 }
 .traniners-hr{
-    width: 1055px;
+    width: 1107px;
     border: 1px solid #B4C1D9;
-    position: absolute;
-    top: 46px;
-    left: 263px;
 }
 
 .trainers-circle{
     width: 45px;
     height: 45px;
-    position: absolute;
-    top: 40px;
-    right: 28px;
+    position: relative;
     border-radius: 50px;
 }
 
