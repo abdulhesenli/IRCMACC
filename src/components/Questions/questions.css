@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -19,55 +19,74 @@
     font-size: 36px;
     color: var(--titlecolor);
     text-align: center;
-    margin-top: 70px;
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
-
-.accordion {
-    width: 90%;
-    max-width: 1000px;
-    margin: 1rem auto;
-  }
-  .accordion-item {
-    position: relative;
-    width: 900px;
-    height: 56px;
-    border-radius: 90px !important;
-    background-color: #F0F6F9;
-    margin-left: 84px;
-    
-  }
-
-
-
-  .accordion-item-active {
-    position: relative;
-    width: 900px;
-    height: 212px;
-    border-radius: 20px !important;
-    background-color: #F0F6F9;
-    margin-left: 84px;
-    border: 1px solid #009ADE;
-    
-  }
-  .accordion-item-body{
-    width: 706px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #5B748D;
-    margin-left: 29px;
-  }
-  .accordion-item-header {
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?' url(../../assets/plus-circle.svg);
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #002D74;
-    margin-left: 30px;
-    margin-top: 13px;
-  }
-.Plus{
-    position: absolute;
-    right: 40px;
+#accordionFlushExample{
+  width: 920px;
+  margin: auto;
+  
 }
+.accordion-item{
+  border: none !important;
+  margin-bottom: 20px;
+  background-color: #F0F6F9 !important;
+  border-radius: 20px !important;
+}
+.accordion-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none !important;
+  background-color: #F0F6F9 !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.50px;
+  color: #002D74;
+}
+.accordion-body{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #5B748D;
+}
+.accordion-button:hover .accordion-item{
+  border: 1px solid red !important;
+}
+.accordion-button::after {
+  content: none; 
+}
+.accordion-button::before{
+  content: url(../../assets/plus-circle.svg);
+  order: 2
+}
+
+.accordion-button:not(.collapsed)::before{
+  content: url(../../assets/minus-circle.svg);
+  
+}
+ .accordion-button:not(.collapsed) .accordion-item {
+   border: 2px solid #009ADE !important; 
+}
+
+.accordion-item > .accordion-collapse.show {
+
+  border-left:1px solid #009ADE!important ;
+  border-right:1px solid #009ADE!important ;
+  border-bottom:1px solid #009ADE !important;
+  border-radius: 0 0 20px 20px !important;
+}
+
+.accordion-button:not(.collapsed) {
+
+  border-top:1px solid #009ADE !important;
+  border-left:1px solid #009ADE!important ;
+  border-right:1px solid #009ADE!important ;
+  border-radius: 20px 20px 0 0  !important;
+}
+

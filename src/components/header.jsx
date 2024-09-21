@@ -23,28 +23,21 @@ function Header() {
             <div className=" header-nav">
                     <div>
                     <Link to="/"><img src={irtmac} alt="Irtmac" className="irtmac" style={{width:'150px'}}/></Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+              
                     </div>
-                    {/* className="collapse navbar-collapse"  */}
                     <div id="navbar">
-                    {/* className="navbar-nav me-auto mb-2 mb-lg-0" */}
                     <ul >
                             <li className="nav-item">
                                 <Link className=" nav nav-link" to="/">ANA SƏHİFƏ</Link>
                             </li>
                             <li className=" dropdown dropdown-2 nav-item" id='about'>
 
-                                <Link className="nav nav-link" to="/about">HAQQIMIZDA</Link>
+                                <Link className="nav nav-link" >HAQQIMIZDA</Link>
                                 <div className="dropdown-content dropdown-menu dropdown-menu-white">
-                                    <Link className="nav nav-link" to="/Questions">Ən çox verilən suallar</Link>
-                                    <Link className="dropdown-item   nav nav-link" to="/Mission">Missiya və Dəyərlər</Link>
-                                    
-
-                                    <a href="#">History</a>
+                                    <Link className="nav " to="/about">Rəhbərin Müraciəti</Link>
+                                    <Link className="nav " to="/Questions">Ən çox verilən suallar</Link>
+                                    <Link className="dropdown-item   nav " to="/Mission">Missiya və Dəyərlər</Link>
+                             
                                 </div>
 
 
@@ -56,8 +49,14 @@ function Header() {
                             <li className="nav-item">
                                 <Link className="nav nav-link" to="/Telimciler">TƏLİMÇİLƏR</Link>
                             </li>
-                            <li className=" nav nav-item">
+                            <li className=" dropdown dropdown-2 nav-item">
                                 <Link className="nav nav-link" to="/Media">MEDİA MƏRKƏZİ</Link>
+                                <div className="dropdown-content dropdown-menu dropdown-menu-white">
+                                    <Link className="nav " to="/NewsPage">Xəbərlər</Link>
+                         
+                                </div>
+
+                                
                             </li>
                             <li className="nav-item">
                                 <Link className="nav nav-link" to="/Contact">ƏLAQƏ</Link>

@@ -33,8 +33,7 @@ function Media (){
                             <div>
                             <a href="#" className="circle-button">
                              <span className="text">Ətrafli</span>
-                              <span className="arrow"><img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" />
-                              </span>
+                              <span className="arrow"><img src={ArrowIcon} alt="ArrowIcon"  className="ArrowIcon" /></span>
                             </a>
 
                             </div>

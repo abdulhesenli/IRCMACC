@@ -114,37 +114,6 @@
 
 }
 
-.span:hover{
-
-    color: #fc0000 !important;
-
-
-}
-.MediaContinue{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background: #009ADE;
-    border-radius: 50%;
-    opacity: 20%;
-    text-align: none;
-    margin: auto;
-    padding: 18px 22px;
-    transition: all 0.2s ease;
-}
-
-.MediaContinue:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 28px;
-    background: rgba(46,202,127,0.2);
-    width: 56px;
-    height: 56px;
-    transition: all 0.3s ease;
-}
 
 
 .mediabtn{
@@ -188,7 +157,7 @@
 /* Butonun varsayılan hali */
 .circle-button {
     position: absolute;
-    left: 260px;
+    left: 240px;
     top: 2px;
     width: 40px;
     height: 40px;
@@ -217,7 +186,7 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    /* color: black; */
+
 }
 .arrow{
   position:absolute;
@@ -238,7 +207,7 @@
 /* Hover durumunda butonun genişlemesi ve metnin görünmesi */
 .circle-button:hover {
     width: 134px;
-    left: 230px;
+    left: 240px;
     border-radius: 50px; /* Tam buton şekline geçiş */
     background-color: #009ADE; /* Yeşil */
     justify-content: space-between; /* Metin ve ok simgesini ayırır */
@@ -246,14 +215,18 @@
     color: #ffffff;
 }
 
-.circle-button:hover  .text {
-    left: 29px;
+.circle-button:hover.text {
+    /* left: 29px; */
     color: #ffffff;
 }
 
 .circle-button:hover  .arrow {
-    left: 82px;
+    left: 75px;
     color: #ffffff;
+}
+.circle-button:hover .ArrowIcon{
+    content: url(../../assets/arrow-right.svg);
+    margin-top: -4px !important;
 }
 
 

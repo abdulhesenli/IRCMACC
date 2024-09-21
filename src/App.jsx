@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import Home from './components/home/Home.jsx';
@@ -10,7 +9,8 @@ import Telimciler from './components/Telimciler/Telimciler.jsx';
 import Media from './components/Media/Media.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Error from './components/error/Error.jsx';
-import Questions from './components/Questions/Questions.jsx';
+import Questions from './components/Questions/questions.jsx';
+import NewsPage from './components/NewsPage/Newspage.jsx';
 import Mission from './components/Mission/Mission.jsx';
 import Loading from "./components/Ui/Loading.jsx";
 import {useSelector, useDispatch} from "react-redux";
@@ -48,11 +48,12 @@ function App() {
                   <Route path="/" element={<Home/>}/>
                   <Route path="/about" element={<About/>}/>
                   <Route path="/telimler" element={<Telimler/>}/>
-                  <Route path="/Telimciler" element={<Telimciler/>}/>
+                  <Route path="/telimciler" element={<Telimciler/>}/>
                   <Route path="/Media" element={<Media/>}/>
                   <Route path="/Contact" element={<Contact/>}/>
                   <Route path="/Questions" element={<Questions/>}/>
                   <Route path="/Mission" element={<Mission/>}/>
+                  <Route path="/NewsPage" element={<NewsPage/>}/>
                   <Route path="*" element={<Error/>}/>
               </Routes>
            

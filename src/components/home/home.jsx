@@ -1,6 +1,7 @@
 // import  from "react";
 import { useState, useEffect } from 'react';
 import "../../header.css"
+import '../../res.css'
 import './home.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Rectangle from '../../assets/Rectangle.png'
@@ -13,11 +14,11 @@ import Group2 from '../../assets/Group2.svg'
 import Group3 from '../../assets/Group3.svg'
 import Group4 from '../../assets/Group4.svg'
 import Arrow from '../../assets/arrow-right.svg'
-// import Trainers from "../Trainers/trainers";
-// import Training from "../training/training";
-import Registration from "../registration/registration";
-// import Testimonials from "../Testimonials/testimonials";
-// import News from "../News/news";
+// import Trainers from "../Trainers/Trainers";
+// import Training from "../training/Training";
+import Registration from "../registration/Registration";
+// import Testimonials from "../Testimonials/Testimonials";
+// import News from "../News/News";
 // import NewsPage from "../NewsPage/newspage";
 // import Questions from "../Questions/questions";
 // import Footer from "../Footer/footer";
@@ -49,34 +50,34 @@ function Home(){
             <div id="home">
 
                 <img id="Rec_img" src={Rectangle}  alt="Rectangle" className="Rectangle" />
-             <svg id="vector_1" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+             <svg id="vector_1" className='svg' height="200" width="200" xmlns="http://www.w3.org/2000/svg">
                 <circle r="83" cx="83" cy="14" fill="#0074a75c" />
              </svg> 
              {/* <svg id="vector_2" height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
                 <circle r="83" cx="83" cy="14" fill="#0074a75c" />
                 </svg>  */}
-                <svg id="vector_3" clipPath="flat-bottom" height="200" width="200"xmlns="http://www.w3.org/2000/svg" >
+                <svg id="vector_3" className='svg' clipPath="flat-bottom" height="200" width="200"xmlns="http://www.w3.org/2000/svg" >
                 <circle r="83" cx="83" cy="14" fill="#0074a75c" />
              </svg> 
                 <div>
                 <img id="image" src={Image}  alt="Vector" className="Vector" />
 
-                <svg id="vector_4" height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
+                <svg id="vector_4" className='svg' height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
                     <circle r="83" cx="83" cy="85" fill="#0074a75c" />
                     </svg> 
-                    <svg id="vector_4_1" height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
+                    <svg id="vector_4_1" className='svg' height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
                     <circle r="83" cx="83" cy="85" fill="#0074a75c" />
                     </svg> 
-                    <svg id="vector_4_2" height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
+                    <svg id="vector_4_2" className='svg' height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
                     <circle r="70" cx="83" cy="85" fill="#0074a75c" />
                     </svg> 
-                    <svg id="vector_5" height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
+                    <svg id="vector_5" className='svg' height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
                     <circle r="83" cx="83" cy="14" fill="#03466429" />
                     </svg> 
                 </div>
                 
                 <div>
-                   <h1 className="text-h">Beynəlxalq    <br />
+                   <h1 className="text-h">Beynəlxalq
                         Tibb Tədqiqatları
                         və Təlim Mərkəzi
                     </h1>

@@ -14,6 +14,13 @@
     background-color:#F0F6F9;
     margin-top: 20px;
 }
+.NewsCard .Newsphoto{
+    object-fit: cover;
+    width: 416px;
+    height: 240px;
+    border-radius: 22px
+
+}
 
 
 .NewsCard h2 {
@@ -62,7 +69,7 @@
 
 
 .Newstext a{
-    display: block;
+    /* display: block; */
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #5B748D;
@@ -73,18 +80,52 @@
 
 
 
-.NewsContinue::after {
-    content: "";
-    display: block;
-    width: 40px;
-    top: 473px;
-    left: 326px;
+
+
+.NewsContinue{
     position: absolute;
-    background: #009ADE;
-    transition: width 0.3s;
+    left: 320px;
+    top: 467px;
+    width: 40px;
     height: 40px;
-    border-radius: 50%;
+    background-color: #009ADE; /* Soluk yeşil */
+    /* color: #5B748D !important; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     opacity: 20%;
+    text-decoration: none;
+    border-radius: 50%; /* Daire şekli */
+    transition: all 0.4s ease; /* Tüm değişiklikler için geçiş süresi */
+}
+.Newstext2{
+    position: absolute;
+    top: 7px;
+    padding: 0 5px 0 5px;
+    left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.NewsContinue:hover{
+    width: 120px;
+    left: 320px;
+    border-radius: 50px; /* Tam buton şekline geçiş */
+    background-color: #002D74; /* Yeşil */
+    justify-content: space-between; /* Metin ve ok simgesini ayırır */
+    opacity: 100%;
+    color: #ffffff;
+}
+
+.NewsContinue:hover.Newstext2 {
+    /* left: 29px; */
+    color: #ffffff;
+}
+
+.NewsContinue:hover #Newsicon{
+    content: url(../../assets/arrow-right.svg);
+    margin-top: 7.5px !important;
 }
 
 

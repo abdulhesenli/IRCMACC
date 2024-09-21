@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Genel Responsive Ayarlar */
+@media only screen and (max-width: 1200px) {
+    #home {
+        max-width: 100%;
+    }
+    .svg{
+        display: none;
+    }
+    .circle {
+        width: 200px;
+        height: 300px;
+        border-radius: 200px 0 0 200px;
+        right: 10px;
+    }
+
+    .text-h {
+        font-size: 40px;
+        line-height: 50px;
+        right: 10px;
+        width: auto;
+    }
+
+    #Rec_img {
+        height: auto;
+    }
+
+    .logo {
+        width: 250px;
+        height: 120px;
+    }
+
+    .group2 {
+        width: 80px;
+        height: 80px;
+        top: 650px;
+        right: 20px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .aboutText2 {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .Contact-Title {
+        width: 90%;
+    }
+
+    .contact-title {
+        font-size: 32px;
+    }
+
+    .contact-text {
+        font-size: 20px;
+    }
+
+    .Contactregister {
+        width: 90%;
+    }
+
+    .ContactForm input, .textarea {
+        width: 90%;
+    }
+
+    .ContactBtn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Adress {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adress-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .WorkTime {
+        width: 90%;
+        left: 5%;
+    }
+
+    .InsideNews-Title {
+        width: 90%;
+    }
+
+    .insidenews-text {
+        width: 90%;
+    }
+
+    .Media-Title, .Body-Title {
+        width: 90%;
+    }
+
+    .media-title, .mis-title {
+        font-size: 30px;
+    }
+
+    .media-text, .mis-text {
+        font-size: 22px;
+    }
+
+    .MediaCard, .MissionCard {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #home {
+        padding: 0 15px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 250px;
+        border-radius: 150px 0 0 150px;
+    }
+
+    .text-h {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 100px;
+    }
+
+    .group2 {
+        width: 70px;
+        height: 70px;
+        top: 600px;
+        right: 10px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        width: 90%;
+        height: auto;
+    }
+
+    .aboutText2 {
+        width: 100%;
+    }
+
+    .abouttext3 {
+        width: 90%;
+    }
+
+    .Contact-Title {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-text {
+        font-size: 18px;
+    }
+
+    .Contactregister {
+        width: 100%;
+        height: auto;
+    }
+
+    .ContactForm {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .ContactForm input, .textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .ContactBtn {
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        width: auto;
+    }
+
+    .Adress {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .adress-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .WorkTime {
+        width: 100%;
+        left: 0;
+    }
+
+    .InsideNews-Title {
+        width: 100%;
+    }
+
+    .insidenews-text {
+        width: 100%;
+    }
+
+    .media-title, .mis-title {
+        font-size: 26px;
+    }
+
+    .media-text, .mis-text {
+        font-size: 20px;
+    }
+
+    .MediaCard, .MissionCard {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .MediaCard p, .MissionCard p {
+        font-size: 12px;
+    }
+
+    .circle-button {
+        width: 100px;
+        height: 30px;
+    }
+
+    .circle-button:hover {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .text-h {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .circle {
+        width: 120px;
+        height: 200px;
+        border-radius: 120px 0 0 120px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 80px;
+    }
+
+    .group2 {
+        width: 60px;
+        height: 60px;
+        top: 550px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .about {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutText2, .abouttext3 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .aboutcircle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .AboutImage {
+        width: 250px;
+        height: 250px;
+    }
+
+    .Contact-Title {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-text {
+        font-size: 16px;
+    }
+
+    .Contactregister {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .ContactForm {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0;
+    }
+
+    .ContactForm input, .textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .ContactBtn {
+        margin: 10px auto;
+    }
+
+    .Adress {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .adress-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .WorkTime {
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .InsideNews-Title {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .insidenews-text {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .ContactSosial {
+        width: 80px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .sosialtext {
+        padding: 10px;
+    }
+
+    .media-title, .mis-title {
+        font-size: 22px;
+    }
+
+    .media-text, .mis-text {
+        font-size: 18px;
+    }
+
+    .MediaCard, .MissionCard {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .circle-button {
+        width: 80px;
+        height: 30px;
+    }
+
+    .circle-button:hover {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .text-h {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 150px;
+        border-radius: 100px 0 0 100px;
+    }
+
+    .logo {
+        width: 120px;
+        height: 60px;
+    }
+
+    .group2 {
+        width: 50px;
+        height: 50px;
+        top: 500px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .about {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutText2, .abouttext3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .aboutcircle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .AboutImage {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Contact-Title {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .contact-text {
+        font-size: 14px;
+    }
+
+    .Contactregister {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .ContactForm {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0;
+    }
+
+    .ContactForm input, .textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .ContactBtn {
+        margin: 10px auto;
+    }
+
+    .Adress {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .adress-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .WorkTime {
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .InsideNews-Title {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .insidenews-text {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .ContactSosial {
+        width: 60px;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .sosialtext {
+        padding: 5px;
+    }
+
+    .media-title, .mis-title {
+        font-size: 18px;
+    }
+
+    .media-text, .mis-text {
+        font-size: 16px;
+    }
+
+    .MediaCard, .MissionCard {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .circle-button {
+        width: 60px;
+        height: 30px;
+    }
+
+    .circle-button:hover {
+        width: 60px;
+    }
+}

@@ -1,7 +1,7 @@
 import '../../header.css'
 import './training.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import TrainingCard from '../TrainingCard/trainingcard';
+import TrainingCard from '../TrainingCard/Trainingcard';
 import Ellipse from '../../assets/Ellipse.svg'
 import IconRight from '../../assets/Icon-right.svg'
 import {useTranslation} from "react-i18next";
@@ -29,7 +29,7 @@ function Training(){
         
          </div>
          <p className="Traning-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-         {/* <TrainingCard/> */}
+         <TrainingCard/>
          
       </div>
 

@@ -94,9 +94,10 @@
 .text-h{
     position: absolute;
     top: 364px;
-    width: 385px;
+    width: 519px;
     color: #ffffff;
     right: 150px;
+    font-family: "Montserrat", sans-serif;
     font-size: 52px;
     line-height: 65px;
     text-align: right;

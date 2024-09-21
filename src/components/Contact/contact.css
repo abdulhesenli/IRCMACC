@@ -46,10 +46,10 @@
     border-radius: 30px;
 }
 .ContactForm{
-    position: absolute;
-    width: 448px;
-    left: 245px;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
+    margin-left: 40px;
    
 }
 .ContactForm input{
@@ -61,10 +61,15 @@
 
 
 }
+.form-group{
+    width: 490px;
+    margin-top: 40px;
+}
 
 
 #name::placeholder{
     color: #5B748D;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     /* padding-left: 40px; */
@@ -72,24 +77,27 @@
 }
 #text::placeholder{
     color: #5B748D;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     /* padding-left: 40px; */
 }
 #email::placeholder{
     color: #5B748D;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     /* padding-left: 40px; */
 }
 #textarea::placeholder{
     color: #5B748D;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     /* padding-left: 40px; */
 }
 #textarea{
-    position: absolute;
+    /* position: absolute; */
     top: 2px;
     left:  490px;
     width: 448px;
@@ -109,12 +117,12 @@
     gap: 12px;
     background-color: #002D74;
     color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
     border: none;
-    position: absolute;
-    left: 783px;
-   margin-top: 15px;
+    margin-top: 24px;
+    margin-left: 295px;
 }
 
 .Adress{
@@ -125,24 +133,47 @@
     margin: auto;
     background-color: #009ADE;
     border-radius: 0 0 30px 30px;
+    box-shadow: 0px 10px 30px rgba(0, 154, 222, 1); /* Gölge efekti */
 }
 .contactimg{
     margin-bottom: 10px;
 }
 
 .adress-text{
-    width: 187px;
+    width: 212px;
     margin-top: 35px;
 }
 .adress-text1{
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #ffffff;
 }
 
 .adress-title{
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: #ffffff;
+}
+
+.WorkTime{
+    width: 1156px;
+    height: 62px;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    border-radius: 90px;
+    top: 506px;
+    left: 123px;
+}
+
+.WorkTimeText{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #002D74;
+    text-align: center;
+    margin-top: 15px;
 }
 

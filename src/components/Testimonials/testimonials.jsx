@@ -8,7 +8,7 @@ import ArrowCircleLeft from '../../assets/arrow-circle-left.svg'
 
 function Testimonials (){
     return(
-        <div id='TestsBG' style={{backgroundColor:"#F0F6F9", height:'px', marginTop:'120px', position:'relative'}}>
+        <div id='TestsBG'>
 
 
             <h1 className='TestimonialsTitle'>Testimonials</h1>

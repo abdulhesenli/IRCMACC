@@ -40,16 +40,16 @@ function TrainersCard() {
     return (
 
 
-        <div style={{maxWidth: "1350px", marginLeft: "51px"}}>
+        <div id="TrainersCard">
 
 
-            <div className="row" style={{marginTop: "40px", marginLeft: "-13px"}}>
+            <div className="row" style={{marginTop: "40px"}}>
 
                 {/* {content} */}
 
                 <div className="col-3"  >   
                       <div className="card">   
-                          <img src={Doctor1} alt="Doctor2" className="Doctor2" style={{borderRadius:"19px"}} />   
+                          <img src={Doctor1} alt="Doctor2" className="Doctor" style={{borderRadius:"19px"}} />   
 
                           <div className="card-content ">   
                              <h2>Name <br />Surname</h2>   
@@ -62,7 +62,7 @@ function TrainersCard() {
 
                   <div className="col-3"  >   
                       <div className="card">   
-                          <img src={Doctor2} alt="Doctor2" className="Doctor2" style={{borderRadius:"19px"}} />   
+                          <img src={Doctor2} alt="Doctor2" className="Doctor" style={{borderRadius:"19px"}} />   
 
                           <div className="card-content ">   
                              <h2>Name <br />Surname</h2>   
@@ -75,7 +75,7 @@ function TrainersCard() {
 
                   <div className="col-3" >   
                       <div className="card">   
-                          <img src={Doctor3} alt="Doctor3" className="Doctor3" style={{borderRadius:"19px"}} />   
+                          <img src={Doctor3} alt="Doctor3" className="Doctor" style={{borderRadius:"19px"}} />   
 
                           <div className="card-content ">   
                              <h2>Name <br />Surname</h2>   
@@ -88,7 +88,7 @@ function TrainersCard() {
 
                   <div className="col-3"  >   
                       <div className="card">   
-                          <img src={Doctor4} alt="Doctor4" className="Doctor4" style={{borderRadius:"19px"}} />   
+                          <img src={Doctor4} alt="Doctor4" className="Doctor" style={{borderRadius:"19px"}} />   
 
                           <div className="card-content ">   
                              <h2>Name <br />Surname</h2>   

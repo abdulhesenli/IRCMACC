@@ -4,28 +4,41 @@
     margin: 0;
     box-sizing: border-box;
 }
+#TrainersCard{
+    max-width: 1392px;
 
+}
+
+#TrainersCard .Doctor{
+    width: 330px;
+    height: 374px;
+    object-fit: cover;
+
+}
 .card{
     width: 318px;
     height: 360px;
     border-radius: 20px;
-    border: 0 0 1px 0;
+    border:none;
 }
 
 .card-content {
     width: 280px;
     height: 160px;
     background: #009ADE;
-    position: absolute;
+    /* position: absolute;
     top: 300px;
-    left: 20px;
+    left: 20px; */
     border-radius: 20px;
+    margin-top: -80px;
+    margin-left: 28px;
 }
 
 .card-content h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 24px;
+    line-height:29.26px;
     text-align: center;
     color: white;
     padding-top: 23px;
@@ -37,6 +50,7 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    line-height:21px;
     text-align: center;
     color: white;
 }

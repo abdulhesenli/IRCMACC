@@ -4,11 +4,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-.TestsBG{
+#TestsBG{
     position: relative;
     margin-top: 127px;
     width: 100%;
-    height: 498px;
+    height: 498px !important;
     background-color: #F0F6F9;
 }
 #Testimonials{
