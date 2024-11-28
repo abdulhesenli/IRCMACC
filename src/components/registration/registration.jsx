@@ -8,7 +8,8 @@ function Registration() {
     return (
         <div style={{marginTop:'170px'}}>
             <div className='register'>
-                <div id='register'>
+                <div id='register'  >
+                    
 
                     <div className='registerdiv' style={{marginLeft: "110px", paddingTop: "50px" }}>
                         <h1 className='registerTitle'>Müraciət et</h1>
