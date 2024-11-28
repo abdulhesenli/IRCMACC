@@ -7,7 +7,7 @@
 
 
 /* Genel Responsive Ayarlar */
-@media (min-width: 1200px) and (max-width: 1200px)  {
+@media (min-width: 1200px) and (max-width: 3200px)  {
     .close-search-icon {
         position: absolute;
         top: 60%;
@@ -17,6 +17,30 @@
         font-size: 20px;
         color: #000;
     }  
+    .TopHeader {
+         /* Elemanları dikey hizala */
+        align-items: center;    /* Ortala */
+        padding: 10px 20px;     /* Sağ-sol boşlukları küçült */
+      }
+    
+      .topheader-text {
+        text-align: center; /* Metni ortala */
+        font-size: 18px; /* Daha küçük yazı boyutu */
+        margin: 10px 0; /* Üst-alt boşluk ekle */
+      }
+    
+      .irtmac {
+        margin: 10px auto; /* Logoyu ortala ve yukarı-aşağı boşluk ekle */
+      }
+    
+      .vl {
+        display: none; /* Dikey çizgiyi gizle */
+      }
+    
+      .hamburger-menu {
+        margin-top: 10px; /* Yukarıdan boşluk ekle */
+      }
+    
 }
 @media (min-width: 992px) and (max-width: 1200px) {
     .close-search-icon {
@@ -32,6 +56,71 @@
         display: block !important;
         margin-left: 0;
         margin-right: 25px;
+    }
+    .TopHeader {
+        /* Elemanları dikey hizala */
+       align-items: center;    /* Ortala */
+       padding: 10px 20px;     /* Sağ-sol boşlukları küçült */
+     }
+     .header-nav{
+        display: none;
+    }
+    #vector_1 {
+        position: absolute;
+        top: 60px !important;
+        left: 500px;
+    }
+    #vector_3 {
+        position: absolute;
+        top: 60px !important;
+        left: 700px;
+    }
+    #vector_4 {
+        position: absolute;
+        top: 277px !important;
+        left: 550px;
+        z-index: 1;
+    }
+    #vector_4_1 {
+        position: absolute;
+        top: 242px !important;
+        left: 351px;
+        z-index: 1;
+    }
+    #vector_4_2 {
+        position: absolute;
+        top: 453px !important;
+        left: 500px;
+        z-index: 1;
+    }
+    #vector_5 {
+        position: absolute;
+        top: 407px !important;
+        left: 715px;
+        z-index: 1;
+        rotate: 180deg;
+    }
+
+    .circle {
+        top: 163px !important;
+        right: 0px !important;
+    }
+
+    #image {
+        position: absolute;
+        top: 112px !important;
+        left: 200px;
+        z-index: 2;
+    }
+    .group2 {
+        
+        top: 562px !important;
+        
+    }
+    .text-h {
+        
+        top: 160px !important;
+       
     }
 }
 
@@ -50,6 +139,9 @@
         display: block !important;
         margin-left: 0;
         margin-right: 25px;
+    }
+    .header-nav{
+        display: none;
     }
 }
 
