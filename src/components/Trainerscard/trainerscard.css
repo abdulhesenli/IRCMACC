@@ -10,20 +10,21 @@
 }
 
 #TrainersCard .Doctor{
-    width: 330px;
+    max-width: 330px;
     height: 374px;
     object-fit: cover;
 
 }
 .card{
-    width: 318px;
-    height: 360px;
+    max-width: 318px;
+    margin: auto;
     border-radius: 20px;
     border:none;
+    margin-bottom: 15px;
 }
 
 .card-content {
-    width: 280px;
+    max-width: 280px;
     height: 160px;
     background: #009ADE;
     /* position: absolute;

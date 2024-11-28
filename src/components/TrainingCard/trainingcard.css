@@ -8,7 +8,7 @@
 .Trainingcard{
     display: flex;
     flex-direction: column;
-    width: 448px;
+    max-width: 448px;
     height: 268px;
     border-radius: 20px;
     border: 0 0 1px 0;
@@ -16,10 +16,20 @@
     margin-top: 20px;
 }
 
+.Trainingcard:hover{
+background-color: #009ADE;
+
+}
+.Trainingcard:hover h2,
+.Trainingcard:hover p,
+.Traningtext a:hover {
+    color: #ffffff; /* Beyaz renk */
+}
+
 
 
 .Trainingcard h2 {
-    width: 367px;
+    max-width: 367px;
     height: 58px;
     margin-left: 40px;
     font-family: "Montserrat", sans-serif;
@@ -33,7 +43,7 @@
 
 
 .Trainingcard p {
-    width: 367px;
+    max-width: 367px;
     height: 42px;
     margin-left: 40px;
     font-family: "Montserrat", sans-serif;
@@ -47,7 +57,7 @@
 
 .Traninghref{
     position: relative;
-    width: 81px;
+    max-width: 81px;
     height: 24px;
     margin-top: 50px;
     margin-left: 60px;
@@ -71,7 +81,7 @@
     position: absolute;
     left: 50px;
     /* top: 2px; */
-    width: 40px;
+    max-width: 40px;
     height: 40px;
     background-color: #009ADE; /* Soluk yeşil */
     /* color: #5B748D !important; */
@@ -94,7 +104,7 @@
 }
 
 .Continue:hover{
-    width: 134px;
+    max-width: 134px;
     left: 50px;
     border-radius: 50px; /* Tam buton şekline geçiş */
     background-color: #002D74; /* Yeşil */

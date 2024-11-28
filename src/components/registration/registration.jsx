@@ -1,6 +1,8 @@
 // import '../../header.css'
 import './registration.css'
+import '../../res.css'
 import RightIcon from '../../assets/registright.svg'
+
 
 function Registration() {
     return (
@@ -8,7 +10,7 @@ function Registration() {
             <div className='register'>
                 <div id='register'>
 
-                    <div style={{ width: "400px", marginLeft: "110px", paddingTop: "50px" }}>
+                    <div className='registerdiv' style={{marginLeft: "110px", paddingTop: "50px" }}>
                         <h1 className='registerTitle'>Müraciət et</h1>
                         <p className='registerText'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -20,20 +22,20 @@ function Registration() {
                     </div>
 
                     <form className='registerForm'>
-                        <div className="form-group">
+                        <div className="Register-form-group">
 
-                            <input type="text" name="name" id="name" placeholder="Ad, Soyad" />
+                            <input type="text" name="name" id="registername" className='inputtext' placeholder="Ad, Soyad" />
 
                         </div>
-                        <div className="form-group">
-                            <input type="text" name="text" id="text" placeholder="Əlaqə nömrəniz" />
+                        <div className="Register-form-group">
+                            <input type="text" name="text" id="registertext" className='inputtext' placeholder="Əlaqə nömrəniz" />
 
                         </div>
 
 
                         <div className="custom-select-wrapper">
                             <select id="message" className="custom-select" placeholder="Təlimi seç">
-                                <option value="option1" >Təlimi seç</option>
+                                <option  value="option1" >Təlimi seç</option>
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
                                 <option value="option3">Option 3</option>

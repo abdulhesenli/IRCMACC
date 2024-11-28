@@ -14,11 +14,11 @@ import Group2 from '../../assets/Group2.svg'
 import Group3 from '../../assets/Group3.svg'
 import Group4 from '../../assets/Group4.svg'
 import Arrow from '../../assets/arrow-right.svg'
-// import Trainers from "../Trainers/Trainers";
-// import Training from "../training/Training";
+import Trainers from "../Trainers/Trainers";
+import Training from "../training/Training";
 import Registration from "../registration/Registration";
-// import Testimonials from "../Testimonials/Testimonials";
-// import News from "../News/News";
+import Testimonials from "../Testimonials/Testimonials";
+import News from "../News/News";
 // import NewsPage from "../NewsPage/newspage";
 // import Questions from "../Questions/questions";
 // import Footer from "../Footer/footer";
@@ -93,7 +93,7 @@ function Home(){
                     <img src={Group2}  alt="Group2" className="Group2" />
                 </div>
 
-                <div id='Homelogo'>
+                <div id='Homelogo' className='Homelogo'>
                     <div >
                      <div className="logo">
                         <img src={LogoIpsum}  alt="LogoIpsum" className="LogoIpsum" />
@@ -116,7 +116,8 @@ function Home(){
                     </div>
                 </div>
 
-                <div id='HomeGroup' style={{height:"365px"}}>
+                <div id='HomeGroup' className='HomeGroup' style={{height:"365px"}}>
+
                 <div className='HomeBox' >
                     <h1 className="title">
                     Mauris laoreet ante at nunc dictum Mauris laoreet ante at.
@@ -151,7 +152,7 @@ function Home(){
                     <div className="line"></div>
                    <hr className="line2" />
                 </div>
-                </div>
+            </div>
 
                
 
@@ -165,7 +166,7 @@ function Home(){
                 
                 <div className="HRline"></div>
 
-                <div id='BanText'>
+                <div id='BanText' className='Bantext'>
 
                     <h1 className="BanTitle">Mauris laoreet ante at nunc dictum.</h1>
                     <p className="BanTitle2"> 
@@ -194,11 +195,11 @@ function Home(){
 
             </div>
           
-            {/* <Training/>  */}
-            {/* <Trainers/> */}
+            <Training/> 
+            <Trainers/>
             <Registration/>
-            {/* <Testimonials/> */}
-            {/* <News/>  */}
+            <Testimonials/>
+            <News/> 
 
             {/* <Questions/> */}
             

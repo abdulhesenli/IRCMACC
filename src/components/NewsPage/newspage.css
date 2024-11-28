@@ -8,7 +8,7 @@
 
 .Newspage{
 
-    width: 448px;
+    max-width: 448px;
     height: 56px;
     margin: auto;
     border: 1px solid #E9ECF4;

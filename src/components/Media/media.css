@@ -10,7 +10,7 @@
 
 }
 .Media-Title{
-    width: 920px;
+    max-width: 920px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
 }
 
 .MediaCard{
-    width: 430px;
+    max-width: 430px;
     height: 440px;
     border-radius: 20px;
     border: 0 0 1px 0;
@@ -51,7 +51,7 @@
     width: 430px;
 }
 .MediaCard h2 {
-    width: 367px;
+    max-width: 367px;
     height: 58px;
     margin-left: 40px;
     font-family: "Montserrat", sans-serif;
@@ -73,7 +73,7 @@
 }
 
 .MediaCard p {
-    width: 380px;
+    max-width: 380px;
     height: 42px;
     margin-left: 40px;
     font-family: "Montserrat", sans-serif;
@@ -92,7 +92,7 @@
 
 .Mediatext{
     position: relative;
-    width: 368px;
+    max-width: 368px;
     display: flex;
     align-items: center;
     justify-content: space-between;

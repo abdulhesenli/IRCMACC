@@ -1,4 +1,5 @@
 import "../../header.css"
+import '../../res.css'
 import './trainerscard.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Doctor1 from '../../assets/doctor1.svg'
@@ -47,7 +48,7 @@ function TrainersCard() {
 
                 {/* {content} */}
 
-                <div className="col-3"  >   
+                <div className="col-12 col-sm-6 col-lg-3"  >   
                       <div className="card">   
                           <img src={Doctor1} alt="Doctor2" className="Doctor" style={{borderRadius:"19px"}} />   
 
@@ -60,7 +61,7 @@ function TrainersCard() {
                       </div>   
                   </div>  
 
-                  <div className="col-3"  >   
+                  <div className="col-12 col-sm-6 col-lg-3"  >   
                       <div className="card">   
                           <img src={Doctor2} alt="Doctor2" className="Doctor" style={{borderRadius:"19px"}} />   
 
@@ -73,7 +74,7 @@ function TrainersCard() {
                       </div>   
                   </div>   
 
-                  <div className="col-3" >   
+                  <div className="col-12 col-sm-6 col-lg-3" >   
                       <div className="card">   
                           <img src={Doctor3} alt="Doctor3" className="Doctor" style={{borderRadius:"19px"}} />   
 
@@ -86,7 +87,7 @@ function TrainersCard() {
                       </div>   
                   </div>   
 
-                  <div className="col-3"  >   
+                  <div className="col-12 col-sm-6 col-lg-3"  >   
                       <div className="card">   
                           <img src={Doctor4} alt="Doctor4" className="Doctor" style={{borderRadius:"19px"}} />   
 

@@ -12,7 +12,7 @@
 
 }
 .Contact-Title{
-    width: 482px;
+    max-width: 482px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -38,12 +38,12 @@
   
 }
 .Contactregister{
-    width: 1156px;
+    max-width: 1156px;
     height: 350px;
     background-color: #F0F6F9;
     margin: auto;
     margin-top: 30px;
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0 ;
 }
 .ContactForm{
     display: flex;
@@ -61,6 +61,7 @@
 
 
 }
+
 .form-group{
     width: 490px;
     margin-top: 40px;
@@ -128,7 +129,7 @@
 .Adress{
     display: flex;
     justify-content: space-around;
-    width: 930px;
+    max-width: 930px;
     height: 218px;
     margin: auto;
     background-color: #009ADE;

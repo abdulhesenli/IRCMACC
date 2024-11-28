@@ -1,5 +1,6 @@
 import "../../header.css"
 import './news.css'
+import '../../res.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Ellipse from '../../assets/Ellipse.svg'
 import IconRight from '../../assets/Icon-right.svg'

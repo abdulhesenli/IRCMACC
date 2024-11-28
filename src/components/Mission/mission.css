@@ -12,7 +12,7 @@
 
 }
 .Body-Title{
-    width: 920px;
+    max-width: 920px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
 
 
 .MissionCard{
-    width: 436px;
+    max-width: 436px;
     height: 268px;
     border-radius: 20px;
     border: 0 0 1px 0;
@@ -51,7 +51,7 @@
 
 
 .MissionCard h2 {
-    width: 367px;
+    max-width: 367px;
     height: 58px;
     margin-left: 40px;
     font-family: "Montserrat", sans-serif;
@@ -65,7 +65,7 @@
 
 
 .MissionCard p {
-    width: 367px;
+    max-width: 367px;
     height: 42px;
     margin-left: 40px;
     font-family: "Montserrat", sans-serif;

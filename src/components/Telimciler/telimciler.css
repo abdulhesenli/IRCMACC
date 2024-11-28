@@ -11,7 +11,7 @@
 
 }
 .Telimci-Title{
-    width: 920px;
+    max-width: 920px;
     margin: auto;
     display: flex;
     flex-direction: column;

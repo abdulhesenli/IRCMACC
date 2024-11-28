@@ -1,4 +1,5 @@
 import './newspage.css'
+import '../../res.css'
 import NewsArrowRight from '../../assets/arrow-narrow-right.svg'
 import NewsArrowLeft from '../../assets/arrow-narrow-left.svg'
 import NewsCard from '../NewsCard/Newscard'

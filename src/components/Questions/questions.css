@@ -24,7 +24,7 @@
 }
 
 #accordionFlushExample{
-  width: 920px;
+  max-width: 920px;
   margin: auto;
   
 }

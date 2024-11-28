@@ -7,407 +7,43 @@
 
 
 /* Genel Responsive Ayarlar */
-@media only screen and (max-width: 1200px) {
-    #home {
-        max-width: 100%;
-    }
-    .svg{
-        display: none;
-    }
-    .circle {
-        width: 200px;
-        height: 300px;
-        border-radius: 200px 0 0 200px;
-        right: 10px;
-    }
-
-    .text-h {
-        font-size: 40px;
-        line-height: 50px;
-        right: 10px;
-        width: auto;
-    }
-
-    #Rec_img {
-        height: auto;
-    }
-
-    .logo {
-        width: 250px;
-        height: 120px;
-    }
-
-    .group2 {
-        width: 80px;
-        height: 80px;
-        top: 650px;
-        right: 20px;
-    }
-
-    .box {
-        width: 100%;
-        height: auto;
-    }
-
-    .about {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .aboutText2 {
-        margin-left: 0;
-        width: 90%;
-    }
-
-    .Contact-Title {
-        width: 90%;
-    }
-
-    .contact-title {
-        font-size: 32px;
-    }
-
-    .contact-text {
+@media (min-width: 993px) and (max-width: 1200px)  {
+    .close-search-icon {
+        position: absolute;
+        top: 60%;
+        right: -440px !important;
+        transform: translateY(-50%);
+        cursor: pointer;
         font-size: 20px;
-    }
-
-    .Contactregister {
-        width: 90%;
-    }
-
-    .ContactForm input, .textarea {
-        width: 90%;
-    }
-
-    .ContactBtn {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .Adress {
-        width: 90%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .adress-text {
-        width: 100%;
-        text-align: center;
-    }
-
-    .WorkTime {
-        width: 90%;
-        left: 5%;
-    }
-
-    .InsideNews-Title {
-        width: 90%;
-    }
-
-    .insidenews-text {
-        width: 90%;
-    }
-
-    .Media-Title, .Body-Title {
-        width: 90%;
-    }
-
-    .media-title, .mis-title {
-        font-size: 30px;
-    }
-
-    .media-text, .mis-text {
-        font-size: 22px;
-    }
-
-    .MediaCard, .MissionCard {
-        width: 100%;
-        max-width: 400px;
-    }
+        color: #000;
+    }  
 }
-
-@media only screen and (max-width: 992px) {
-    #home {
-        padding: 0 15px;
-    }
-
-    .circle {
-        width: 150px;
-        height: 250px;
-        border-radius: 150px 0 0 150px;
-    }
-
-    .text-h {
-        font-size: 36px;
-        line-height: 45px;
-    }
-
-    .logo {
-        width: 200px;
-        height: 100px;
-    }
-
-    .group2 {
-        width: 70px;
-        height: 70px;
-        top: 600px;
-        right: 10px;
-    }
-
-    .box {
-        width: 100%;
-        height: auto;
-    }
-
-    .about {
-        width: 90%;
-        height: auto;
-    }
-
-    .aboutText2 {
-        width: 100%;
-    }
-
-    .abouttext3 {
-        width: 90%;
-    }
-
-    .Contact-Title {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .contact-title {
-        font-size: 28px;
-    }
-
-    .contact-text {
-        font-size: 18px;
-    }
-
-    .Contactregister {
-        width: 100%;
-        height: auto;
-    }
-
-    .ContactForm {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-    }
-
-    .ContactForm input, .textarea {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .ContactBtn {
-        margin-left: 0;
-        margin-right: 0;
-        display: block;
-        width: auto;
-    }
-
-    .Adress {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-    }
-
-    .adress-text {
-        width: 100%;
-        text-align: center;
-    }
-
-    .WorkTime {
-        width: 100%;
-        left: 0;
-    }
-
-    .InsideNews-Title {
-        width: 100%;
-    }
-
-    .insidenews-text {
-        width: 100%;
-    }
-
-    .media-title, .mis-title {
-        font-size: 26px;
-    }
-
-    .media-text, .mis-text {
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .close-search-icon {
+        position: absolute;
+        top: 60%;
+        right: -660px !important;
+        transform: translateY(-50%);
+        cursor: pointer;
         font-size: 20px;
-    }
-
-    .MediaCard, .MissionCard {
-        width: 100%;
-        max-width: 350px;
-    }
-
-    .MediaCard p, .MissionCard p {
-        font-size: 12px;
-    }
-
-    .circle-button {
-        width: 100px;
-        height: 30px;
-    }
-
-    .circle-button:hover {
-        width: 100px;
-    }
+        color: #000;
+    }  
 }
 
-@media only screen and (max-width: 768px) {
-    .text-h {
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .circle {
-        width: 120px;
-        height: 200px;
-        border-radius: 120px 0 0 120px;
-    }
-
-    .logo {
-        width: 150px;
-        height: 80px;
-    }
-
-    .group2 {
-        width: 60px;
-        height: 60px;
-        top: 550px;
-    }
-
-    .box {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
-
-    .about {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-
-    .aboutText2, .abouttext3 {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .aboutcircle {
-        width: 250px;
-        height: 250px;
-    }
-
-    .AboutImage {
-        width: 250px;
-        height: 250px;
-    }
-
-    .Contact-Title {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .contact-title {
-        font-size: 24px;
-    }
-
-    .contact-text {
-        font-size: 16px;
-    }
-
-    .Contactregister {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .ContactForm {
-        flex-direction: column;
-        align-items: stretch;
-        margin: 0;
-    }
-
-    .ContactForm input, .textarea {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .ContactBtn {
-        margin: 10px auto;
-    }
-
-    .Adress {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .adress-text {
-        width: 100%;
-        text-align: center;
-    }
-
-    .WorkTime {
-        width: 100%;
-        left: 0;
-        border-radius: 0;
-    }
-
-    .InsideNews-Title {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .insidenews-text {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .ContactSosial {
-        width: 80px;
-        height: auto;
-        margin: 20px auto;
-    }
-
-    .sosialtext {
-        padding: 10px;
-    }
-
-    .media-title, .mis-title {
-        font-size: 22px;
-    }
-
-    .media-text, .mis-text {
-        font-size: 18px;
-    }
-
-    .MediaCard, .MissionCard {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .circle-button {
-        width: 80px;
-        height: 30px;
-    }
-
-    .circle-button:hover {
-        width: 80px;
-    }
+@media (min-width: 769px) and (max-width: 992px) {
+    .close-search-icon {
+        position: absolute;
+        top: 60%;
+        right: -460px !important;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 20px;
+        color: #000;
+    } 
 }
 
-@media only screen and (max-width: 576px) {
+@media  (min-width: 300px) and (max-width: 768px) {
+   
     .text-h {
         font-size: 24px;
         line-height: 32px;
@@ -438,8 +74,10 @@
 
     .about {
         flex-direction: column;
-        width: 100%;
+        /* width: 100%; */
         height: auto;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
     }
 
     .aboutText2, .abouttext3 {
@@ -457,57 +95,8 @@
         height: 200px;
     }
 
-    .Contact-Title {
-        width: 100%;
-        padding: 0 5px;
-    }
 
-    .contact-title {
-        font-size: 20px;
-    }
-
-    .contact-text {
-        font-size: 14px;
-    }
-
-    .Contactregister {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
-
-    .ContactForm {
-        flex-direction: column;
-        align-items: stretch;
-        margin: 0;
-    }
-
-    .ContactForm input, .textarea {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .ContactBtn {
-        margin: 10px auto;
-    }
-
-    .Adress {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .adress-text {
-        width: 100%;
-        text-align: center;
-    }
-
-    .WorkTime {
-        width: 100%;
-        left: 0;
-        border-radius: 0;
-    }
+ 
 
     .InsideNews-Title {
         width: 100%;
@@ -550,4 +139,1050 @@
     .circle-button:hover {
         width: 60px;
     }
+
+
+     /* 'missiya' css start  */
+
+
+    .Mission_Card .col-4 {
+        flex-basis: 100%; /* Her satırda 1 kart */
+        max-width: 100%;
+    }
+    
+
+     /* 'missiya' css end */
+
+
+
+
+
+     .telimci-title{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 24px !important;
+        text-align: justify !important;
+        color: var(--titlecolor);
+        text-align: center;
+        margin-top: 70px;
+    }
+    
+    .telimci-text{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 20px !important; 
+        text-align: justify !important;
+        color: var(--titlecolor);
+        text-align: center;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      
+    }
+    .media-text{
+        font-size: 20px !important;
+
+    }
+    .media-title{
+        font-size: 24px !important;
+
+    }
+
+
+
+.NewsContinue{
+    position: absolute;
+    left: 320px;
+    top: 467px;
+    width: 40px;
+    height: 40px;
+    background-color: #009ADE; /* Soluk yeşil */
+    /* color: #5B748D !important; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 20%;
+    text-decoration: none;
+    border-radius: 50%; /* Daire şekli */
+    transition: all 0.4s ease; /* Tüm değişiklikler için geçiş süresi */
+}
+.Newstext2{
+    position: absolute;
+    top: 7px;
+    padding: 0 5px 0 5px;
+    left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.NewsContinue:hover{
+    width: 120px;
+    left: 320px;
+    border-radius: 50px; /* Tam buton şekline geçiş */
+    background-color: #002D74; /* Yeşil */
+    justify-content: space-between; /* Metin ve ok simgesini ayırır */
+    opacity: 100%;
+    color: #ffffff;
+}
+
+.NewsContinue:hover.Newstext2 {
+    /* left: 29px; */
+    color: #ffffff;
+}
+
+.NewsContinue:hover #Newsicon{
+    content: url(../../assets/arrow-right.svg);
+    margin-top: 7.5px !important;
+}
+
+.close-search-icon {
+    position: absolute;
+    top: 60%;
+    right: -150px !important;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+
+    
+    
+} .text-h {
+        font-size: 30px;
+        line-height: 40px;
+        /* display: none; */
+    }
+    .topheader-text{
+        display: none;
+        /* content: ' ' !important; */
+    }
+    .irtmac{
+        width: 100px;
+        display:block !important;
+        margin-left: 25px;
+    }
+    .topheader-text{
+        margin-right: 0!important;
+        padding-right: 0 !important;
+        margin-top: -6px !important;
+
+    }
+    
+    .header-nav{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block !important;
+        margin-left: 0;
+        margin-right: 25px;
+    }
+
+    .circle {
+        width: 120px;
+        height: 200px;
+        border-radius: 120px 0 0 120px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 80px;
+    }
+
+    .group2 {
+        width: 60px;
+        height: 60px;
+        top: 550px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+  
+    .aboutText2, .abouttext3 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .aboutcircle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .AboutImage {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .InsideNews-Title {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .insidenews-text {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .ContactSosial {
+        width: 80px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .sosialtext {
+        padding: 10px;
+    }
+
+    .media-title, .mis-title {
+        font-size: 22px;
+    }
+
+    .media-text, .mis-text {
+        font-size: 18px;
+    }
+
+    .MediaCard, .MissionCard {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .circle-button {
+        width: 80px;
+        height: 30px;
+    }
+
+    .circle-button:hover {
+        width: 80px;
+    }
+
+    .Rectangle{
+        max-width: 100%;
+        height: 300px !important;
+    }
+
+    .text-h{
+
+        position: absolute;
+        top: 164px !important;
+        width: 314px !important;
+        color: #ffffff;
+        right: 50px !important;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px !important;
+        line-height: 20px !important;
+        text-align: right;
+        z-index: 1;
+        font-size: 1.5rem;
+    }
+    .svg{
+        display: none;
+    }
+    .Vector{
+        display: none;
+    }
+    .circle{
+        display: none;
+    }
+    .group2{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 310px !important;
+        right: 55px !important;
+        width: 92px;
+        height: 92px;
+        border-radius: 90px;
+        background-color: #F32735;
+        z-index: 5;
+    }
+
+    .Homelogo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 79px;
+        margin-bottom: 79px;
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .HomeGroup{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 130px !important;
+        flex-direction: column;
+    }
+    .title{
+        max-width: 448px !important;
+        text-align: center;
+        font-size: 20px !important;
+        line-height: 27.88px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        text-align: justify !important;
+        
+    }
+
+    .title1{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px !important;
+        line-height: 20.07px !important;
+        color: #002D74;
+        max-width: 389px !important;
+        text-align: justify !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    .box{
+        width: 350px !important;
+        height: 360px;
+        border-radius: 30px;
+        background-color: #009ADE;
+        position: relative;
+        padding: 10px;
+    }
+    .bodtext{
+        font-size: 50px !important;
+    }
+    .line{
+        border-left: 1px solid #002D74;
+        height: 230px !important;
+        position: absolute;
+        left: 180px !important;
+        top: 15px !important;
+        width: 0;
+        opacity: 20%;
+    }
+    .line2{
+        position: absolute;
+        width: 284px !important;
+        background: #002D74;
+        top: 50% !important;
+        left: 5 !important;
+        opacity: 20%;
+    }
+    .inbox{
+        padding-left: 36px !important;
+        background-color: none !important;
+        margin-left: 0 !important;
+    }
+    .banner{
+        display: flex;
+        align-items: center;
+        flex-direction: column !important;
+        height: 907px !important;
+        max-width: 1392px;
+        background-color: #002856;
+        border-radius: 30px;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    .Group4 {
+        margin-left: 15px !important;
+        margin-top: 41px !important;
+        margin-bottom: 260px !important;
+    }
+    .HRline {
+        border-top: 1px solid #0071CE !important;
+        height: 0 !important;
+        margin-left: 12px !important;
+        width: 241px !important;
+        margin-top: -219px !important;
+    }
+    .BanTitle{
+        max-width: 814px !important;
+        font-size: 27px !important;
+        line-height: 30.88px !important;
+        text-align: justify !important;
+        
+    }
+    .BanTitle2{
+        max-width: 814px !important;
+        font-size: 14px;
+        line-height: 21.07px !important;
+        text-align: justify !important;
+        margin-bottom: 30px;
+    }
+    .Bantext{
+        margin-left: 35px !important;
+        margin-right: 35px !important;
+        margin-top: 80px !important;
+    }
+    .Group3{
+        margin-left: 222px !important;
+        margin-top: 37px !important;
+        rotate: 90deg !important;
+    }
+
+    /* about css start */
+
+    .aboutcircle{
+        display: none !important;
+    }
+
+    .about{
+      
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 1150px !important;
+        height: 534px !important;
+        /* margin-left: 20px !important; */
+        border-radius: 20px 20px 20px 20px !important;
+        /* margin-right: 20px !important; */
+
+    }
+    .about-title{
+        font-size: 24px !important;
+    }
+    .about-text{
+        font-size: 17px !important;
+    }
+    .AboutText2{
+        max-width: 380px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: -470px !important;
+    }
+    
+    .aboutText2{
+        max-width: 665px !important;
+        height: 0px !important;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #003B71;
+        text-align: justify !important;
+        margin-left: 3px !important;
+        margin-right: 20px !important;
+
+    }
+    .abouttext3{
+        max-width: 1089px !important;
+        text-align: justify !important;
+        
+    }
+    .abouttext3 p{
+
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+     /* about css end */
+
+
+
+      /* 'en cox verilen suallar' css start */
+        .ques-title{
+        font-size: 20px !important;
+       }
+        .accordion-item{
+            margin-left: 20px !important;
+            margin-right: 20px !important;
+        }
+
+      /* 'en cox verilen suallar' css end */
+    
+      /* 'missiya' css start */
+
+      .Mission_Card{
+        display: flex !important;
+        flex-direction: column !important;
+      }
+      .mis-title{
+        font-size: 24px !important;
+     }
+
+     .mis-text{
+        font-size: 20px !important;
+     }
+
+     .MissionCard h2 {
+        max-width: 367px !important;
+        height: 58px;
+        margin-left: 40px;
+        font-size: 24px !important;
+        text-align: justify !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+       
+    }
+    .MissionCard p {
+        max-width: 367px !important;
+        height: 42px;
+        font-size: 15px !important;
+        text-align: justify !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      
+
+    }
+
+    .Mission_Card .col-4 {
+        flex-basis: 100%; /* Her satırda 1 kart */
+        max-width: 100%;
+    }
+  
+
+    
+      /* 'missiya' css end */
+
+
+
+
+
+     .telimci-title{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 24px !important;
+        text-align: justify !important;
+        color: var(--titlecolor);
+        text-align: center;
+        margin-top: 70px;
+    }
+    
+    .telimci-text{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 20px !important; 
+        text-align: justify !important;
+        color: var(--titlecolor);
+        text-align: center;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      
+    }
+    .media-text{
+        font-size: 20px !important;
+
+    }
+    .media-title{
+        font-size: 24px !important;
+
+    }
+
+
+
+ .NewsContinue{
+    position: absolute;
+    left: 270px !important;
+    top: 467px;
+    width: 40px;
+    height: 40px;
+    background-color: #009ADE; /* Soluk yeşil */
+    /* color: #5B748D !important; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 20%;
+    text-decoration: none;
+    border-radius: 50%; /* Daire şekli */
+    transition: all 0.4s ease; /* Tüm değişiklikler için geçiş süresi */
+ }
+ .Newstext2{
+    position: absolute;
+    top: 7px;
+    padding: 0 5px 0 5px;
+    left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+ }
+
+ .NewsContinue:hover{
+    width: 120px;
+    left: 270px !important;
+    border-radius: 50px; /* Tam buton şekline geçiş */
+    background-color: #002D74; /* Yeşil */
+    justify-content: space-between; /* Metin ve ok simgesini ayırır */
+    opacity: 100%;
+    color: #ffffff;
+ } 
+
+ .NewsContinue:hover.Newstext2 {
+    /* left: 29px; */
+    color: #ffffff;
+ }
+
+  .NewsContinue:hover #Newsicon{
+    content: url(../../assets/arrow-right.svg);
+    margin-top: 7.5px !important;
+ }
+ .Newtext{
+    margin-left: 10px !important;
+ }
+
+ .newspage-title{
+    font-size: 24px !important;
+ }
+ .newspage-text{
+    font-size: 20px !important;
+ }
+
+ .Traning-text {
+    max-width: 212px !important;
+    margin-right: 45px !important;
+    font-size: 36px;
+    margin-left: 20px !important;
+ }
+ .Traning-text2 {
+    /* max-width: 212px !important; */
+    font-size: 24px;
+    margin-left: 20px !important;
+ }
+ .traning-hr{
+    width: 120px !important;
+    border: 1px solid #B4C1D9;
+ 
+ }
+
+ .Trainingcard{
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+ }
+
+.Traniners-text{
+    margin-right: 20px !important;
+    font-size: 36px;
+    margin-left: 20px !important;
+}
+.Traniners-text2{
+    font-size: 24px;
+    margin-left: 20px !important;
+}
+.traniners-hr{
+    width: 120px !important;
+    border: 1px solid #B4C1D9;
+ 
+}
+
+.trainers-circle{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    border-radius: 50px;
+}
+
+
+/* registration.css */
+
+/* Mobil cihazlar için medya sorgusu */
+    .registerdiv{
+    margin-left: 0 !important;
+    max-width: 400px ;
+    }
+    .register {
+      display: flex;
+      flex-direction: column !important; /* Dikey hizalama */
+      align-items: center !important;    /* Merkezde hizalama */
+      text-align: center !important;     /* Yazıları ortala */
+      margin: 0 20px !important; 
+      height: 633px !important;        /* Kenarlardan biraz boşluk bırak */
+    }
+  
+    #register {
+      width: 100% !important;            /* Tam genişlik */
+      margin: 0 !important;              /* Kenar boşluklarını sıfırla */
+      padding: 20px !important;      
+      display: flex;
+      flex-direction: column !important;    /* İç boşluk ekle */
+    }
+
+    .registerTitle {
+      font-size: 24px !important;        /* Başlık boyutunu küçült */
+    }
+  
+    .registerText {
+      font-size: 14px !important;        /* Metin boyutunu küçült */
+      margin-bottom: 20px !important;
+      text-align: justify !important;    /* Alt boşluk ekle */
+    }
+  
+    .registerForm {
+      width: 100% !important; 
+      margin-left: 0px !important;           
+    }
+  
+    .Register-form-group {
+      margin-bottom: 0px !important;    /* Her input arasına boşluk ekle */
+      width: 100% !important;   
+      margin-top: 0 !important;         /* Inputları tam genişlik yap */
+    }
+  
+    .inputtext {
+      width: 100% !important;            /* Input genişliği */
+      font-size: 16px !important;        /* Yazı boyutu */
+    }
+
+    .custom-select-wrapper {
+      width: 100% !important;            
+      margin-bottom: 20px !important;    
+
+      }
+      
+      .custom-select {
+        width: 100% !important;            
+       font-size: 16px !important;      
+    
+      }
+
+    .RegisterBtn{
+        /* width: 350px !important; */
+        margin-left: 170px !important;
+        margin-top: 0px !important;
+    }
+
+   /* Kartları dikey hizala ve her biri %100 genişlikte olsun */
+   #Testimonials {
+    flex-direction: column;
+  }
+  .card-container {
+    width: 100%;
+    margin-right: 0;
+  }
+
+
+
+  #Testimonials {
+    flex-direction: column !important; /* Kartları dikey sıralamak için */
+    gap: 10px !important; /* Dikey mesafe */
+  }
+
+  .card-container {
+    width: 100% !important; /* Mobilde tek kart tam genişlikte görünsün */
+    margin-bottom: 20px !important; /* Kartlar arasında dikey mesafe */
+  }
+
+  #TestsBG {
+
+    width: 100%;
+    height: 1145px !important;
+
+}
+
+.NewsCard{
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+.News-text{
+    margin-left: 20px !important;
+    margin-right: 45px !important;
+}
+.News-text2{
+    margin-left: 20px !important;
+}
+.News-hr{
+    width: 120px !important;
+}
+.contact-text{
+    text-align: justify !important;
+    font-size: 18px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.Contactregister {
+    max-width: 1156px;
+    height: 545px !important;
+    background-color: #F0F6F9;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 20px !important;
+    border-radius: 30px;
+    margin-right: 20px !important;
+}
+.ContactForm {
+    display: flex !important;
+    /* justify-content: center !important; */
+    margin-top: 50px;
+    flex-direction: column !important;
+    margin-left: 15px !important;
+}
+.form-group .groupone{
+    display: flex !important;
+    /* justify-content: center !important; */
+    margin-top: 50px;
+    flex-direction: column !important;
+    margin-left: 10px !important;
+}
+
+.form-group{
+    margin-top: 10px !important;
+}
+.groupone{
+    margin-top: 30px !important;
+}
+
+#name{
+    max-width: 345px !important;
+}
+#text{
+    width: 345px !important;
+    padding-left: 30px !important;
+}
+#email{
+    width: 345px !important;
+    padding-left: 30px !important;
+}
+
+#textarea{
+    width: 345px !important;
+}
+
+.ContactBtn{
+    margin-left: 187px !important;
+}
+.Adress {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+.adress-text{
+    margin-left: 18px !important;
+}
+
+.adress-title{
+    font-size: 10px !important;
+}
+
+iframe.map {
+    width: calc(100% - 40px) !important; /* Sağ-sol 20px boşluk */
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+.WorkTime{
+    width: 295px !important;
+    left: 36px !important;
+}
+
+.WorkTimeText {
+    font-size: 14px !important;
+    margin-top: 0px !important;
+    padding: 20px !important;
+    line-height: 24.26px !important;
+}
+
+}
+
+
+/* Diğer stiller */
+
+  
+  
+
+    
+
+@media only screen and (max-width: 576px) {
+    .text-h {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 150px;
+        border-radius: 100px 0 0 100px;
+    }
+
+    .logo {
+        width: 120px;
+        height: 60px;
+    }
+
+    .group2 {
+        width: 50px;
+        height: 50px;
+        top: 500px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .about {
+        flex-direction: column;
+        /* width: 100%; */
+        height: auto;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .aboutText2, .abouttext3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .aboutcircle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .AboutImage {
+        width: 200px;
+        height: 200px;
+    }
+
+
+ 
+
+    .InsideNews-Title {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .insidenews-text {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .ContactSosial {
+        width: 60px;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .sosialtext {
+        padding: 5px;
+    }
+
+    .media-title, .mis-title {
+        font-size: 18px;
+    }
+
+    .media-text, .mis-text {
+        font-size: 16px;
+    }
+
+    .MediaCard, .MissionCard {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .circle-button {
+        width: 60px;
+        height: 30px;
+    }
+
+    .circle-button:hover {
+        width: 60px;
+    }
+
+
+     /* 'missiya' css start  */
+
+
+    .Mission_Card .col-4 {
+        flex-basis: 100%; /* Her satırda 1 kart */
+        max-width: 100%;
+    }
+    
+
+     /* 'missiya' css end */
+
+
+
+
+
+     .telimci-title{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 24px !important;
+        text-align: justify !important;
+        color: var(--titlecolor);
+        text-align: center;
+        margin-top: 70px;
+    }
+    
+    .telimci-text{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 20px !important; 
+        text-align: justify !important;
+        color: var(--titlecolor);
+        text-align: center;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      
+    }
+    .media-text{
+        font-size: 20px !important;
+
+    }
+    .media-title{
+        font-size: 24px !important;
+
+    }
+
+
+
+.NewsContinue{
+    position: absolute;
+    left: 320px;
+    top: 467px;
+    width: 40px;
+    height: 40px;
+    background-color: #009ADE; /* Soluk yeşil */
+    /* color: #5B748D !important; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 20%;
+    text-decoration: none;
+    border-radius: 50%; /* Daire şekli */
+    transition: all 0.4s ease; /* Tüm değişiklikler için geçiş süresi */
+}
+.Newstext2{
+    position: absolute;
+    top: 7px;
+    padding: 0 5px 0 5px;
+    left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.NewsContinue:hover{
+    width: 120px;
+    left: 320px;
+    border-radius: 50px; /* Tam buton şekline geçiş */
+    background-color: #002D74; /* Yeşil */
+    justify-content: space-between; /* Metin ve ok simgesini ayırır */
+    opacity: 100%;
+    color: #ffffff;
+}
+
+.NewsContinue:hover.Newstext2 {
+    /* left: 29px; */
+    color: #ffffff;
+}
+
+.NewsContinue:hover #Newsicon{
+    content: url(../../assets/arrow-right.svg);
+    margin-top: 7.5px !important;
+}
+
+.close-search-icon {
+    position: absolute;
+    top: 60%;
+    right: -150px !important;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+
+    
+    
+}
+
 }

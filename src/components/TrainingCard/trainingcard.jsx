@@ -2,6 +2,7 @@
 // import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './trainingcard.css'
+import '../../res.css'
 import ArrowIcon from '../../assets/Icon-right.svg'
 // import ArrowIconwhite from '../../assets/arrow-right.svg'
 // import {useGetEducationQuery} from "../../store/Api/education.js";
@@ -72,12 +73,11 @@ function TrainingCard() {
 
                 {/* {content} */}
 
-                <div className="col-4"  >
+                <div className="col-12 col-sm-6 col-lg-4"  >
                     <div className="Trainingcard">
-                        {/* <img src={Doctor1} alt="Doctor1" className="Doctor1" style={{borderRadius:"19px"}} /> *!/  */}
-                        <h2>Cərrahi Bacarıqların <br />
+                        <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-2'>Cərrahi Bacarıqların <br />
                             Əsasları</h2>
-                        <p>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
+                        <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
 
                         <div className="Traningtext">
 
@@ -92,11 +92,11 @@ function TrainingCard() {
                     </div>
                 </div>
 
-                <div className="col-4"  >
+                <div className="col-12 col-sm-6 col-lg-4"  >
                     <div className="Trainingcard">
-                        <h2>Cərrahi Bacarıqların <br />
+                        <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-2'>Cərrahi Bacarıqların <br />
                             Əsasları</h2>
-                        <p>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
+                        <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
                         <div className="Traningtext">
 
                             <a href="#" className="Continue">
@@ -111,11 +111,11 @@ function TrainingCard() {
                     </div>
                 </div>
 
-                <div className="col-4"  >
+                <div className="col-12 col-sm-6 col-lg-4"  >
                     <div className="Trainingcard">
-                        <h2>Cərrahi Bacarıqların <br />
+                        <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-2'>Cərrahi Bacarıqların <br />
                             Əsasları</h2>
-                        <p>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
+                        <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
                         <div className="Traningtext">
 
                             <a href="#" className="Continue">
@@ -129,11 +129,11 @@ function TrainingCard() {
 
                     </div>
                 </div>
-                <div className="col-4"  >
+                <div className="col-12 col-sm-6 col-lg-4"  >
                     <div className="Trainingcard">
-                        <h2>Cərrahi Bacarıqların <br />
+                        <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-2'>Cərrahi Bacarıqların <br />
                             Əsasları</h2>
-                        <p>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
+                        <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
                         <div className="Traningtext">
 
                             <a href="#" className="Continue">
@@ -147,11 +147,11 @@ function TrainingCard() {
 
                     </div>
                 </div>
-                <div className="col-4"  >
+                <div className="col-12 col-sm-6 col-lg-4"  >
                     <div className="Trainingcard">
-                        <h2>Cərrahi Bacarıqların <br />
+                        <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-2'>Cərrahi Bacarıqların <br />
                             Əsasları</h2>
-                        <p>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
+                        <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
                         <div className="Traningtext">
 
                             <a href="#" className="Continue">
@@ -165,11 +165,11 @@ function TrainingCard() {
 
                     </div>
                 </div>
-                <div className="col-4"  >
+                <div className="col-12 col-sm-6 col-lg-4"  >
                     <div className="Trainingcard">
-                        <h2>Cərrahi Bacarıqların <br />
+                        <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-2'>Cərrahi Bacarıqların <br />
                             Əsasları</h2>
-                        <p>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
+                        <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
                         <div className="Traningtext">
 
                             <a href="#" className="Continue">

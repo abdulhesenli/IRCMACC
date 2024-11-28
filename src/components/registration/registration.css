@@ -7,7 +7,7 @@
 }
 .register{
     margin: auto;
-    width: 1156px;
+    max-width: 1156px;
     height: 393px;
     border-radius: 30px;
     background-color: #F0F6F9;
@@ -18,11 +18,8 @@
 
 #register{
     display: flex;
-
-   
-
 }
-#name{
+#registername{
     width: 448px;
     height: 58px;
     border: none;
@@ -36,12 +33,12 @@
  outline: none;
  border-color: #007bff;
 } */
-#name:focus{
+#registername:focus{
     outline: none;
     border-color: #007bff;
 }
 
-#text:focus{
+#registertext:focus{
     outline: none;
     border-color: #007bff;
 }
@@ -49,7 +46,7 @@
     outline: none;
     border-color: #007bff;
 }
-#text{
+#registertext{
     width: 448px;
     height: 58px;
     border: none;
@@ -76,7 +73,7 @@
 
 }
 
-#name::placeholder{
+#registername::placeholder{
     color: #5B748D;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -84,7 +81,7 @@
     outline: none;
     border-color: #007bff;
 }
-#text::placeholder{
+#registertext::placeholder{
     color: #5B748D;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -100,7 +97,9 @@
     outline: none;
     border-color: #007bff;
 }
-
+.inputtext{
+margin-bottom: 10px;
+}
 select::placeholder{
     padding-right: 30px;
 }
@@ -115,7 +114,7 @@ select::placeholder{
     font-size: 14px;
     font-weight: 400;
     border: none;
-    margin-left: 875px;
+    margin-left: 833px;
     margin-top: 39px;
 }
 
@@ -125,13 +124,16 @@ select::placeholder{
     font-size: 14px;
     padding-top: 24px;
     color: #002D74;
-    width: 354px;
+    max-width: 354px;
+    
 }
 .registerTitle{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 36px;
     color: #003B71;
+    max-width: 354px;
+   
 }
 
 

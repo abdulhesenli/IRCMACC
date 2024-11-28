@@ -1,4 +1,5 @@
 import './about.css'
+import '../../res.css'
 // import Image from '../../assets/aboutimage2.svg'
 import {Helmet} from "react-helmet";
 import {useTranslation} from "react-i18next";
@@ -24,7 +25,7 @@ function About (){
 
                     </div>
 
-                    <div>
+                    <div className='AboutText2'>
                         <p className='aboutText2'>Rəşad Fərhad oğlu Şolan (Məmmədov Rəşad Fərhad oğlu; 27 iyun 1980,
                             İmişli rayonu ) —
                             cərrah-uroloq, transplantoloq, Amerika Uroloqlar Assosiasiyasının və Avropa Uroloqlar

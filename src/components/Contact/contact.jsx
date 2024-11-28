@@ -1,4 +1,5 @@
 import './contact.css'
+import '../../res.css'
 import Send from '../../assets/send-03.svg'
 import Location from '../../assets/location.svg'
 import Phonecall from '../../assets/phonecall.svg'
@@ -16,7 +17,7 @@ function Contact (){
             <div className='Contactregister'>
             <form className='ContactForm'>
 
-              <div className="form-group">
+              <div className="form-group groupone">
                 <input type="text" name="name" id="name" style={{marginBottom:'10px'}} placeholder="Ad, Soyad"/>
                 <input type="text" name="text" id="text" style={{marginBottom:'10px'}}  placeholder=" +994 00 000 00 00"/>
                 <input type="email" name="email" id="email" placeholder=" E-mail"/>
@@ -58,7 +59,7 @@ function Contact (){
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12156.609233436639!2d49.861909999999995!3d40.38331685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307db76b4bb377%3A0xd02c5ca432b069fd!2sSharg%20restaurant!5e0!3m2!1sru!2saz!4v1723662080569!5m2!1sru!2saz"
                     width="1392" height="583" style={{border : 0, marginTop:'50px', borderRadius:"20px", position:"relative"}} allowFullScreen="" loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade">
+                    referrerPolicy="no-referrer-when-downgrade" className='map'>
 
                     </iframe>
 

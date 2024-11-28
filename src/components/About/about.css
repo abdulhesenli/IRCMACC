@@ -13,7 +13,7 @@
 
 }
 .About-Title{
-    width: 782px;
+    max-width: 782px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -70,23 +70,24 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 1150px;
+    max-width: 1150px;
     height: 334px;
     border-radius: 165px 20px 20px 165px;
     margin: auto;
 }
 .aboutText2{
-    width: 665px;
+    max-width: 665px;
     height: 231px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #003B71;
     margin-left: 220px;
+    text-align: justify;
 }
 
 .abouttext3{
-    width: 1089px;
+    max-width: 1089px;
     margin: auto;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -94,4 +95,5 @@
     font-size: 14px;
     color: #003B71;
     margin-top: 70px;
+    text-align: justify;
 }

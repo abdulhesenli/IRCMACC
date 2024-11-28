@@ -165,3 +165,234 @@
    
 }
 
+
+
+.hamburger-menu {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Menü İçeriği - Tam Sayfa Kaplama */
+.menu-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Menü Açıkken Ekranı Kapsar */
+.menu-content.active {
+    transform: translateX(0);
+}
+
+/* Menü Linkleri */
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-content li {
+    padding: 15px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s ease forwards;
+}
+
+/* Linklerin Gecikmeli Animasyonu */
+.menu-content li:nth-child(1) { animation-delay: 0.1s; }
+.menu-content li:nth-child(2) { animation-delay: 0.2s; }
+.menu-content li:nth-child(3) { animation-delay: 0.3s; }
+.menu-content li:nth-child(4) { animation-delay: 0.4s; }
+.menu-content li:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-content li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Kapatma Butonu */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* ddcdcd */
+
+/* Genel sıfırlamalar ve stil ayarları */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.TopHeader{
+    max-width: 1392px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 17px;
+    justify-content: space-between;
+}
+
+.topheader-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Search Icon */
+.SearchIcon{
+    box-sizing: border-box;
+    width: 25.5px;
+    height: 25.5px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Search Bar */
+.header-search {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    transition: all 0.4s linear;
+}
+
+.header-search.active {
+    opacity: 1;
+    pointer-events: auto;
+    height: 50px; /* Arama kutusunun görünür uzunluğu */
+    cursor: pointer;
+}
+
+.header-search input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    /* border-radius: 4px; */
+    height: 59px;
+    border: 1px solid #ccc;
+}
+
+/* Close Search Icon */
+.close-search-icon {
+    position: absolute;
+    top: 60%;
+    right: -150px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Fullscreen Menu */
+.menu-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-content.active {
+    transform: translateX(0);
+}
+
+/* Menu Links */
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-content li {
+    padding: 15px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s ease forwards;
+}
+
+/* Link Animations */
+.menu-content li:nth-child(1) { animation-delay: 0.1s; }
+.menu-content li:nth-child(2) { animation-delay: 0.2s; }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-content li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
