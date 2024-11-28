@@ -25,7 +25,8 @@ function App() {
 
     useEffect(()=>{
         dispatch(setLoading(true));
-        setTimeout(()=>{
+        setTimeout(()=>{console.log('App component rendered');
+console.log('Loading state:', loading);
             dispatch(setLoading(false));
         }, 1000)
     }, [])
