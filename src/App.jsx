@@ -1,22 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'tailwindcss/base';
-// import 'tailwindcss/components';
-// import 'tailwindcss/utilities';
+import {useSelector, useDispatch} from "react-redux";
+import {useEffect} from "react";
+import {setLoading} from "./store/Slice/ui.js";
 import { Routes, Route } from 'react-router-dom';
-// import Footer from "./components/Footer/Footer.jsx"
 import Footer from './components/Footer/Footer.jsx'
 import Telimler from "./components/Telimler/Telimler.jsx"
 import Telimciler from './components/Telimciler/Telimciler.jsx';
 import Media from './components/Media/Media.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Error from './components/error/Error.jsx';
-import Questions from './components/Questions/questions.jsx';
+import Questions from './components/Questions/Questions.jsx';
 import NewsPage from './components/NewsPage/Newspage.jsx';
 import Mission from './components/Mission/Mission.jsx';
 import Loading from "./components/Ui/Loading.jsx";
-import {useSelector, useDispatch} from "react-redux";
-import {useEffect} from "react";
-import {setLoading} from "./store/Slice/ui.js";
 import Topheader from './components/Topheader/Topheader.jsx';
 import Header from './components/Header.jsx';
 import Home from './components/home/Home.jsx';
