@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/home/Home.jsx';
 import About from './components/About/About.jsx';
 import Footer from "./components/Footer/Footer.jsx"
 import Telimler from "./components/Telimler/Telimler.jsx"
@@ -17,6 +16,7 @@ import {useEffect} from "react";
 import {setLoading} from "./store/Slice/ui.js";
 import Topheader from './components/Topheader/Topheader.jsx';
 import Header from './components/Header.jsx';
+import Home from './components/home/Home.jsx';
 
 
 function App() {
