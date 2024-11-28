@@ -1,4 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'tailwindcss/base';
+// import 'tailwindcss/components';
+// import 'tailwindcss/utilities';
 import { Routes, Route } from 'react-router-dom';
 import Footer from "./components/Footer/Footer.jsx"
 import Telimler from "./components/Telimler/Telimler.jsx"

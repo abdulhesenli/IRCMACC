@@ -7,7 +7,7 @@
 
 
 /* Genel Responsive Ayarlar */
-@media (min-width: 993px) and (max-width: 1200px)  {
+@media (min-width: 1200px) and (max-width: 1200px)  {
     .close-search-icon {
         position: absolute;
         top: 60%;
@@ -18,7 +18,7 @@
         color: #000;
     }  
 }
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     .close-search-icon {
         position: absolute;
         top: 60%;
@@ -28,6 +28,11 @@
         font-size: 20px;
         color: #000;
     }  
+    .hamburger-menu{
+        display: block !important;
+        margin-left: 0;
+        margin-right: 25px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -40,6 +45,12 @@
         font-size: 20px;
         color: #000;
     } 
+
+    .hamburger-menu{
+        display: block !important;
+        margin-left: 0;
+        margin-right: 25px;
+    }
 }
 
 @media  (min-width: 300px) and (max-width: 768px) {

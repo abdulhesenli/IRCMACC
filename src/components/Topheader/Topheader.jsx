@@ -53,7 +53,7 @@ function Topheader() {
                     <img src={irtmacc} alt="Irtmac" className="irtmac" style={{ width: '150px', display: 'none' }} />
                 </Link>
 
-                <div className="topheader-text d-flex">
+                <div className="topheader-text d-flex ">
                     <div onClick={handleClick} className="me-4">
                         <CiSearch className="SearchIcon" />
                     </div>
@@ -63,11 +63,14 @@ function Topheader() {
                         <option value="en">EN</option>
                         <option value="ru">RU</option>
                     </select>
-                </div>
-
-                <div className="hamburger-menu" onClick={toggleMenu}>
+                    <div className="hamburger-menu" onClick={toggleMenu}>
                     <GiHamburgerMenu size={24} color="white" />
                 </div>
+                </div>
+
+                {/* <div className="hamburger-menu" onClick={toggleMenu}>
+                    <GiHamburgerMenu size={24} color="white" />
+                </div> */}
 
                 <div className={`menu-content ${isOpenMenu ? 'active' : ''}`}>
                     <div className="close-button" onClick={toggleMenu}>

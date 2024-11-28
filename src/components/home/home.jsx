@@ -24,7 +24,6 @@ import News from "../News/News";
 // import Footer from "../Footer/footer";
 
 
-
 function Home(){
     
     const [counter, setCounter] = useState(0);
@@ -93,28 +92,58 @@ function Home(){
                     <img src={Group2}  alt="Group2" className="Group2" />
                 </div>
 
-                <div id='Homelogo' className='Homelogo'>
+                {/* <div id='Homelogo' className='Homelogo row'>
                     <div >
-                     <div className="logo">
+                     <div className="logo col-3 col-lg-2">
                         <img src={LogoIpsum}  alt="LogoIpsum" className="LogoIpsum" />
                     </div>                  
                     </div>
                      <div >
-                        <div className="logo">
+                        <div className="logo col-3 col-lg-6">
                          <img src={LogoIpsum2}  alt="LogoIpsum4" className="LogoIpsum4" />
                         </div>                   
                     </div>
                     <div >
-                        <div className="logo">
+                        <div className="logo col-3 col-lg-6">
                          <img src={LogoIpsum3}  alt="LogoIpsum3" className="LogoIpsum3" />
                          </div>                   
                     </div>
                      <div >
-                         <div className="logo">
+                         <div className="logo col-3 col-lg-6">
                          <img src={LogoIpsum4}  alt="LogoIpsum4" className="LogoIpsum4" />
                         </div>                 
                     </div>
-                </div>
+                </div> */}
+                <div id="Homelogo" className="Homelogo row">
+  {/* İlk logo */}
+  <div className="col-12 col-md-6 col-lg-3 mb-3">
+    <div className="logo">
+      <img src={LogoIpsum} alt="LogoIpsum" className="LogoIpsum img-fluid" />
+    </div>
+  </div>
+
+  {/* İkinci logo */}
+  <div className="col-12 col-md-6 col-lg-3 mb-3">
+    <div className="logo">
+      <img src={LogoIpsum2} alt="LogoIpsum2" className="LogoIpsum2 img-fluid" />
+    </div>
+  </div>
+
+  {/* Üçüncü logo */}
+  <div className="col-12 col-md-6 col-lg-3 mb-3">
+    <div className="logo">
+      <img src={LogoIpsum3} alt="LogoIpsum3" className="LogoIpsum3 img-fluid" />
+
+    </div>
+  </div>
+
+  {/* Dördüncü logo */}
+  <div className="col-12 col-md-6 col-lg-3 mb-3">
+    <div className="logo">
+      <img src={LogoIpsum4} alt="LogoIpsum4" className="LogoIpsum4 img-fluid" />
+    </div>
+  </div>
+</div>
 
                 <div id='HomeGroup' className='HomeGroup' style={{height:"365px"}}>
 
