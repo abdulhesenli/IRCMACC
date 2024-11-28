@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom';
-import About from './components/About/About.jsx';
 import Footer from "./components/Footer/Footer.jsx"
 import Telimler from "./components/Telimler/Telimler.jsx"
 import Telimciler from './components/Telimciler/Telimciler.jsx';
@@ -17,6 +16,8 @@ import {setLoading} from "./store/Slice/ui.js";
 import Topheader from './components/Topheader/Topheader.jsx';
 import Header from './components/Header.jsx';
 import Home from './components/home/Home.jsx';
+import About from './components/About/About.jsx'
+
 
 
 function App() {
@@ -42,6 +43,7 @@ console.log('Loading state:', loading);
                  </div>
                  <div  id='topheader' style={{backgroundColor:'#009ADE', borderRadius:'0 0 20px 20px'}}>
                     <Header/>
+                   
                 </div>
 
            
