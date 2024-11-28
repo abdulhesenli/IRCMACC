@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'tailwindcss/components';
 // import 'tailwindcss/utilities';
 import { Routes, Route } from 'react-router-dom';
-import Footer from "./components/Footer/Footer.jsx"
+// import Footer from "./components/Footer/Footer.jsx"
+import Footer from './components/Footer/Footer.jsx'
 import Telimler from "./components/Telimler/Telimler.jsx"
 import Telimciler from './components/Telimciler/Telimciler.jsx';
 import Media from './components/Media/Media.jsx';
@@ -65,6 +66,9 @@ console.log('Loading state:', loading);
               </Routes>
            
               <Footer/>
+
+  
+            
           </div>
       </>
 
