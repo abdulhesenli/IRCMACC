@@ -30,12 +30,11 @@ function NewsCard(){
 
 
                        <div className="Newstext">
-                        <h6 className="Newtext">Xəbər / 17.04.24</h6>
+                          <h6 className="Newtext">Xəbər / 17.04.24</h6>
 
-                            <div style={{display:'flex', alignItems:'center'}}>
-                            <a href="#" className="NewsContinue">
-                                <span className="Newstext2" >Ətraflı</span>
-                                <span><img src={ArrowIcon} alt="ArrowIcon" id='Newsicon' style={{ marginLeft: "83px", marginTop: "12px" }} /></span>
+                            <div>
+                            <a href="#" className="ctaa"><span>Ətraflı oxu</span>
+                             <img src={ArrowIcon} alt="ArrowIcon"  />
                             </a>
                             </div>
                         </div>
@@ -54,11 +53,9 @@ function NewsCard(){
                     dolor mi blandit ligula, id tristique dui elit et sem.</p>
                     <div className="Newstext">
                         <h6 className="Newtext">Xəbər / 17.04.24</h6>
-
-                            <div style={{display:'flex', alignItems:'center'}}>
-                            <a href="#" className="NewsContinue">
-                                <span className="Newstext2" >Ətraflı</span>
-                                <span><img src={ArrowIcon} alt="ArrowIcon" id='Newsicon' style={{ marginLeft: "83px", marginTop: "12px" }} /></span>
+                        <div>
+                            <a href="#" className="ctaa"><span>Ətraflı oxu</span>
+                             <img src={ArrowIcon} alt="ArrowIcon"  />
                             </a>
                             </div>
                         </div>
@@ -76,11 +73,9 @@ function NewsCard(){
                 dolor mi blandit ligula, id tristique dui elit et sem.</p>
                        <div className="Newstext">
                            <h6 className="Newtext">Xəbər / 17.04.24</h6>
-
-                            <div style={{display:'flex', alignItems:'center'}}>
-                            <a href="#" className="NewsContinue">
-                                <span className="Newstext2" >Ətraflı</span>
-                                <span><img src={ArrowIcon} alt="ArrowIcon" id='Newsicon' style={{ marginLeft: "83px", marginTop: "12px" }} /></span>
+                           <div>
+                            <a href="#" className="ctaa"><span>Ətraflı oxu</span>
+                             <img src={ArrowIcon} alt="ArrowIcon"  />
                             </a>
                             </div>
                         </div>

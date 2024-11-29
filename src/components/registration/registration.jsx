@@ -6,7 +6,7 @@ import RightIcon from '../../assets/registright.svg'
 
 function Registration() {
     return (
-        <div style={{marginTop:'170px'}}>
+        <div style={{marginTop:'80px'}}>
             <div className='register'>
                 <div id='register'>
 

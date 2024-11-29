@@ -20,7 +20,7 @@
     .TopHeader {
          /* Elemanları dikey hizala */
         align-items: center;    /* Ortala */
-        padding: 10px 20px;     /* Sağ-sol boşlukları küçült */
+         /* padding: 10px 20px; */
       }
     
       .topheader-text {
@@ -206,10 +206,7 @@
         padding: 0 5px;
     }
 
-    .insidenews-text {
-        width: 100%;
-        padding: 0 5px;
-    }
+
 
     .ContactSosial {
         width: 60px;
@@ -424,10 +421,6 @@
         padding: 0 10px;
     }
 
-    .insidenews-text {
-        width: 100%;
-        padding: 0 10px;
-    }
 
     .ContactSosial {
         width: 80px;
@@ -1144,10 +1137,7 @@ iframe.map {
         padding: 0 5px;
     }
 
-    .insidenews-text {
-        width: 100%;
-        padding: 0 5px;
-    }
+   
 
     .ContactSosial {
         width: 60px;
@@ -1286,6 +1276,39 @@ iframe.map {
 
     
     
+}
+
+.MainCarousel {
+    max-width: 315px !important;
+    height: 360px;
+    left: 50px !important;
+}
+.ContactSosial{
+    display: none !important;
+}
+
+.insidenews-title{
+    max-width: 920px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500 !important;
+    font-size: 22px  !important;
+    color: var(--titlecolor);
+    text-align: justify !important;
+    margin-top: 70px;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+.insidenews-text{
+  
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px !important;
+    color: #009ADE;
+    text-align: justify !important;
+    margin-top: 20px;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
 }
 
 }

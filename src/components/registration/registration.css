@@ -13,6 +13,8 @@
     background-color: #F0F6F9;
     margin-top: 80px;
     background-image: url(../../assets/registerban.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 

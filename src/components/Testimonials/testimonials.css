@@ -40,7 +40,7 @@
     margin-bottom: 0;
 }
 .TestimonialsText{
-    /* width: 638px; */
+    max-width: 638px;
     /* height: 34px; */
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -50,6 +50,7 @@
     text-align: center;
     padding-top: 24px;
     margin-bottom: 30px;
+    margin: auto;
   
       
 }
@@ -68,7 +69,7 @@
 .TestimonialsCardText{
     margin: auto;
     width: 289px;
-    padding-top: 37px;
+    padding-top: 24px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -132,14 +133,14 @@
 }
 .ArrowCircleRight{
     position: absolute;
-    top: 320px;
-    right: 65px;
+    top: 120px;
+    right: 0px;
  
 }
 .ArrowCircleLeft{
     position: absolute;
-    top: 320px;
-    left: 65px;
+    top: 120px;
+    left: 0px;
  
 }
 

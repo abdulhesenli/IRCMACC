@@ -17,6 +17,9 @@ import Topheader from './components/Topheader/Topheader.jsx';
 import Header from './components/Header.jsx';
 import Home from './components/home/Home.jsx';
 import About from './components/About/About.jsx'
+import Telimcidaxili from './components/Telimcidaxili/Telimcidaxili.jsx'
+import Telimdaxili from './components/Telimler daxili/Telimdaxili.jsx'
+
 
 
 
@@ -58,6 +61,7 @@ console.log('Loading state:', loading);
                   <Route path="/Questions" element={<Questions/>}/>
                   <Route path="/Mission" element={<Mission/>}/>
                   <Route path="/NewsPage" element={<NewsPage/>}/>
+                  <Route path="/Telimdaxili" element={<Telimdaxili/>}/>
                   <Route path="*" element={<Error/>}/>
               </Routes>
            

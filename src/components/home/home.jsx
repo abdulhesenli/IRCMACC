@@ -4,8 +4,8 @@ import "../../header.css"
 import '../../res.css'
 import './home.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Rectangle from '../../assets/Rectangle.png'
-import Image from '../../assets/image.svg'
+import Rectangle from '../../assets/doctors.jpeg'
+// import Image from '../../assets/image.svg'
 import LogoIpsum from '../../assets/image1.svg'
 import LogoIpsum2 from '../../assets/image2.svg'
 import LogoIpsum3 from '../../assets/image3.svg'
@@ -19,9 +19,11 @@ import Training from "../training/Training";
 import Registration from "../registration/Registration";
 import Testimonials from "../Testimonials/Testimonials";
 import News from "../News/News";
+import InsideNews from '../İnsideNews/Insidenews';
 // import NewsPage from "../NewsPage/newspage";
 // import Questions from "../Questions/questions";
 // import Footer from "../Footer/footer";
+
 
 
 function Home(){
@@ -47,18 +49,26 @@ function Home(){
          
 
             <div id="home">
+              <div style={{width:"100%",position:"relative"}} className=''>
+              <img id="Rec_img" src={Rectangle}  alt="Rectangle" className="Rectangle" />
+              <div className="group2">
+            
+               <img src={Group2}  alt="Group2" className="Group2" />
+                 </div>
 
-                <img id="Rec_img" src={Rectangle}  alt="Rectangle" className="Rectangle" />
-             <svg id="vector_1" className='svg' height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+              </div>
+
+                {/* <img id="Rec_img" src={Rectangle}  alt="Rectangle" className="Rectangle" /> */}
+             {/* <svg id="vector_1" className='svg' height="200" width="200" xmlns="http://www.w3.org/2000/svg">
                 <circle r="83" cx="83" cy="14" fill="#0074a75c" />
-             </svg> 
+             </svg>  */}
              {/* <svg id="vector_2" height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
                 <circle r="83" cx="83" cy="14" fill="#0074a75c" />
                 </svg>  */}
-                <svg id="vector_3" className='svg' clipPath="flat-bottom" height="200" width="200"xmlns="http://www.w3.org/2000/svg" >
+                {/* <svg id="vector_3" className='svg' clipPath="flat-bottom" height="200" width="200"xmlns="http://www.w3.org/2000/svg" >
                 <circle r="83" cx="83" cy="14" fill="#0074a75c" />
-             </svg> 
-                <div>
+             </svg>  */}
+                {/* <div>
                 <img id="image" src={Image}  alt="Vector" className="Vector" />
 
                 <svg id="vector_4" className='svg' height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
@@ -73,9 +83,9 @@ function Home(){
                     <svg id="vector_5" className='svg' height="200" width="200" xmlns="http://www.w3.org/2000/svg" >
                     <circle r="83" cx="83" cy="14" fill="#03466429" />
                     </svg> 
-                </div>
+                </div> */}
                 
-                <div>
+                {/* <div>
                    <h1 className="text-h">Beynəlxalq
                         Tibb Tədqiqatları
                         və Təlim Mərkəzi
@@ -85,65 +95,36 @@ function Home(){
 
                    
 
-                </div>
+                </div> */}
 
-                <div className="group2">
+                {/* <div className="group2">
             
                     <img src={Group2}  alt="Group2" className="Group2" />
-                </div>
+                </div> */}
 
-                {/* <div id='Homelogo' className='Homelogo row'>
-                    <div >
-                     <div className="logo col-3 col-lg-2">
+                 <div id='Homelogo' className='Homelogo row'>
+                   
+                     <div className="logo">
                         <img src={LogoIpsum}  alt="LogoIpsum" className="LogoIpsum" />
                     </div>                  
-                    </div>
-                     <div >
-                        <div className="logo col-3 col-lg-6">
+                   
+                  
+                        <div className="logo">
                          <img src={LogoIpsum2}  alt="LogoIpsum4" className="LogoIpsum4" />
-                        </div>                   
+                                     
                     </div>
-                    <div >
-                        <div className="logo col-3 col-lg-6">
+                   
+                        <div className="logo">
                          <img src={LogoIpsum3}  alt="LogoIpsum3" className="LogoIpsum3" />
                          </div>                   
-                    </div>
-                     <div >
-                         <div className="logo col-3 col-lg-6">
+                   
+                    
+                         <div className="logo">
                          <img src={LogoIpsum4}  alt="LogoIpsum4" className="LogoIpsum4" />
                         </div>                 
-                    </div>
-                </div> */}
-                <div id="Homelogo" className="Homelogo row">
-  {/* İlk logo */}
-  <div className="col-12 col-md-6 col-lg-3 mb-3">
-    <div className="logo">
-      <img src={LogoIpsum} alt="LogoIpsum" className="LogoIpsum img-fluid" />
-    </div>
-  </div>
+                   
+                </div>
 
-  {/* İkinci logo */}
-  <div className="col-12 col-md-6 col-lg-3 mb-3">
-    <div className="logo">
-      <img src={LogoIpsum2} alt="LogoIpsum2" className="LogoIpsum2 img-fluid" />
-    </div>
-  </div>
-
-  {/* Üçüncü logo */}
-  <div className="col-12 col-md-6 col-lg-3 mb-3">
-    <div className="logo">
-      <img src={LogoIpsum3} alt="LogoIpsum3" className="LogoIpsum3 img-fluid" />
-
-    </div>
-  </div>
-
-  {/* Dördüncü logo */}
-  <div className="col-12 col-md-6 col-lg-3 mb-3">
-    <div className="logo">
-      <img src={LogoIpsum4} alt="LogoIpsum4" className="LogoIpsum4 img-fluid" />
-    </div>
-  </div>
-</div>
 
                 <div id='HomeGroup' className='HomeGroup' style={{height:"365px"}}>
 
@@ -229,6 +210,8 @@ function Home(){
             <Registration/>
             <Testimonials/>
             <News/> 
+            <InsideNews/>
+            {/* <NewsPage/> */}
 
             {/* <Questions/> */}
             

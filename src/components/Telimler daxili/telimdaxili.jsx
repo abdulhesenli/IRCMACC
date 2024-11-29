@@ -15,9 +15,9 @@ function TelimDaxili (){
                
             </div>
 
-            <table id='table' style={{borderRadius:'10px'}}>
+            <table id='table'>
                 <tr>
-                    <td style={{width:'212px', backgroundColor:'#F0F6F9'}}>1-ci gün</td>
+                    <td style={{width:'212px', backgroundColor:'#F0F6F9', borderRadius:"20px 0 0 0 "}}>1-ci gün</td>
                     <td style={{width:'802px'}}>Xüsusi təlim qutularında laparoskopik cərrahi bacarıqların təlimi</td>
                     <td>1-ci gün</td>
                 </tr>
@@ -47,6 +47,8 @@ function TelimDaxili (){
                     <td>5-ci gün</td>
                 </tr>
             </table>
+
+            
 
 
 

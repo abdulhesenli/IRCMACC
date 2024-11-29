@@ -20,7 +20,7 @@
 }
 
 .insidenews-title{
-    width: 920px;
+    max-width: 920px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 32px;
@@ -30,7 +30,7 @@
 }
 
 .insidenews-text{
-    width: 1156px;
+    max-width: 1156px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -40,8 +40,12 @@
 }
 .InsideImage{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 920px;
     margin: auto;
+    margin-top: 50px;
+    
 
 }
 .ContactIcon{
@@ -58,7 +62,7 @@
     border: 1px solid #C5CEE0;
     border-radius: 20px;
     margin-left: 100px;
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 .sosialtext{
     font-family: "Montserrat", sans-serif;

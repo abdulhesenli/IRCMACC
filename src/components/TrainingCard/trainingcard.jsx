@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './trainingcard.css'
 import '../../res.css'
 import ArrowIcon from '../../assets/Icon-right.svg'
+
+
 // import ArrowIconwhite from '../../assets/arrow-right.svg'
 // import {useGetEducationQuery} from "../../store/Api/education.js";
 // import Loading from "../Ui/Loading.jsx";
@@ -80,11 +82,11 @@ function TrainingCard() {
                         <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
 
                         <div className="Traningtext">
-
-                            <a href="#" className="Continue">
-                                <span className="Trainingtext2" >Ətraflı</span>
-                                <span><img src={ArrowIcon} alt="ArrowIcon" id='traniningicon' style={{ marginLeft: "83px", marginTop: "12px" }} /></span>
+                            <a href="#" className="cta"><span>Ətraflı oxu</span>
+                            <img src={ArrowIcon} alt="ArrowIcon" />
+                             
                             </a>
+
                         </div>
 
 
@@ -98,10 +100,9 @@ function TrainingCard() {
                             Əsasları</h2>
                         <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
                         <div className="Traningtext">
-
-                            <a href="#" className="Continue">
-                                <span className="Trainingtext2" >Ətraflı</span>
-                                <span><img src={ArrowIcon} alt="ArrowIcon" id='traniningicon' style={{ marginLeft: "83px", marginTop: "12px" }} /></span>
+                             <a href="#" className="cta"><span>Ətraflı oxu</span>
+                             <img src={ArrowIcon} alt="ArrowIcon"  />
+                       
                             </a>
                         </div>
 
@@ -117,28 +118,12 @@ function TrainingCard() {
                             Əsasları</h2>
                         <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
                         <div className="Traningtext">
-
-                            <a href="#" className="Continue">
-                                <span className="Trainingtext2" >Ətraflı</span>
-                                <span><img src={ArrowIcon} alt="ArrowIcon" id='traniningicon' style={{ marginLeft: "83px", marginTop: "12px" }} /></span>
-                            </a>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-                <div className="col-12 col-sm-6 col-lg-4"  >
-                    <div className="Trainingcard">
-                        <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-2'>Cərrahi Bacarıqların <br />
-                            Əsasları</h2>
-                        <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
-                        <div className="Traningtext">
-
-                            <a href="#" className="Continue">
-                                <span className="Trainingtext2" >Ətraflı</span>
-                                <span><img src={ArrowIcon} alt="ArrowIcon" id='traniningicon' style={{ marginLeft: "83px", marginTop: "12px" }} /></span>
+                        <a href="#" className="cta"><span>Ətraflı oxu</span>
+                        <img src={ArrowIcon} alt="ArrowIcon"  />
+                            {/* <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5" />
+                                <polyline points="8 1 12 5 8 9" />
+                            </svg> */}
                             </a>
                         </div>
 
@@ -153,10 +138,12 @@ function TrainingCard() {
                             Əsasları</h2>
                         <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
                         <div className="Traningtext">
-
-                            <a href="#" className="Continue">
-                                <span className="Trainingtext2" >Ətraflı</span>
-                                <span><img src={ArrowIcon} alt="ArrowIcon" id='traniningicon' style={{ marginLeft: "83px", marginTop: "12px" }} /></span>
+                        <a href="#" className="cta"><span>Ətraflı oxu</span>
+                        <img src={ArrowIcon} alt="ArrowIcon"  />
+                            {/* <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5" />
+                                <polyline points="8 1 12 5 8 9" />
+                            </svg> */}
                             </a>
                         </div>
 
@@ -171,10 +158,32 @@ function TrainingCard() {
                             Əsasları</h2>
                         <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
                         <div className="Traningtext">
+                        <a href="#" className="cta"><span>Ətraflı oxu</span>
+                        <img src={ArrowIcon} alt="ArrowIcon" />
+                            {/* <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5" />
+                                <polyline points="8 1 12 5 8 9" />
+                            </svg> */}
+                            </a>
+                        </div>
 
-                            <a href="#" className="Continue">
-                                <span className="Trainingtext2" >Ətraflı</span>
-                                <span><img src={ArrowIcon} alt="ArrowIcon" id='traniningicon' style={{ marginLeft: "83px", marginTop: "12px" }} /></span>
+
+
+
+                    </div>
+                </div>
+                <div className="col-12 col-sm-6 col-lg-4"  >
+                    <div className="Trainingcard">
+                        <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-2'>Cərrahi Bacarıqların <br />
+                            Əsasları</h2>
+                        <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
+                        <div className="Traningtext">
+                        <a href="#" className="cta"><span>Ətraflı oxu</span>
+                        <img src={ArrowIcon} alt="ArrowIcon" />
+                            {/* <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5" />
+                                <polyline points="8 1 12 5 8 9" />
+                            </svg> */}
                             </a>
                         </div>
 

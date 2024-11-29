@@ -1,13 +1,14 @@
 import './insidenews.css'
 import News from '../News/News'
 
-import NewsImage from '../../assets/newsimage.svg'
-import ArrorRight from '../../assets/arrow-circle-right.svg'
-import ArrorLeft from '../../assets/arrow-circle-left.svg'
+// import NewsImage from '../../assets/newsimage.svg'
+// import ArrorRight from '../../assets/arrow-circle-right.svg'
+// import ArrorLeft from '../../assets/arrow-circle-left.svg'
 import Newsfacebook from '../../assets/Newsfacebook.svg';
 import Newsinstagram from '../../assets/Newsinstagram.svg';
 import Newslinkedin from '../../assets/Newslinkedin.svg';
 import Newssubtract from '../../assets/NewsSubtract.svg';
+import NewsCarousel from '../NewsCarousel/NewsCarousel'
 
 
 
@@ -25,9 +26,10 @@ function InsideNews (){
                 </p>
             </div>
 
-            <div>
-                <div className='InsideImage'>
-                <img src={NewsImage} alt="NewsImage" />
+            <div className='InsideImage'>
+              
+                    <NewsCarousel/>
+             
                 <div className='ContactSosial'>
                     <h1 className='sosialtext'>Paylaş</h1>
                     <ul>
@@ -36,11 +38,6 @@ function InsideNews (){
                         <li> <a href="#"><img src={Newslinkedin} alt="Newslinkedin" /></a></li>
                         <li> <a href="#"><img src={Newssubtract} alt="Newssubtract" /></a></li>
                     </ul>
-                </div>
-                </div>
-                <div className='ContactIcon'>
-                <a href="#"><img src={ArrorLeft} alt="ArrorLeft" /></a>
-                <a href="#"><img src={ArrorRight} alt="ArrorRight" /></a>
                 </div>
                
 

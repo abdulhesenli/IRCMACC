@@ -60,7 +60,9 @@
     border-radius: 20px !important;
     margin: auto;
     margin-top: 50px;
-    
+    /* caption-side: bottom;
+    border-collapse: collapse;
+     */
 }
 
 tr,td{

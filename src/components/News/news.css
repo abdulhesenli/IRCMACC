@@ -39,7 +39,8 @@
 }
 .News-hr{
     width: 1107px;
-    border: 1px solid #B4C1D9;
+    opacity: 1;
+    color: #B4C1D9;
 
 }
 
@@ -48,5 +49,6 @@
     height: 45px;
     position: relative;
     border-radius: 50px;
+    border: 1px solid #B4C1D9;
 }
 

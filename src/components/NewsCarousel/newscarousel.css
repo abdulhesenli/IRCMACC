@@ -1,0 +1,52 @@
+/* Main container */
+.MainCarousel{
+    max-width: 800px;
+    height: 360px;
+}
+.carousel {
+    /* max-width: 600px; */
+    height: 360px;
+    box-shadow: 3px 4px 9px gray;
+    /* margin-top: 50px; */
+    /* margin: 50px auto 0; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border-radius: 20px;
+  }
+  
+  /* Slides */
+  .slide {
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    transition: all 1.9s ease;
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  .slide.active {
+    position: absolute;
+    opacity: 1;
+    transform: translateX(0%);
+    left: 0% !important;
+  }
+  
+  /* Buttons */
+  .navigation {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .navigation button {
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+.ContactIcon button{
+    border: none;
+    border-radius: 50%;
+    background: none;
+    margin-left: 20px;
+}
+
+

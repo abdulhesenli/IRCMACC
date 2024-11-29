@@ -11,7 +11,7 @@ function Error (){
             <p className='errortext'>Səhifəni tapmaqda çətinlik çəkirik. <br />
             Daha sonra yenidən cəhd edin və ya şəbəkə bağlantınızı yoxlayın.
             </p>
-            <Link to="/" >  <button className='errorbtn'>Əsas səhifə <img src={ArrowError} alt="ArrowError" className='ArrowError' /> </button> </Link>
+            <Link style={{textDecoration:"none"}} to="/" >  <button className='errorbtn'>Əsas səhifə <img src={ArrowError} alt="ArrowError" className='ArrowError' /> </button> </Link>
 
         </div>
     )

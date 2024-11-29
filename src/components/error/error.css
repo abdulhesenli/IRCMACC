@@ -17,12 +17,15 @@
     margin-top: 70px;
 
 }
+.ArrowError{
+    margin-left: 10px;
+}
 
 .Error404{
     object-fit: cover;
     margin: auto;
     display: block;
-    margin-top: 130px;
+    margin-top: 80px;
 }
 .errortext{
     font-family: "Montserrat", sans-serif;
@@ -42,5 +45,6 @@
     color: #ffffff;
     border: none;
     position: relative;
-    margin-top: 120px;
+    margin-top: 20px;
+    text-decoration: none;
 }

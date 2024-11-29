@@ -54,10 +54,14 @@
   font-size: 14px;
   line-height: 21px;
   color: #5B748D;
+  
 }
-.accordion-button:hover .accordion-item{
+
+/* .accordion-button:hover .accordion-item{
   border: 1px solid red !important;
-}
+  background-color: #009ADE !important;
+  color: white;
+} */
 .accordion-button::after {
   content: none; 
 }
@@ -71,22 +75,25 @@
   
 }
  .accordion-button:not(.collapsed) .accordion-item {
-   border: 2px solid #009ADE !important; 
+   border: 1px solid #009ADE !important; 
+   background-color: #009ADE;
 }
 
-.accordion-item > .accordion-collapse.show {
+/* .accordion-item > .accordion-collapse.show {
 
   border-left:1px solid #009ADE!important ;
   border-right:1px solid #009ADE!important ;
   border-bottom:1px solid #009ADE !important;
   border-radius: 0 0 20px 20px !important;
-}
 
+} */
+/* 
 .accordion-button:not(.collapsed) {
 
   border-top:1px solid #009ADE !important;
   border-left:1px solid #009ADE!important ;
   border-right:1px solid #009ADE!important ;
   border-radius: 20px 20px 0 0  !important;
-}
+
+} */
 

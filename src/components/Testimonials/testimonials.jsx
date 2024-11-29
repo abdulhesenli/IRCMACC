@@ -111,28 +111,28 @@ function Testimonials() {
     {
       name: 'Name Surname',
       title: 'Student',
-      text: 'Lorem Ipsum is sim',
+      text: 'loe industry standard dummy text ever sintype and scrambled it to make a type specimen book.',
     },
     {
       name: 'Name Surname',
       title: 'Student',
-      text: 'Lorem Ipsum is since the 1500s.since the 1500s.'
+      text: 'ndustry standard dummy text ever since the 1500s, when an unknown ed it to make a type specimen book.',
     },
 
     {
       name: 'Name Surname',
       title: 'Student',
-      text: 'industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+      text: 'lorem Ipsum ithe 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     },
     {
       name: 'Name Surname',
       title: 'Student',
-      text: 'has been the industrys standard dummy text ever since the 1500s.',
+      text: 'lorem Ipsum is simply  Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     },
     {
       name: 'Name Surname',
       title: 'Student',
-      text: 'orem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+      text: 'lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     },
   ];
 
@@ -183,10 +183,7 @@ function Testimonials() {
           <h6 className="CardTitle">{testimonials[(currentIndex + 2) % testimonials.length].name}</h6>
           <h6 className="CardText">{testimonials[(currentIndex + 2) % testimonials.length].title}</h6>
         </div>
-      </div>
-
-      {/* Sağ ve Sol Oklar */}
-      <div className="carousel-controls">
+        <div className="carousel-controls">
         <a href="#" onClick={(e) => { e.preventDefault(); handlePrev(); }}>
           <img src={ArrowCircleLeft} alt="ArrowCircleLeft" className="ArrowCircleLeft" />
         </a>
@@ -194,6 +191,17 @@ function Testimonials() {
           <img src={ArrowCircleRight} alt="ArrowCircleRight" className="ArrowCircleRight" />
         </a>
       </div>
+      </div>
+
+      {/* Sağ ve Sol Oklar */}
+      {/* <div className="carousel-controls">
+        <a href="#" onClick={(e) => { e.preventDefault(); handlePrev(); }}>
+          <img src={ArrowCircleLeft} alt="ArrowCircleLeft" className="ArrowCircleLeft" />
+        </a>
+        <a href="#" onClick={(e) => { e.preventDefault(); handleNext(); }}>
+          <img src={ArrowCircleRight} alt="ArrowCircleRight" className="ArrowCircleRight" />
+        </a>
+      </div> */}
 
       <img src={RedCircle} alt="RedCircle" className="RedCircle" />
       <img src={WhiteComma} alt="WhiteComma" className="WhiteComma" />

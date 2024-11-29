@@ -10,6 +10,7 @@ import {useTranslation} from "react-i18next";
 
 
 
+
 function Header() {
     const {t} = useTranslation();
 
@@ -34,8 +35,8 @@ function Header() {
 
                                 <Link className="nav nav-link" >HAQQIMIZDA</Link>
                                 <div className="dropdown-content dropdown-menu dropdown-menu-white">
-                                    <Link className="nav " to="/about">Rəhbərin Müraciəti</Link>
-                                    <Link className="nav " to="/Questions">Ən çox verilən suallar</Link>
+                                    <Link className=" dropdown-item nav " to="/about">Rəhbərin Müraciəti</Link>
+                                    <Link className=" dropdown-item nav " to="/Questions">Ən çox verilən suallar</Link>
                                     <Link className="dropdown-item   nav " to="/Mission">Missiya və Dəyərlər</Link>
                              
                                 </div>
@@ -50,9 +51,11 @@ function Header() {
                                 <Link className="nav nav-link" to="/Telimciler">TƏLİMÇİLƏR</Link>
                             </li>
                             <li className=" dropdown dropdown-2 nav-item">
-                                <Link className="nav nav-link" to="/Media">MEDİA MƏRKƏZİ</Link>
+                                <Link className="nav nav-link">MEDİA MƏRKƏZİ</Link>
                                 <div className="dropdown-content dropdown-menu dropdown-menu-white">
-                                    <Link className="nav " to="/NewsPage">Xəbərlər</Link>
+                                    <Link className="nav " to="/Media">KİV</Link>
+                                    <Link className="nav " to="/Telimdaxili">Xəbərlər</Link>
+                                    
                          
                                 </div>
 

@@ -22,11 +22,13 @@ background-color: #009ADE;
 }
 .Trainingcard:hover h2,
 .Trainingcard:hover p,
-.Traningtext a:hover {
-    color: #ffffff; /* Beyaz renk */
+.Traningtext :hover span{
+    color: #ffffff ; /* Beyaz renk */
 }
 
-
+.Traningtext{
+    margin-left: 36px;
+}
 
 .Trainingcard h2 {
     max-width: 367px;
@@ -36,9 +38,8 @@ background-color: #009ADE;
     font-weight: 500;
     font-size: 24px;
     color: #003B71;
-    padding-top: 35px;
-    /* padding-bottom: 10px; */
-    margin-bottom: 55px;
+    padding-top: 30px;
+    margin-bottom: 24px;
 }
 
 
@@ -52,6 +53,7 @@ background-color: #009ADE;
     text-align: center;
     color: #003B71;
     text-align: left;
+    margin-bottom: 0 !important;
     
 }
 
@@ -77,22 +79,7 @@ background-color: #009ADE;
 
 
 
-.Continue{
-    position: absolute;
-    left: 50px;
-    /* top: 2px; */
-    max-width: 40px;
-    height: 40px;
-    background-color: #009ADE; /* Soluk yeşil */
-    /* color: #5B748D !important; */
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    opacity: 20%;
-    text-decoration: none;
-    border-radius: 50%; /* Daire şekli */
-    transition: all 0.4s ease; /* Tüm değişiklikler için geçiş süresi */
-}
+
 .Trainingtext2{
     position: absolute;
     top: 7px;
@@ -103,25 +90,81 @@ background-color: #009ADE;
     font-size: 16px;
 }
 
-.Continue:hover{
-    max-width: 134px;
-    left: 50px;
-    border-radius: 50px; /* Tam buton şekline geçiş */
-    background-color: #002D74; /* Yeşil */
-    justify-content: space-between; /* Metin ve ok simgesini ayırır */
-    opacity: 100%;
-    color: #ffffff;
-}
 
-.Continue:hover.Trainingtext2 {
-    /* left: 29px; */
-    color: #ffffff;
-}
 
-.Continue:hover #traniningicon{
+
+  .Trainingcard:hover .cta img  {
+    filter: brightness(0) invert(1); /* İkonu beyaza çevirir */
+    transition: all 0.3s ease; /* Animasyon */
+  }
+  .Trainingcard:hover .cta span  {
+    filter: brightness(0) invert(1); /* İkonu beyaza çevirir */
+    transition: all 0.3s ease; /* Animasyon */
+  }
+
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 9px 19px;
+    transition: all 0.2s ease;
+    top: 36px;
+  }
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    opacity: 20%;
+    background: #009ADE;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+  }
+  .cta span {
+      position: relative;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      /* color: #1a2d62; */
+      font-weight: 400;
+        color: #5B748D;
+      font-weight: 500;
+      /* text-transform: uppercase; */
+  }
+  .cta img {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #9ed815;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .cta:hover:before {
+    width: 100%;
+    background: #002D74;
+    opacity: 1;
+  }
+  .cta:hover img {
+    transform: translateX(0);
+  }
+  .cta:active {
+    transform: scale(0.96);
+  }
+  .cta:hover span{color:#fff;}
+  .cta:hover img{
     content: url(../../assets/arrow-right.svg);
-    margin-top: 7.5px !important;
-}
-
+    position: relative;
+    top: 0;
+    /* margin-left: 10px; */
+    /* color: red !important; */
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
 
 
