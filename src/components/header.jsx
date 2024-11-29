@@ -54,7 +54,7 @@ function Header() {
                                 <Link className="nav nav-link">MEDİA MƏRKƏZİ</Link>
                                 <div className="dropdown-content dropdown-menu dropdown-menu-white">
                                     <Link className="nav " to="/Media">KİV</Link>
-                                    <Link className="nav " to="/Telimdaxili">Xəbərlər</Link>
+                                    <Link className="nav " to="/NewsPage">Xəbərlər</Link>
                                     
                          
                                 </div>
