@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import irtmac from '../assets/Irtmac.svg'
 import {Link} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
+// import Home from './home/Home';
 // import {useState} from "react";
 
 
@@ -21,15 +22,12 @@ function Header() {
            
 
 
-            <div className=" header-nav">
-                    <div>
-                    <Link to="/"><img src={irtmac} alt="Irtmac" className="irtmac" style={{width:'150px'}}/></Link>
-              
-                    </div>
+                <div className="header-nav">
+                    <div> <Link to="/"><img src={irtmac} alt="Irtmac" className="irtmac" style={{width:'150px'}}/></Link></div>
                     <div id="navbar">
-                    <ul >
+                        <ul>
                             <li className="nav-item">
-                                <Link className=" nav nav-link" to="/">ANA SƏHİFƏ</Link>
+                                <Link className=" nav nav-link" to="/"> {t('home')} </Link>
                             </li>
                             <li className=" dropdown dropdown-2 nav-item" id='about'>
 
@@ -75,8 +73,7 @@ function Header() {
                         <button className="btn-2 btn btn-dark" type="submit">{t('register')}</button>
 
                     </div>
-               
-            </div>
+                </div>
          
 
 

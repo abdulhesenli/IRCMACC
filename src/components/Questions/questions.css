@@ -79,6 +79,11 @@
    background-color: #009ADE;
 }
 
+.collapse{
+
+  visibility: visible !important;
+}
+
 /* .accordion-item > .accordion-collapse.show {
 
   border-left:1px solid #009ADE!important ;

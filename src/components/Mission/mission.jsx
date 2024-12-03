@@ -11,7 +11,7 @@ function Mission (){
             </div>
 
 
-             <div className=" Mission_Card row" style={{marginTop:"40px", marginLeft:"-13px"}}>
+             <div className=" Mission_Card row">
              <div className="col-12 col-sm-6 col-lg-4">
                 <div className="MissionCard">
                     {/* <img src={Doctor1} alt="Doctor1" className="Doctor1" style={{borderRadius:"19px"}} /> */}

@@ -5,8 +5,9 @@ import { CiSearch } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import irtmacc from '../../assets/Irtmac.svg';
-import { useTranslation } from "react-i18next";
+import { useTranslation  } from "react-i18next";
 import { GiHamburgerMenu } from "react-icons/gi";
+
 
 function Topheader() {
     const { i18n } = useTranslation();
@@ -46,9 +47,14 @@ function Topheader() {
     return (
         <div>
             <div className="TopHeader">
-                <h1 className="topheader-text">
+                {i18n.language==="ru"? <h1 className="topheader-text textru">
+                    INTERNATIONAL 
+                </h1>: <h1 className="topheader-text">
                     INTERNATIONAL RESEARCH TRAINING MEDICAL ASSEMBLY CENTER
-                </h1>
+                </h1>}
+                {/* <h1 className="topheader-text">
+                    INTERNATIONAL RESEARCH TRAINING MEDICAL ASSEMBLY CENTER
+                </h1> */}
                 <Link to="/">
                     <img src={irtmacc} alt="Irtmac" className="irtmac" style={{ width: '150px', display: 'none' }} />
                 </Link>
@@ -58,7 +64,7 @@ function Topheader() {
                         <CiSearch className="SearchIcon" />
                     </div>
                     <div className="vl"></div>
-                    <select onChange={handleChange}>
+                    <select onChange={handleChange} defaultValue={i18n.language} >
                         <option value="az">AZ</option>
                         <option value="en">EN</option>
                         <option value="ru">RU</option>

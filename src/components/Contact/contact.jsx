@@ -25,7 +25,11 @@ function Contact (){
 
                 <div className="form-group">
                 <textarea name="textarea" id="textarea" placeholder='Mesajınız'></textarea>
+                <div  className='d-flex justify-content-end contactBtn' style={{maxWidth:"448px"}} >
                 <button type="submit" className='ContactBtn'>Göndər <img src={Send} alt="Send" style={{marginLeft:'10px'}} /> </button>
+
+                </div>
+                {/* <button type="submit" className='ContactBtn'>Göndər <img src={Send} alt="Send" style={{marginLeft:'10px'}} /> </button> */}
 
                 </div>
         

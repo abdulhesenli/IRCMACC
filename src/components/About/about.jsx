@@ -1,6 +1,6 @@
 import './about.css'
 import '../../res.css'
-// import Image from '../../assets/aboutimage2.svg'
+import Image from '../../assets/aboutimage2.svg'
 import {Helmet} from "react-helmet";
 import {useTranslation} from "react-i18next";
 
@@ -18,12 +18,15 @@ function About (){
                     <p className='about-text'>Mərkəzin rəhbəri Tibb Elmləri Doktoru</p>
                     <h2 className='Name-title'>Rəşad Şolan</h2>
                 </div>
-
+       
                 <div className='about'>
+                    
                     <div className='aboutcircle'>
-                        {/* <img src={Image} alt="Image" className='AboutImage' /> */}
+                        <img src={Image} alt="Image" className='AboutImage' />
 
                     </div>
+
+                   
 
                     <div className='AboutText2'>
                         <p className='aboutText2'>Rəşad Fərhad oğlu Şolan (Məmmədov Rəşad Fərhad oğlu; 27 iyun 1980,
@@ -41,6 +44,8 @@ function About (){
                             Mərkəzinin rəsi, eyni zamanda DTX HTBİ Hərbi Hospitalının “Böyrək Xəstəlikləri və Orqan
                             Transplantasiyası” şöbəsinin rəhbəri, tibb üzrə fəlsəfə doktoru.</p>
                     </div>
+
+
                 </div>
 
                 <div className='abouttext3'>

@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import {useSelector, useDispatch} from "react-redux";
 import {useEffect} from "react";
 import {setLoading} from "./store/Slice/ui.js";
@@ -31,7 +32,7 @@ function App() {
     useEffect(()=>{
         dispatch(setLoading(true));
         setTimeout(()=>{console.log('App component rendered');
-console.log('Loading state:', loading);
+        console.log('Loading state:', loading);
             dispatch(setLoading(false));
         }, 1000)
     }, [])
@@ -39,6 +40,7 @@ console.log('Loading state:', loading);
   return (
       <>
           {loading &&  <Loading/>}
+          {/* <MouseTracker/> */}
           <div>
 
                  <div  id='topheader' style={{backgroundColor:'#002D74', height:'60px'}}>

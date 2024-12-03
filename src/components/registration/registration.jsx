@@ -42,13 +42,16 @@ function Registration() {
                             </select>
                         </div>
                         {/* <button type="submit" className='RegisterBtn'>Göndər</button> */}
+                        <button type="submit" className='RegisterBtn'>Göndər
+                    <img src={RightIcon} alt="right"  style={{marginLeft:'20px'}}/>
+                </button>
                     </form>
                     
 
                 </div>
-                <button type="submit" className='RegisterBtn'>Göndər
+                {/* <button type="submit" className='RegisterBtn'>Göndər
                     <img src={RightIcon} alt="right"  style={{marginLeft:'20px'}}/>
-                </button>
+                </button> */}
             </div>
         </div>
 

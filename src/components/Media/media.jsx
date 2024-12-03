@@ -32,10 +32,10 @@ function Media (){
                           <button className='mediabtn'>Məqalə</button>
 
                           <div>
-                            <a href="#" className="mediacta"><span>Ətraflı oxu</span>
+                            <a href="#" className="mediactaa"><span>Ətraflı oxu</span>
                              <img src={ArrowIcon} alt="ArrowIcon"  />
                             </a>
-                            </div>
+                        </div>
                  </div>
             </div>
             </div>
@@ -50,11 +50,11 @@ function Media (){
                         <button className='mediabtn'>Video dərslik</button>
                      
                         <div>
-                            <a href="#" className="mediacta"><span>Ətraflı oxu</span>
+                            <a href="#" className="mediactaa"><span>Ətraflı oxu</span>
                              <img src={ArrowIcon} alt="ArrowIcon"  />
                             </a>
-                            </div>
                         </div>
+                    </div>
                 </div>
             </div>
             <div>
@@ -67,10 +67,10 @@ function Media (){
                         <button className='mediabtn'>Təqdimat</button>
                      
                         <div>
-                            <a href="#" className="mediacta"><span>Ətraflı oxu</span>
+                            <a href="#" className="mediactaa"><span>Ətraflı oxu</span>
                              <img src={ArrowIcon} alt="ArrowIcon"  />
                             </a>
-                            </div>
+                        </div>
                         </div>
                 </div>
             </div>
@@ -85,10 +85,10 @@ function Media (){
 
                      
                         <div>
-                            <a href="#" className="mediacta"><span>Ətraflı oxu</span>
+                            <a href="#" className="mediactaa"><span>Ətraflı oxu</span>
                              <img src={ArrowIcon} alt="ArrowIcon"  />
                             </a>
-                            </div>
+                        </div>
                         </div>
                 </div>
             </div>
@@ -103,10 +103,10 @@ function Media (){
 
                     
                         <div>
-                            <a href="#" className="mediacta"><span>Ətraflı oxu</span>
+                            <a href="#" className="mediactaa"><span>Ətraflı oxu</span>
                              <img src={ArrowIcon} alt="ArrowIcon"  />
                             </a>
-                            </div>
+                        </div>
                         </div>
                 </div>
             </div>
@@ -120,10 +120,10 @@ function Media (){
                         <button className='mediabtn'>Təqdimat</button>
 
                         <div>
-                            <a href="#" className="mediacta"><span>Ətraflı oxu</span>
+                            <a href="#" className="mediactaa"><span>Ətraflı oxu</span>
                              <img src={ArrowIcon} alt="ArrowIcon"  />
                             </a>
-                            </div>
+                        </div>
                         </div>
                 </div>
             </div>

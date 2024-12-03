@@ -144,6 +144,8 @@ background-color: #009ADE;
     stroke-width: 2;
     transform: translateX(-5px);
     transition: all 0.3s ease;
+    display: inline-block;
+    
   }
   .cta:hover:before {
     width: 100%;
@@ -152,6 +154,7 @@ background-color: #009ADE;
   }
   .cta:hover img {
     transform: translateX(0);
+    
   }
   .cta:active {
     transform: scale(0.96);
@@ -161,10 +164,10 @@ background-color: #009ADE;
     content: url(../../assets/arrow-right.svg);
     position: relative;
     top: 0;
-    /* margin-left: 10px; */
     /* color: red !important; */
     transform: translateX(-5px);
     transition: all 0.3s ease;
   }
+ 
 
 

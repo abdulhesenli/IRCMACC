@@ -65,42 +65,7 @@
      .header-nav{
         display: none;
     }
-    #vector_1 {
-        position: absolute;
-        top: 60px !important;
-        left: 500px;
-    }
-    #vector_3 {
-        position: absolute;
-        top: 60px !important;
-        left: 700px;
-    }
-    #vector_4 {
-        position: absolute;
-        top: 277px !important;
-        left: 550px;
-        z-index: 1;
-    }
-    #vector_4_1 {
-        position: absolute;
-        top: 242px !important;
-        left: 351px;
-        z-index: 1;
-    }
-    #vector_4_2 {
-        position: absolute;
-        top: 453px !important;
-        left: 500px;
-        z-index: 1;
-    }
-    #vector_5 {
-        position: absolute;
-        top: 407px !important;
-        left: 715px;
-        z-index: 1;
-        rotate: 180deg;
-    }
-
+   
     .circle {
         top: 163px !important;
         right: 0px !important;
@@ -114,7 +79,7 @@
     }
     .group2 {
         
-        top: 562px !important;
+        top: 500px !important;
         
     }
     .text-h {
@@ -143,9 +108,61 @@
     .header-nav{
         display: none;
     }
-}
+    .banner{
+        display: flex;
+        align-items: center;
+        flex-direction: column !important;
+        height: auto !important;
+        max-width: 1392px;
+        background-color: #002856;
+        border-radius: 30px;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
 
-@media  (min-width: 300px) and (max-width: 768px) {
+    .HRline {
+        border-top: 1px solid #0071CE !important;
+        height: 0 !important;
+        margin-left: 12px !important;
+        width: 241px !important;
+        margin-top: -219px !important;
+    }
+    .BanTitle{
+        max-width: 814px !important;
+        font-size: 27px !important;
+        line-height: 30.88px !important;
+        text-align: justify !important;
+        
+    }
+    .BanTitle2{
+        max-width: 814px !important;
+        font-size: 14px;
+        line-height: 21.07px !important;
+        text-align: justify !important;
+        margin-bottom: 30px;
+    }
+    .Bantext{
+        margin-left: 35px !important;
+        margin-right: 35px !important;
+        margin-top: 80px !important;
+    }
+    .Ban-btn{
+        margin-bottom: 24px !important;
+    }
+
+    .Group4 {
+        margin-left: 15px !important;
+        margin-top: 41px !important;
+        margin-bottom: 260px !important;
+    }
+}
+/* @media  (min-width: 993px) and (max-width: 1439px) {
+    .ctaa{
+        left: 0 !important;
+    }
+} */
+
+@media  (min-width: 200px) and (max-width: 768px) {
    
     .text-h {
         font-size: 24px;
@@ -166,14 +183,9 @@
     .group2 {
         width: 50px;
         height: 50px;
-        top: 500px;
+        top: 450px;
     }
 
-    .box {
-        width: 100%;
-        height: auto;
-        padding: 5px;
-    }
 
     .about {
         flex-direction: column;
@@ -226,10 +238,10 @@
         font-size: 16px;
     }
 
-    .MediaCard, .MissionCard {
+    /* .MediaCard, .MissionCard {
         width: 100%;
         max-width: 260px;
-    }
+    } */
 
     .circle-button {
         width: 60px;
@@ -386,11 +398,7 @@
         height: 80px;
     }
 
-    .group2 {
-        width: 60px;
-        height: 60px;
-        top: 550px;
-    }
+
 
     .box {
         width: 100%;
@@ -440,10 +448,10 @@
         font-size: 18px;
     }
 
-    .MediaCard, .MissionCard {
+    /* .MediaCard, .MissionCard {
         width: 100%;
         max-width: 300px;
-    }
+    } */
 
     .circle-button {
         width: 80px;
@@ -488,23 +496,16 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 310px !important;
+        top: 263px !important;
         right: 55px !important;
-        width: 92px;
-        height: 92px;
+        width: 70px !important;
+        height: 70px !important;
         border-radius: 90px;
         background-color: #F32735;
         z-index: 5;
     }
 
-    .Homelogo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 79px;
-        margin-bottom: 79px;
-        flex-direction: column;
-    }
+
     .logo{
         margin-bottom: 20px;
     }
@@ -514,6 +515,9 @@
         justify-content: space-around;
         margin-bottom: 130px !important;
         flex-direction: column;
+    }
+    .boxtext{
+        font-size: 32px !important;
     }
     .title{
         max-width: 448px !important;
@@ -552,7 +556,7 @@
         border-left: 1px solid #002D74;
         height: 230px !important;
         position: absolute;
-        left: 180px !important;
+        left: 175px !important;
         top: 15px !important;
         width: 0;
         opacity: 20%;
@@ -574,7 +578,7 @@
         display: flex;
         align-items: center;
         flex-direction: column !important;
-        height: 907px !important;
+        height: auto !important;
         max-width: 1392px;
         background-color: #002856;
         border-radius: 30px;
@@ -690,8 +694,8 @@
       /* 'missiya' css start */
 
       .Mission_Card{
-        display: flex !important;
-        flex-direction: column !important;
+            margin: auto !important;
+            padding: 0 !important;
       }
       .mis-title{
         font-size: 24px !important;
@@ -722,10 +726,10 @@
 
     }
 
-    .Mission_Card .col-4 {
-        flex-basis: 100%; /* Her satırda 1 kart */
+    /* .Mission_Card .col-4 {
+        flex-basis: 100%; 
         max-width: 100%;
-    }
+    } */
   
 
     
@@ -825,7 +829,7 @@
 
  .Traning-text {
     max-width: 212px !important;
-    margin-right: 45px !important;
+    margin-right: 35px !important;
     font-size: 36px;
     margin-left: 20px !important;
  }
@@ -834,11 +838,7 @@
     font-size: 24px;
     margin-left: 20px !important;
  }
- .traning-hr{
-    width: 120px !important;
-    border: 1px solid #B4C1D9;
- 
- }
+
 
  .Trainingcard{
     margin-left: 20px !important;
@@ -855,10 +855,11 @@
     margin-left: 20px !important;
 }
 .traniners-hr{
-    width: 120px !important;
+    width: 30% !important;
     border: 1px solid #B4C1D9;
  
 }
+
 
 .trainers-circle{
     width: 45px;
@@ -866,13 +867,27 @@
     position: relative;
     border-radius: 50px;
 }
+.tr-circle{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    border-radius: 50px;
+}
+
+.traning-hr{
+    width: 30% !important;
+    border: 1px solid #B4C1D9;
+ 
+}
+
 
 
 /* registration.css */
 
 /* Mobil cihazlar için medya sorgusu */
     .registerdiv{
-    margin-left: 0 !important;
+        margin: auto !important;
+    /* margin-left: 0 !important; */
     max-width: 400px ;
     }
     .register {
@@ -903,7 +918,7 @@
     }
   
     .registerForm {
-      width: 100% !important; 
+      /* width: 100% !important;  */
       margin-left: 0px !important;           
     }
   
@@ -931,7 +946,7 @@
       }
 
     .RegisterBtn{
-        /* width: 350px !important; */
+        width: 175px !important;
         margin-left: 170px !important;
         margin-top: 0px !important;
     }
@@ -967,6 +982,9 @@
 .NewsCard{
     margin-left: 20px !important;
     margin-right: 20px !important;
+}
+.ctaa{
+    left: 0px !important;
 }
 
 .News-text{
@@ -1034,8 +1052,8 @@
     width: 345px !important;
 }
 
-.ContactBtn{
-    margin-left: 187px !important;
+.contactBtn{
+    width: 345px !important;
 }
 .Adress {
     margin-left: 20px !important;
@@ -1070,7 +1088,7 @@ iframe.map {
 }
 
 
-/* Diğer stiller */
+
 
   
   
@@ -1100,11 +1118,6 @@ iframe.map {
         top: 500px;
     }
 
-    .box {
-        width: 100%;
-        height: auto;
-        padding: 5px;
-    }
 
     .about {
         flex-direction: column;
@@ -1157,10 +1170,10 @@ iframe.map {
         font-size: 16px;
     }
 
-    .MediaCard, .MissionCard {
+    /* .MediaCard, .MissionCard {
         width: 100%;
         max-width: 260px;
-    }
+    } */
 
     .circle-button {
         width: 60px;

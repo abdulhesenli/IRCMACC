@@ -124,7 +124,10 @@
     font-weight: 400;
     border: none;
     margin-top: 24px;
-    margin-left: 295px;
+    /* margin-left: 295px; */
+}
+.ContactBtn img{
+    display: inline-block;
 }
 
 .Adress{
@@ -140,6 +143,7 @@
 .contactimg{
     margin-bottom: 10px;
 }
+
 
 .adress-text{
     width: 212px;

@@ -25,72 +25,9 @@
     height: 550px;
     border-radius: 0 0 30px 30px;
 
-  }
-
-.circle{
-    top: 289px;
-    width: 232px;
-    height: 349px;
-    border-radius: 250px 0 0 250px;
-    position: absolute;
-    background-color: #01344b54;
-    position: absolute;
-    z-index: 0;
-    right: 24px;
 }
 
-#vector_1{
-    position: absolute;
-    top: 184px;
-    left: 500px;
-}
 
-#vector_2{
-    position: absolute;
-    top: 0px;
-    left: 700px;
-}
-
-#vector_3{
-    position: absolute;
-    top: 184px;
-    left: 700px;
-}
-#image{
-    position: absolute;
-    top: 236px;
-    left: 200px;
-    z-index: 2;
-}
-
-#vector_4{
-    position: absolute;
-    top: 365px;
-    left: 550px;
-    z-index: 1;
-}
-
-#vector_4_1{
-    position: absolute;
-    top: 360px;
-    left: 351px;
-    z-index: 1;
-}
-
-#vector_4_2{
-    position: absolute;
-    top: 579px;
-    left: 500px;
-    z-index: 1;
-}
-
-#vector_5{
-    position: absolute;
-    top: 534px;
-    left: 715px;
-    z-index: 1;
-    rotate: 180deg;
-}
 
 
 .text-h{
@@ -108,10 +45,12 @@
 
 #Homelogo{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 79px;
     margin-bottom: 79px;
+    gap: 15px;
+    
 }
 
 .logo{

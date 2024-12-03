@@ -44,7 +44,7 @@ function TrainersCard() {
         <div id="TrainersCard">
 
 
-            <div className="row" style={{marginTop: "40px"}}>
+            <div className="row" style={{marginTop: "40px", rowGap:"20px"}}>
 
                 {/* {content} */}
 
