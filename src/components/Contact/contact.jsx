@@ -37,7 +37,7 @@ function Contact (){
             </div>
 
             <div className='Adress'>
-                <div className='adress-text' style={{marginLeft:"100px"}}>
+                <div className='adress-text AdressText  ' style={{marginLeft:"100px"}}>
                    <img src={Location} alt="Location" id='Location' className='contactimg' />
                    <p className="adress-text1">Ünvan</p>
                    <h1 className="adress-title" >Zərifə Əliyeva 55, <br />

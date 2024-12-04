@@ -5,7 +5,7 @@ import './telimdaxili.css'
 function TelimDaxili (){
     return(
         <div style={{maxWidth:'1392px', margin:'auto'}}>
-            <div className='Telim-Title'>
+            <div className='TelimDaxili-Title'>
                 <h1 className='telim-title'>Laparoskopik urologiya və böyrək transplantasiyası</h1>
             </div>
 

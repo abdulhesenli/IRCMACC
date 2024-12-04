@@ -21,7 +21,7 @@ function TelimciDaxili(){
             </div>
             </div>
 
-            <div style={{width:'1002px', margin:'auto', textAlign:'center', lineHeight:'1', marginTop:'60px'}}>
+            <div className='Intelimci-Text'>
                 <p className='intelimci-text' >Eksperimental təlim və tədqiqatlarda t.e.d. Rəşad Şolan böyük təcrübəyə sahibdir. Belə ki, elmi fəaliyyəti boyunca daha çox eksperimental tədqiqatlara üstünlük verməklə yanaşı heyvan üzərində müxtəlif cərrahi təlim modellərini işləyib hazırlamışdır.</p>
             </div>
            

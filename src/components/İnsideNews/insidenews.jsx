@@ -1,6 +1,5 @@
 import './insidenews.css'
 import News from '../News/News'
-
 // import NewsImage from '../../assets/newsimage.svg'
 // import ArrorRight from '../../assets/arrow-circle-right.svg'
 // import ArrorLeft from '../../assets/arrow-circle-left.svg'
@@ -9,6 +8,7 @@ import Newsinstagram from '../../assets/Newsinstagram.svg';
 import Newslinkedin from '../../assets/Newslinkedin.svg';
 import Newssubtract from '../../assets/NewsSubtract.svg';
 import NewsCarousel from '../NewsCarousel/NewsCarousel'
+
 
 
 
@@ -27,7 +27,7 @@ function InsideNews (){
             </div>
 
             <div className='InsideImage'>
-              
+                
                     <NewsCarousel/>
              
                 <div className='ContactSosial'>

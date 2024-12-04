@@ -285,8 +285,8 @@
         text-align: justify !important;
         color: var(--titlecolor);
         text-align: center;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
       
     }
     .media-text{
@@ -825,6 +825,8 @@
  }
  .newspage-text{
     font-size: 20px !important;
+    margin-left: 20px;
+    margin-right: 20px;
  }
 
  .Traning-text {
@@ -1030,7 +1032,7 @@
 }
 
 .form-group{
-    margin-top: 10px !important;
+    margin-top: 0px !important;
 }
 .groupone{
     margin-top: 30px !important;
@@ -1063,9 +1065,7 @@
     margin-left: 18px !important;
 }
 
-.adress-title{
-    font-size: 10px !important;
-}
+
 
 iframe.map {
     width: calc(100% - 40px) !important; /* Sağ-sol 20px boşluk */
@@ -1217,8 +1217,8 @@ iframe.map {
         text-align: justify !important;
         color: var(--titlecolor);
         text-align: center;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
       
     }
     .media-text{

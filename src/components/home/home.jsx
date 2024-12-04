@@ -18,7 +18,7 @@ import Training from "../training/Training";
 import Registration from "../registration/Registration";
 import Testimonials from "../Testimonials/Testimonials";
 import News from "../News/News";
-import InsideNews from '../İnsideNews/Insidenews';
+// import InsideNews from '../İnsideNews/Insidenews';
 // import NewsPage from "../NewsPage/newspage";
 // import Questions from "../Questions/questions";
 // import Footer from "../Footer/footer";
@@ -164,7 +164,7 @@ function Home(){
             <Registration/>
             <Testimonials/>
             <News/> 
-            <InsideNews/>
+            {/* <InsideNews/> */}
             {/* <NewsPage/> */}
 
             {/* <Questions/> */}

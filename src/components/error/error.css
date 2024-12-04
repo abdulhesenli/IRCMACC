@@ -9,6 +9,7 @@
 
 
 .error-title{
+    max-width: 100%;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -19,9 +20,11 @@
 }
 .ArrowError{
     margin-left: 10px;
+    display: inline-block;
 }
 
 .Error404{
+    max-width: 100%;
     object-fit: cover;
     margin: auto;
     display: block;
@@ -36,6 +39,7 @@
     margin-top: 40px;
 }
 .errorbtn{
+    
     display: block;
     margin: auto;
     border-radius: 60px;
@@ -47,4 +51,18 @@
     position: relative;
     margin-top: 20px;
     text-decoration: none;
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+    .Error404{
+        max-width: 100%;
+        object-fit: cover;
+        margin: auto;
+        display: block;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+
 }

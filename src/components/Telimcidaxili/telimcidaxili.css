@@ -12,7 +12,7 @@
 
 }
 .Intelimci-Title{
-    width: 757px;
+    max-width: 757px;
     margin-top: 40px;
     margin-left: 40px;
    
@@ -25,21 +25,71 @@
     color: var(--titlecolor);
  
 }
+
 .TelimciImg{
     border-radius: 20px;
+}
+.Intelimci-Text{
+    max-width: 1002px;
+    margin:'auto'; 
+    text-align: center;
+    line-height: 1;
+    margin-top: 60px;
 }
 .intelimci-text{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: var(--titlecolor);
-
-  
 }
+
 
 #TelimciDaxili{
     margin: auto;
     display: flex;
-    width: 1156px;
+    max-width: 1156px;
     margin-top: 80px;
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+    #TelimciDaxili{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 1156px;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Telimciimg{
+        max-width: 100%;
+        margin: auto;
+    }
+    .intelimci-title{
+        text-align: center;
+    }
+
+    .Intelimci-Text{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .intelimci-text{
+        text-align: justify;
+    }
+    
+
+}
+
+@media  (min-width: 600px) and (max-width: 768px) {
+    #TelimciDaxili{
+        margin: auto;
+        display: flex;
+        max-width: 1156px;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
 }

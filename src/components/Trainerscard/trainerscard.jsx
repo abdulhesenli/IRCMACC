@@ -6,6 +6,7 @@ import Doctor1 from '../../assets/doctor1.svg'
 import Doctor2 from '../../assets/doctor2.svg'
 import Doctor3 from '../../assets/doctor3.svg'
 import Doctor4 from '../../assets/doctor4.svg'
+import {Link} from 'react-router-dom';
 // import {useGetMentorQuery} from "../../store/Api/mentor.js";
 // import Loading from "../Ui/Loading.jsx";
 // import ArrowIcon from "../../assets/Icon-right.svg";
@@ -48,8 +49,9 @@ function TrainersCard() {
 
                 {/* {content} */}
 
-                <div className="col-12 col-sm-6 col-lg-3"  >   
-                      <div className="card">   
+                <div className="col-12 col-sm-6 col-lg-3"  >  
+                <Link to="/InsideNews" style={{textDecoration:'none'}} > 
+                <div className="card">   
                           <img src={Doctor1} alt="Doctor2" className="Doctor" style={{borderRadius:"19px"}} />   
 
                           <div className="card-content ">   
@@ -58,7 +60,10 @@ function TrainersCard() {
 
                           </div>   
 
-                      </div>   
+                      </div>  
+                      </Link>
+ 
+                       
                   </div>  
 
                   <div className="col-12 col-sm-6 col-lg-3"  >   

@@ -4,6 +4,8 @@ import '../../res.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  Newsphoto from '../../assets/newsphoto.png'
 import ArrowIcon from '../../assets/Icon-right.svg'
+import {Link} from 'react-router-dom';
+// import InsideNews from "../İnsideNews/Insidenews";
 
 
 
@@ -33,9 +35,10 @@ function NewsCard(){
                           <h6 className="Newtext">Xəbər / 17.04.24</h6>
 
                             <div>
-                            <a href="#" className="ctaa"><span>Ətraflı oxu</span>
+                            <Link to="/InsideNews" className="ctaa"> <span>Ətraflı oxu</span> <img src={ArrowIcon} alt="ArrowIcon" /></Link>
+                            {/* <a href="#" className="ctaa"><span>Ətraflı oxu</span>
                              <img src={ArrowIcon} alt="ArrowIcon"  />
-                            </a>
+                            </a> */}
                             </div>
                         </div>
                    
@@ -54,9 +57,11 @@ function NewsCard(){
                     <div className="Newstext">
                         <h6 className="Newtext">Xəbər / 17.04.24</h6>
                         <div>
-                            <a href="#" className="ctaa"><span>Ətraflı oxu</span>
+                        <Link to="/InsideNews" className="ctaa"> <span>Ətraflı oxu</span> <img src={ArrowIcon} alt="ArrowIcon" /></Link>
+
+                            {/* <a href="#" className="ctaa"><span>Ətraflı oxu</span>
                              <img src={ArrowIcon} alt="ArrowIcon"  />
-                            </a>
+                            </a> */}
                             </div>
                         </div>
                    
@@ -74,9 +79,11 @@ function NewsCard(){
                        <div className="Newstext">
                            <h6 className="Newtext">Xəbər / 17.04.24</h6>
                            <div>
-                            <a href="#" className="ctaa"><span>Ətraflı oxu</span>
+                           <Link to="/InsideNews" className="ctaa"> <span>Ətraflı oxu</span> <img src={ArrowIcon} alt="ArrowIcon" /></Link>
+
+                            {/* <a href="#" className="ctaa"><span>Ətraflı oxu</span>
                              <img src={ArrowIcon} alt="ArrowIcon"  />
-                            </a>
+                            </a> */}
                             </div>
                         </div>
                    

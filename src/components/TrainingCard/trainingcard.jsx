@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './trainingcard.css'
 import '../../res.css'
 import ArrowIcon from '../../assets/Icon-right.svg'
+import {Link} from 'react-router-dom';
 
 
 // import ArrowIconwhite from '../../assets/arrow-right.svg'
@@ -74,9 +75,10 @@ function TrainingCard() {
             <div className="row" style={{ marginTop: "40px", marginBottom: "85px" }}>
 
                 {/* {content} */}
-
+                
                 <div className="col-12 col-sm-6 col-lg-4"  >
-                    <div className="Trainingcard">
+                <Link  to="/Telimdaxili" style={{textDecoration:'none'}}>
+                <div className="Trainingcard">
                         <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-2'>Cərrahi Bacarıqların <br />
                             Əsasları</h2>
                         <p className='text-custom  fs-2-xxl mt-3 line-clamp-2'>Heyvan modelləri və cərrahiyyə nümunələri üzərində əsas cərrahi texnikaların tətbiqi.</p>
@@ -91,7 +93,8 @@ function TrainingCard() {
 
 
 
-                    </div>
+                    </div> </Link>
+                  
                 </div>
 
                 <div className="col-12 col-sm-6 col-lg-4"  >
