@@ -64,7 +64,7 @@
 }
 
 .form-group{
-    width: 490px;
+    max-width: 490px;
     margin-top: 40px;
 }
 

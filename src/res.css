@@ -448,10 +448,15 @@
         font-size: 18px;
     }
 
-    /* .MediaCard, .MissionCard {
-        width: 100%;
-        max-width: 300px;
-    } */
+    .Mediatext {
+        justify-content: space-around !important;
+        margin-top: 96px !important;
+    }
+
+    .MissionCard {
+       margin-left: 20px !important;
+       margin-right: 20px !important;
+    }
 
     .circle-button {
         width: 80px;
@@ -704,6 +709,8 @@
 
      .mis-text{
         font-size: 20px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
      }
 
      .MissionCard h2 {
@@ -954,8 +961,12 @@
 
     .RegisterBtn{
         width: 175px !important;
-        margin-left: 158px !important;
+        margin-left: 130px !important;
         margin-top: 0px !important;
+    }
+    .row {
+        --bs-gutter-x: 0rem !important;
+  
     }
 
    /* Kartları dikey hizala ve her biri %100 genişlikte olsun */
@@ -1044,7 +1055,7 @@
     margin-top: 0px !important;
 }
 .groupone{
-    margin-top: 30px !important;
+    margin-top: 15px !important;
 }
 
 #name{
@@ -1097,12 +1108,6 @@ iframe.map {
 }
 
 
-
-
-  
-  
-
-    
 
 @media only screen and (max-width: 576px) {
     .text-h {
@@ -1332,5 +1337,31 @@ iframe.map {
     margin-left: 20px !important;
     margin-right: 20px !important;
 }
+
+}
+
+
+@media (min-width: 200px) and (max-width: 390px){
+    
+    #textarea {
+        width: 320px !important;
+    }
+    #email {
+        width: 320px !important;
+        padding-left: 30px !important;
+    }
+    #text {
+        width: 320px !important;
+        padding-left: 30px !important;
+    }
+
+    #name{
+            max-width: 320px !important;
+    }
+    .contactBtn {
+        width: 320px !important;
+    }
+    
+
 
 }

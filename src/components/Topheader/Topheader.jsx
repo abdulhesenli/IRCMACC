@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import{ useState, useEffect } from 'react';
 import './topheader.css';
 import '../../res.css'
 import { CiSearch } from "react-icons/ci";
@@ -123,8 +123,6 @@ function Topheader() {
                                 <Link className=" dropdown-item nav " onClick={toggleMenu} to="/NewsPage">Xəbərlər</Link>
                             </div>
                         </li>
-
-                        <li><Link to="/NewsPage" onClick={toggleMenu}>Xəbərlər</Link></li>
                         <li><Link to="/Contact" onClick={toggleMenu}>Əlaqə</Link></li>
                     </ul>
                 </div>
