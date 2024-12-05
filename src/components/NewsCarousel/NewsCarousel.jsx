@@ -1,12 +1,9 @@
-import  { useState } from "react";
+import { useState } from "react";
 import "./newscarousel.css"; // Stil dosyasını bağlayın
-import ArrorRight from '../../assets/arrow-circle-right.svg'
-import ArrorLeft from '../../assets/arrow-circle-left.svg'
-// import NewsImage from '../../assets/newsimage.svg'
-
+import ArrorRight from '../../assets/arrow-circle-right.svg';
+import ArrorLeft from '../../assets/arrow-circle-left.svg';
 
 const images = [
-
   "https://i.postimg.cc/wv0j2bCB/slide-1.jpg",
   "https://i.postimg.cc/Y00qsz7z/slide-2.jpg",
   "https://i.postimg.cc/PJ7rsvrs/slide-3.jpg",
@@ -42,13 +39,9 @@ const Carousel = () => {
       </main>
       <nav className="ContactIcon">
         <button onClick={goBack}><img src={ArrorLeft} alt="ArrorLeft" /></button>
-        <button onClick={goNext}><img src={ArrorRight} alt="ArrorLeft" /></button>
+        <button onClick={goNext}><img src={ArrorRight} alt="ArrorRight" /></button>
       </nav>
     </div>
-        // <div className='ContactIcon'>
-        // <a href="#"><img src={ArrorLeft} alt="ArrorLeft" /></a>
-        // <a href="#"><img src={ArrorRight} alt="ArrorRight" /></a>
-        // </div>
   );
 };
 

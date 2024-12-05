@@ -6,6 +6,36 @@
     box-sizing: border-box;
 }
 
+.Menu-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scaleY(0.9); /* Küçük bir ölçek efekti */
+    transform-origin: top;
+    transition: max-height 1.5s ease-in-out, opacity 1.4s ease-in-out, transform 1.4s ease-in-out;  }
+  
+  /* Aktif olduğunda animasyonlu görünüm */
+  .Menu-dropdown-content.active {
+    max-height: 500px; /* İçerik uzunluğunuza göre ayarlayın */
+    opacity: 1;
+    transform: scaleY(1);
+    margin-left: 10px;
+  }
+
+  .dropdown-arrow {
+    display: inline-block;
+    margin-left: 8px; /* Yan boşluk */
+    margin-top: 4px; /* Yukarıdan aşağı kaydırma */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .dropdown-arrow svg{
+    display: inline-block;
+
+  }
+  .dropdown-arrow.rotate {
+    transform: rotate(180deg); /* Yukarı bakan ok */
+  }
 .TopHeader{
     max-width: 1392px;
     display: flex;
@@ -157,14 +187,6 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
-   
-}
-
-@media only screen and (max-width: 992px) {
-   
-}
-
 
 
 .hamburger-menu {
@@ -179,7 +201,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgb(8 34 76);
     color: white;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
@@ -197,16 +219,19 @@
 
 /* Menü Linkleri */
 .menu-content ul {
+    position: fixed;
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    top: 100px;
+    left: 45px;
 }
 
 .menu-content li {
-    padding: 15px 0;
+    padding: 5px 0;
     opacity: 0;
     transform: translateY(20px);
     animation: slideIn 0.5s ease forwards;
@@ -327,40 +352,16 @@
     margin-left: 20px;
 }
 
-/* Fullscreen Menu */
-.menu-content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.95);
-    color: white;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .menu-content.active {
     transform: translateX(0);
 }
 
-/* Menu Links */
-.menu-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .menu-content li {
-    padding: 15px 0;
+    /* padding: 15px 0; */
     opacity: 0;
     transform: translateY(20px);
     animation: slideIn 0.5s ease forwards;

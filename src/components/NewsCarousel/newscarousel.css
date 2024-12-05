@@ -13,6 +13,7 @@
     overflow: hidden;
     display: flex;
     border-radius: 20px;
+    box-shadow: none;
   }
   
   /* Slides */
@@ -23,6 +24,7 @@
     transition: all 1.9s ease;
     opacity: 0;
     transform: translateX(100%);
+    object-fit: cover;
   }
   
   .slide.active {
@@ -30,6 +32,7 @@
     opacity: 1;
     transform: translateX(0%);
     left: 0% !important;
+    object-fit: cover;
   }
   
   /* Buttons */

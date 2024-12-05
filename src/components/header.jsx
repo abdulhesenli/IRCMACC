@@ -35,7 +35,7 @@ function Header() {
                                 <div className="dropdown-content dropdown-menu dropdown-menu-white">
                                     <Link className=" dropdown-item nav " to="/about">Rəhbərin Müraciəti</Link>
                                     <Link className=" dropdown-item nav " to="/Questions">Ən çox verilən suallar</Link>
-                                    <Link className="dropdown-item   nav " to="/Mission">Missiya və Dəyərlər</Link>
+                                    <Link className="dropdown-item  nav " to="/Mission">Missiya və Dəyərlər</Link>
                              
                                 </div>
 

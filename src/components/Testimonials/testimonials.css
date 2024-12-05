@@ -143,23 +143,3 @@
     left: 0px;
  
 }
-
-
-
-
-
-
-  
- 
-  .carousel-controls {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .card-container {
-    width: 369px;
-    /* Gerekirse kart boyutlarını burada değiştirebilirsiniz */
-  }
-  

@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* .banright{
+    background-image: url(../../assets/Group3.svg);
+    background-position-x: right;
+    background-repeat: no-repeat;
+} */
+
 
 
 .container{
@@ -221,3 +227,11 @@
 }
 
 
+/* @media  (min-width: 200px) and (max-width: 768px) {
+    .banright{
+        background-image: url(../../assets/Group3.svg);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        transform-origin: 90deg;
+    }
+} */

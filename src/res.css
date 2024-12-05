@@ -540,6 +540,7 @@
         text-align: justify !important;
         margin-left: 20px !important;
         margin-right: 20px !important;
+        margin-bottom: 20px !important;
     }
     .box{
         width: 350px !important;
@@ -770,6 +771,10 @@
     }
 
 
+    .TestimonialsText{
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
 
  .NewsContinue{
     position: absolute;
@@ -949,7 +954,7 @@
 
     .RegisterBtn{
         width: 175px !important;
-        margin-left: 170px !important;
+        margin-left: 158px !important;
         margin-top: 0px !important;
     }
 
@@ -998,6 +1003,10 @@
 }
 .News-hr{
     width: 120px !important;
+}
+.NewsCard h2 p{
+    margin-right: 20px !important;
+    margin-left: 12px !important;
 }
 .contact-text{
     text-align: justify !important;

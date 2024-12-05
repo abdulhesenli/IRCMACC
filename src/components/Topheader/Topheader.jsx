@@ -7,12 +7,21 @@ import { Link } from 'react-router-dom';
 import irtmacc from '../../assets/Irtmac.svg';
 import { useTranslation  } from "react-i18next";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { AiOutlineDown } from "react-icons/ai";
 
 function Topheader() {
     const { i18n } = useTranslation();
     const [isOpenSearch, setIsOpenSearch] = useState(false);
     const [isOpenMenu, setIsOpenMenu] = useState(false);
+    const [isMenuDropdownOpen, setMenuIsDropdownOpen] = useState(false);
+    const [isMenuTwoDropdownOpen, setMenuTwoIsDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setMenuIsDropdownOpen(!isMenuDropdownOpen);
+    };
+    const toggleDropdownTwo = () => {
+        setMenuTwoIsDropdownOpen(!isMenuTwoDropdownOpen);
+    };
 
     const handleChange = (e) => {
         i18n.changeLanguage(e.target.value);
@@ -28,6 +37,10 @@ function Topheader() {
 
     const toggleMenu = () => {
         setIsOpenMenu(!isOpenMenu);
+        if (isOpenMenu) {
+            setMenuIsDropdownOpen(false);
+            setMenuTwoIsDropdownOpen(false);
+        }
     };
 
     useEffect(() => {
@@ -74,9 +87,7 @@ function Topheader() {
                 </div>
                 </div>
 
-                {/* <div className="hamburger-menu" onClick={toggleMenu}>
-                    <GiHamburgerMenu size={24} color="white" />
-                </div> */}
+           
 
                 <div className={`menu-content ${isOpenMenu ? 'active' : ''}`}>
                     <div className="close-button" onClick={toggleMenu}>
@@ -84,14 +95,37 @@ function Topheader() {
                     </div>
                     <ul>
                         <li><Link to="/" onClick={toggleMenu}>Ana Səhifə</Link></li>
-                        <li><Link to="/about" onClick={toggleMenu}>Rəhbərin Müraciəti</Link></li>
-                        <li><Link to="/Questions" onClick={toggleMenu}>Ən çox verilən suallar</Link></li>
-                        <li><Link to="/Mission" onClick={toggleMenu}>Missiya və Dəyərlər</Link></li>
+
+
+                        <li className=" dropdown dropdown-2 nav-item" id='about'>
+                        <Link className="nav nav-link" onClick={toggleDropdown} style={{padding:"0"}} >Haqqımızda
+                        <span className={`dropdown-arrow ${isMenuDropdownOpen ? 'rotate' : ''}`}>
+                        <AiOutlineDown />
+                        </span></Link>
+                        <div className={`Menu-dropdown-content ${isMenuDropdownOpen ? 'active' : ''}`}>
+                            <Link className=" dropdown-item nav " onClick={toggleMenu}  to="/about">Rəhbərin Müraciəti</Link>
+                            <Link className=" dropdown-item nav "  onClick={toggleMenu} to="/Questions">Ən çox verilən suallar</Link>
+                            <Link className="dropdown-item  nav "  onClick={toggleMenu} to="/Mission">Missiya və Dəyərlər</Link>
+                        </div>
+                        </li>
+
+
                         <li><Link to="/Telimler" onClick={toggleMenu}>Təlimlər</Link></li>
                         <li><Link to="/Telimciler" onClick={toggleMenu}>Təlimçilər</Link></li>
-                        <li><Link to="/Media" onClick={toggleMenu}>Media Mərkəzi</Link></li>
+
+                        <li className=" dropdown dropdown-2 nav-item" id='about'>
+                            <Link className="nav nav-link" onClick={toggleDropdownTwo} style={{padding:"0"}} >Media Mərkəzi
+                            <span className={`dropdown-arrow ${isMenuTwoDropdownOpen ? 'rotate' : ''}`}>
+                            <AiOutlineDown />
+                            </span></Link>
+                            <div className={`Menu-dropdown-content ${isMenuTwoDropdownOpen ? 'active' : ''}`}>
+                                <Link className=" dropdown-item nav " onClick={toggleMenu} to="/Media">KİV</Link>
+                                <Link className=" dropdown-item nav " onClick={toggleMenu} to="/NewsPage">Xəbərlər</Link>
+                            </div>
+                        </li>
+
                         <li><Link to="/NewsPage" onClick={toggleMenu}>Xəbərlər</Link></li>
-                        <li><Link to="/Contact" onClick={toggleMenu}>ƏLAQƏ</Link></li>
+                        <li><Link to="/Contact" onClick={toggleMenu}>Əlaqə</Link></li>
                     </ul>
                 </div>
             </div>
