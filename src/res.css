@@ -983,7 +983,10 @@
   #Testimonials {
     flex-direction: column !important; /* Kartları dikey sıralamak için */
     gap: 10px !important; /* Dikey mesafe */
+    
   }
+
+
 
   .card-container {
     width: 100% !important; /* Mobilde tek kart tam genişlikte görünsün */
@@ -993,7 +996,7 @@
   #TestsBG {
 
     width: 100%;
-    height: 1145px !important;
+    height: auto !important;
 
 }
 

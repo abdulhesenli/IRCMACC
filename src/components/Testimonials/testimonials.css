@@ -30,6 +30,7 @@
 
 
 
+
 .TestimonialsTitle{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -142,4 +143,44 @@
     top: 120px;
     left: 0px;
  
+}
+
+
+@media  (min-width: 200px) and (max-width: 819px) {
+    .col-4{
+        display: none;
+      }
+    
+      .col-4:first-child{
+        display: block;
+        margin-left: 30px;
+      }
+    .ArrowCircleLeft{
+        display: none;
+    }
+    .ArrowCircleRight{
+        display: none;
+    }
+}
+
+
+@media  (min-width: 819px) and (max-width: 1237px) {
+    .col-4{
+        display: none;
+      }
+    
+      .col-4:nth-child(1){
+        display: block;
+      }
+      .col-4:nth-child(2){
+        display: block;
+      }
+}
+
+@media (min-width: 200px) and (max-width: 390px) {
+    .col-4:first-child {
+        display: block;
+        margin-left: 10px;
+        /* margin-right: 71px; */
+    }
 }
