@@ -1,6 +1,5 @@
 import '../../header.css';
 import './testimonials.css';
-import '../../res.css';
 import Comma from '../../assets/comma.svg';
 import RedCircle from '../../assets/RedCircle.svg';
 import WhiteComma from '../../assets/WhiteComma.svg';
@@ -69,21 +68,15 @@ function Testimonials() {
   };
 
   return (
-    <div
-      id="TestsBG"
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-      style={{ userSelect: 'none' }}
-    >
+    <div id="TestsBG" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd} style={{ userSelect: 'none' }}>
       <h1 className="TestimonialsTitle">Testimonials</h1>
       <p className="TestimonialsText">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa nisl, porta ac erat quis,
         semper sollicitudin mi Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
 
-      <div id="Testimonials" className="row" style={{ display: 'flex', justifyContent: 'center' }}>
-        <div className="col-4" style={{ width: '400px' }}>
+      <div id="Testimonials" className="row">
+        <div className="col-4" style={{ width: '370px' }}>
           <div className="TestimonialsCard">
             <img src={Comma} alt="Comma" className="Comma" />
             <p className="TestimonialsCardText">{testimonials[(currentIndex) % testimonials.length].text}</p>
@@ -93,7 +86,7 @@ function Testimonials() {
           <h6 className="CardText">{testimonials[(currentIndex) % testimonials.length].title}</h6>
         </div>
 
-        <div className="col-4" style={{ width: '400px' }}>
+        <div className="col-4" style={{ width: '370px' }}>
           <div className="TestimonialsCard">
             <img src={Comma} alt="Comma" className="Comma" />
             <p className="TestimonialsCardText">{testimonials[(currentIndex + 1) % testimonials.length].text}</p>
@@ -103,7 +96,7 @@ function Testimonials() {
           <h6 className="CardText">{testimonials[(currentIndex + 1) % testimonials.length].title}</h6>
         </div>
 
-        <div className="col-4" style={{ width: '400px' }}>
+        <div className="col-4" style={{ width: '370px' }}>
           <div className="TestimonialsCard">
             <img src={Comma} alt="Comma" className="Comma" />
             <p className="TestimonialsCardText">{testimonials[(currentIndex + 2) % testimonials.length].text}</p>

@@ -1,6 +1,4 @@
-// import '../../header.css'
 import './registration.css'
-import '../../res.css'
 import RightIcon from '../../assets/registright.svg'
 
 

@@ -171,3 +171,9 @@ background-color: #009ADE;
  
 
 
+  @media  (min-width: 200px) and (max-width: 768px) {
+    .Trainingcard{
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+  }

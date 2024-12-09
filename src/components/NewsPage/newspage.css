@@ -53,3 +53,12 @@
 #active{
     color: #E1251B;
 }
+@media  (min-width: 200px) and (max-width: 768px){
+    .newspage-title{
+        font-size: 24px;
+    }
+    .newspage-text{
+        font-size: 20px;
+      
+    }
+}

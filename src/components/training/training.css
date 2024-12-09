@@ -47,4 +47,21 @@
 }
     
 
+@media  (min-width: 200px) and (max-width: 768px){
+    .Traning-text {
+        max-width: 212px;
+        margin-right: 35px;
+        margin-left: 20px;
+    }
+    .traning-hr{
+        width: 30%;
+        border: 1px solid #B4C1D9;
+    }
+    .Traning-text2 {
+        margin-left: 20px;
+    }
+  
 
+    
+}
+   

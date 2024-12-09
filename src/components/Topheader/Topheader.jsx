@@ -1,6 +1,5 @@
 import{ useState, useEffect } from 'react';
 import './topheader.css';
-import '../../res.css'
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom';

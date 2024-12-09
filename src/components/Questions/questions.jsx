@@ -1,5 +1,4 @@
 import './questions.css'
-import '../../res.css'
 // import Accordion from 'react-bootstrap/Accordion';
 // import { useState } from 'react';
 // import Plus from '../../assets/plus-circle.svg'

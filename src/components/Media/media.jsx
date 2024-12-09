@@ -1,5 +1,4 @@
 import './media.css'
-import '../../res.css'
 import Media1 from '../../assets/media1.svg'
 import Media2 from '../../assets/media2.svg'
 import Media3 from '../../assets/media3.svg'

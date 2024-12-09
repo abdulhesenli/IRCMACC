@@ -61,7 +61,6 @@
     font-size: 24px;
     color: #003B71;
     padding-top: 35px;
-    /* padding-bottom: 10px; */
     margin-bottom: 70px;
 }
 
@@ -79,5 +78,34 @@
     
 }
 
+@media  (min-width: 200px) and (max-width: 768px){
+    .mis-title{
+        font-size: 24px;
+    }
+    .mis-text{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Mission_Card{
+        margin: auto;
+        padding: 0;
+    }
+    .MissionCard {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .MissionCard h2 {
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px; 
+    }
+    .MissionCard p {
+        font-size: 15px;
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
 
 

@@ -187,6 +187,53 @@
 
 
 @media (min-width: 200px) and (max-width: 768px) {
+    .contact-text{
+        text-align: justify;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .Contactregister {
+        height: 545px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .ContactForm {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    .form-group .groupone{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    
+    .form-group{
+        margin-top: 0px;
+    }
+    .groupone{
+        margin-top: 15px;
+    }
+
+    #name{
+        max-width: 345px;
+    }
+    #text{
+        width: 345px;
+        padding-left: 30px;
+    }
+    #email{
+        width: 345px;
+        padding-left: 30px;
+    }
+    
+    #textarea{
+        width: 345px;
+    }
+    .contactBtn{
+        width: 345px;
+    }
 
     .Adress{
         max-width: 319px;
@@ -233,7 +280,52 @@
     }
 
 
+    iframe.map {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+
+    .WorkTime{
+    width: 295px;
+    left: 36px;
+    }
+
+    .WorkTimeText {
+    font-size: 14px;
+    margin-top: 0px;
+    padding: 20px;
+    line-height: 24.26px;
+    }
+
+
     
 
 }
 
+
+@media (min-width: 200px) and (max-width: 390px){
+    
+    #textarea {
+        width: 320px;
+    }
+    #email {
+        width: 320px;
+        padding-left: 30px;
+    }
+    #text {
+        width: 320px;
+        padding-left: 30px;
+    }
+
+    #name{
+            max-width: 320px;
+    }
+    .contactBtn {
+        width: 320px;
+    }
+    
+
+
+}

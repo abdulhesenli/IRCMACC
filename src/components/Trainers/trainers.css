@@ -44,3 +44,20 @@
     border: 1px solid #B4C1D9;
 }
 
+@media  (min-width: 200px) and (max-width: 768px) {
+    .Traniners-text{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .traniners-hr{
+        width: 30%;
+        border: 1px solid #B4C1D9;
+     
+    }
+    .Traniners-text2{
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+}

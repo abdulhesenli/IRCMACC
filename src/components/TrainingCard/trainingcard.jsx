@@ -2,7 +2,6 @@
 // import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './trainingcard.css'
-import '../../res.css'
 import ArrowIcon from '../../assets/Icon-right.svg'
 import {Link} from 'react-router-dom';
 

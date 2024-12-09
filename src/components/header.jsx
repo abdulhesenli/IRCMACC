@@ -1,11 +1,10 @@
-// import React from "react";
+
 import '../header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import irtmac from '../assets/Irtmac.svg'
 import {Link} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
-// import Home from './home/Home';
-// import {useState} from "react";
+
 
 
 

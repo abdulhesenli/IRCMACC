@@ -174,3 +174,63 @@ select::placeholder{
     display: none; /* Eski tarayıcılarda ok simgesini gizler */
   }
   
+  @media  (min-width: 200px) and (max-width: 768px){
+    .register {
+        flex-direction: column; 
+        align-items: center;   
+        text-align: center; 
+        margin: 0 20px; 
+        height: 633px;        
+    }
+    #register {
+        width: 100%;  
+        margin: 0;             
+        padding: 20px;      
+        flex-direction: column;  
+    }
+
+    .registerdiv{
+        margin: auto;
+        /* max-width: 400px ; */
+    }
+
+    .registerTitle {
+        font-size: 24px;      
+    }
+    .registerText {
+        font-size: 14px;   
+        margin-bottom: 20px;
+        text-align: justify;    
+    }
+    .registerForm {
+        margin-left: 0px;           
+    }
+    .Register-form-group {
+        margin-bottom: 0px;  
+        width: 100%;   
+        margin-top: 0;         
+    }
+    .inputtext {
+        width: 100%;            
+        font-size: 16px;       
+    }
+    .custom-select-wrapper {
+        width: 100%;            
+        margin-bottom: 20px;    
+  
+    }
+    .custom-select {
+        width: 100%;            
+       font-size: 16px;      
+    
+    }
+
+
+    .RegisterBtn{
+        width: 175px;
+        margin-left: 130px;
+        margin-top: 0px;
+    }
+  
+    
+  }

@@ -22,14 +22,11 @@
     justify-content: center;
     position: relative;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Kartlar arasındaki mesafe */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Kartlar arasındaki mesafe */
 
 }
-
-
-
 
 .TestimonialsTitle{
     font-family: "Montserrat", sans-serif;
@@ -42,7 +39,6 @@
 }
 .TestimonialsText{
     max-width: 638px;
-    /* height: 34px; */
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -51,9 +47,7 @@
     text-align: center;
     padding-top: 24px;
     margin-bottom: 30px;
-    margin: auto;
-  
-      
+    margin: auto;      
 }
 
 .TestimonialsCard{
@@ -76,8 +70,6 @@
     font-size: 14px;
     line-height: 17.07px;
     color: #002D74;
-    /* color: #555; */
- 
 }
 .BottomCircle{
     width: 24px;
@@ -87,16 +79,12 @@
     position: absolute;
     top: 183px;
     left: 173px;
-    /* bottom: -10px; */
-    /* right: 10px; */
-  
 }
 
 .Comma{
     position: absolute;
     top: 16px;
     left: 20px;
-  
 }
 .CardTitle{
     font-family: "Montserrat", sans-serif;
@@ -120,17 +108,11 @@
     position: absolute;
     top: -48px;
     left: 50px;
-    /* bottom: 0; */
-    /* left: 0; */
-    /* z-index: -1; */
 }
 .WhiteComma{
     position: absolute;
     top: -16px;
     left: 78px;
-    /* bottom: 50px; */
-    /* right: 50px; */
-    /* z-index: -1; */
 }
 .ArrowCircleRight{
     position: absolute;
@@ -145,6 +127,21 @@
  
 }
 
+@media  (min-width: 200px) and (max-width: 768px) {
+    #TestsBG {
+        width: 100%;
+        height: auto;
+    }
+    .TestimonialsText{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #Testimonials {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+}
 
 @media  (min-width: 200px) and (max-width: 819px) {
     .col-4{
@@ -153,7 +150,6 @@
     
       .col-4:first-child{
         display: block;
-        margin-left: 30px;
       }
     .ArrowCircleLeft{
         display: none;
@@ -180,7 +176,5 @@
 @media (min-width: 200px) and (max-width: 390px) {
     .col-4:first-child {
         display: block;
-        margin-left: 10px;
-        /* margin-right: 71px; */
     }
 }

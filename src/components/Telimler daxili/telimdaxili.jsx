@@ -1,7 +1,5 @@
 import './telimdaxili.css'
 
-
-
 function TelimDaxili (){
     return(
         <div style={{maxWidth:'1392px', margin:'auto'}}>

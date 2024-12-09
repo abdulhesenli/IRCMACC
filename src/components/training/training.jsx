@@ -1,6 +1,5 @@
 import '../../header.css'
 import './training.css'
-import '../../res.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TrainingCard from '../TrainingCard/Trainingcard';
 

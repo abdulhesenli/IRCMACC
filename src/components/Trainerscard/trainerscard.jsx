@@ -1,5 +1,4 @@
 import "../../header.css"
-import '../../res.css'
 import './trainerscard.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Doctor1 from '../../assets/doctor1.svg'
@@ -54,7 +53,7 @@ function TrainersCard() {
                 <div className="card">   
                           <img src={Doctor1} alt="Doctor2" className="Doctor" style={{borderRadius:"19px"}} />   
 
-                          <div className="card-content ">   
+                          <div className="card-content">   
                              <h2>Name <br />Surname</h2>   
                              <p>Op. Dr. Uzm.<br/>Ürek-damar cərrahı</p>   
 

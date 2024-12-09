@@ -55,13 +55,11 @@ dropdown-item:hover{
 
 .btn{
  
-  /* height: 48px; */
   border-radius: 60px;
   Padding:14px, 36px, 14px, 36px;
   Padding: 14px 36px 14px 36px;
 }
 .btn-1 {
-  /* width: 262px; */
   color: #002D74;
   margin-right: 24px;
 }
@@ -70,10 +68,8 @@ dropdown-item:hover{
   color: #002D74;
 }
 .btn-2{
-  /* width: 156px; */
   background-color: #002D74;
   color: #FFFFFF;
-  /* margin-right: 40px; */
 }
 
 .me-2{
@@ -94,7 +90,6 @@ dropdown-item:hover{
 
 
 .nav-link:hover{
-  /* position: relative; */
   color: #FFFFFF;
 
 }
@@ -103,7 +98,6 @@ dropdown-item:hover{
   content: '';
     display: block;
     width: 100%;
-    /* height: 1.5px; */
     background: #002D74;
     bottom: -1px;
     opacity: 0;
@@ -136,8 +130,6 @@ dropdown-item:hover{
   color: #002D74;
   transition: all 0.3s ease-in-out;
   animation-duration: 0.6s;
-  
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -146,5 +138,21 @@ dropdown-item:hover{
   animation-duration: 1s;
   padding: 0;
 }
+@media (min-width: 992px) and (max-width: 1200px){
+  .header-nav{
+    display: none;
+}
+}
+@media  (min-width: 200px) and (max-width: 768px){
+  .header-nav{
+    display: none;
+}
+}
 
+@media (min-width: 769px) and (max-width: 992px) {
+
+  .header-nav{
+      display: none;
+  }
+}
 

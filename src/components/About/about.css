@@ -97,3 +97,53 @@
     margin-top: 70px;
     text-align: justify;
 }
+
+@media  (min-width: 200px) and (max-width: 768px){
+    .about-title{
+        font-size: 24px;
+    }
+    .about-title{
+        font-size: 24px;
+    }
+    .about-text{
+        font-size: 17px;
+    }
+
+
+    .about{
+        justify-content: space-between;
+        flex-direction: column;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 534px;
+        border-radius: 20px 20px 20px 20px;
+
+    }
+    .aboutcircle{
+        display: none;
+    }
+
+
+    .AboutText2{
+        max-width: 380px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .aboutText2{
+        margin-top: 20px;
+        text-align: justify;
+        margin-left: 0px;
+      
+
+    }
+    .abouttext3{
+        text-align: justify;
+        
+    }
+    .abouttext3 p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

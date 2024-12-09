@@ -1,5 +1,4 @@
 import './contact.css'
-import '../../res.css'
 import Send from '../../assets/send-03.svg'
 import Location from '../../assets/location.svg'
 import Phonecall from '../../assets/phonecall.svg'

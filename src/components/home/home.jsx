@@ -1,7 +1,6 @@
 // import  from "react";
 import { useState, useEffect } from 'react';
 import "../../header.css"
-import '../../res.css'
 import './home.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Rectangle from '../../assets/doctors.jpeg'
@@ -10,18 +9,17 @@ import LogoIpsum2 from '../../assets/image2.svg'
 import LogoIpsum3 from '../../assets/image3.svg'
 import LogoIpsum4 from '../../assets/image4.svg'
 import Group2 from '../../assets/Group2.svg'
-import Group3 from '../../assets/Group3.svg'
 import Group4 from '../../assets/Group4.svg'
 import Arrow from '../../assets/arrow-right.svg'
-import Trainers from "../Trainers/Trainers";
-import Training from "../training/Training";
-import Registration from "../registration/Registration";
+// import Trainers from "../Trainers/Trainers";
+// import Training from "../training/Training";
+// import Registration from "../registration/Registration";
 import Testimonials from "../Testimonials/Testimonials";
-import News from "../News/News";
+// import News from "../News/News";
 // import InsideNews from '../İnsideNews/Insidenews';
 // import NewsPage from "../NewsPage/newspage";
 // import Questions from "../Questions/questions";
-// import Footer from "../Footer/footer";
+
 
 
 
@@ -57,26 +55,23 @@ function Home(){
 
               </div>
 
-                 <div id='Homelogo' className='Homelogo row'>
+                <div id='Homelogo' className='Homelogo row'>
                    
-                     <div className="logo">
+                    <div className="logo">
                         <img src={LogoIpsum}  alt="LogoIpsum" className="LogoIpsum" />
-                    </div>                  
-                   
-                  
-                        <div className="logo">
+                     </div>                  
+
+                    <div className="logo">
                          <img src={LogoIpsum2}  alt="LogoIpsum4" className="LogoIpsum4" />
-                        </div>
+                    </div>
                    
-                        <div className="logo">
+                    <div className="logo">
                          <img src={LogoIpsum3}  alt="LogoIpsum3" className="LogoIpsum3" />
-                         </div>                   
-                   
-                    
-                         <div className="logo">
+                    </div>                   
+
+                    <div className="logo">
                          <img src={LogoIpsum4}  alt="LogoIpsum4" className="LogoIpsum4" />
-                        </div>                 
-                   
+                    </div>                 
                 </div>
 
 
@@ -112,20 +107,14 @@ function Home(){
                         <p className="boxtext1">Təcrübə</p>
                     </div>
 
-                    {/* <hr className="line" /> */}
                     <div className="line"></div>
                    <hr className="line2" />
                 </div>
             </div>
 
-               
-
-            <div className="banner">
-
-
+            <div className="banner banright">
                 <div>
                 <img src={Group4} alt="Group4" className="Group4" />
-
                 </div>
                 
                 <div className="HRline"></div>
@@ -145,35 +134,23 @@ function Home(){
                         <img src={Arrow} alt="Arrow"  className="Arrow" />
                         </span> </button>
 
-
                 </div>
-
-                <img src={Group3} style={{marginLeft:"-23px", marginTop:"-155px"}} alt="Group3" className="Group3" />
-
 
             </div>
      
-           
-
-               
-
             </div>
           
-            <Training/> 
-            <Trainers/>
-            <Registration/>
+            {/* <Training/>  */}
+            {/* <Trainers/> */}
+            {/* <Registration/> */}
             <Testimonials/>
-            <News/> 
+            {/* <News/>  */}
             {/* <InsideNews/> */}
             {/* <NewsPage/> */}
 
             {/* <Questions/> */}
             
  </div>
-
-
-
-      
 
     )
 }

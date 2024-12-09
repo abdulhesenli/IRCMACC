@@ -84,21 +84,13 @@
   visibility: visible !important;
 }
 
-/* .accordion-item > .accordion-collapse.show {
+@media  (min-width: 200px) and (max-width: 768px){
+  .ques-title{
+    font-size: 20px;
+  }
+  .accordion-item{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-  border-left:1px solid #009ADE!important ;
-  border-right:1px solid #009ADE!important ;
-  border-bottom:1px solid #009ADE !important;
-  border-radius: 0 0 20px 20px !important;
-
-} */
-/* 
-.accordion-button:not(.collapsed) {
-
-  border-top:1px solid #009ADE !important;
-  border-left:1px solid #009ADE!important ;
-  border-right:1px solid #009ADE!important ;
-  border-radius: 20px 20px 0 0  !important;
-
-} */
-
+}

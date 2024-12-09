@@ -117,84 +117,12 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 576px) {
-    .TopHeader{
-        max-width: 1392px;
-        display: flex;
-        align-items: center;
-        margin: auto;
-        padding-top: 10px;
-        /* justify-content: space-between; */
-    }
-
-    .topheader-text {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 300;
-        font-size: 10px;
-        color: #FFFFFF;
-        margin: 0;
-        padding: 10px 20px 0px 20px ;
-       
-    }
-    .me-4{
-        margin-right: 0px;
-    }
-
-    .header-search{
-        /* position: fixed; */
-        top: 0;
-        width: 100%;
-        opacity: 0;
-        pointer-events: none;
-        height: 0;
-        transition: all 0.4s linear;
-        cursor: pointer;
-    }
-
-}
-@media only screen and (max-width: 768px) {
-    .TopHeader{
-        max-width: 1392px;
-        display: flex;
-        align-items: center;
-        margin: auto;
-        padding-top: 10px;
-        /* justify-content: space-between; */
-    }
-
-    .topheader-text {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 300;
-        font-size: 10px;
-        color: #FFFFFF;
-        margin: 0;
-        padding: 10px 20px 0px 20px ;
-       
-    }
-    .me-4{
-        margin-right: 0px;
-    }
-
-    .header-search{
-        /* position: fixed; */
-        top: 0;
-        width: 100%;
-        opacity: 0;
-        pointer-events: none;
-        height: 0;
-        transition: all 0.4s linear;
-        cursor: pointer;
-    }
-}
-
-
-
 .hamburger-menu {
     cursor: pointer;
     margin-left: 20px;
 }
 
-/* Menü İçeriği - Tam Sayfa Kaplama */
+
 .menu-content {
     position: fixed;
     top: 0;
@@ -212,12 +140,12 @@
     justify-content: center;
 }
 
-/* Menü Açıkken Ekranı Kapsar */
+
 .menu-content.active {
     transform: translateX(0);
 }
 
-/* Menü Linkleri */
+
 .menu-content ul {
     position: fixed;
     list-style: none;
@@ -237,7 +165,7 @@
     animation: slideIn 0.5s ease forwards;
 }
 
-/* Linklerin Gecikmeli Animasyonu */
+
 .menu-content li:nth-child(1) { animation-delay: 0.1s; }
 .menu-content li:nth-child(2) { animation-delay: 0.2s; }
 .menu-content li:nth-child(3) { animation-delay: 0.3s; }
@@ -261,7 +189,7 @@
     font-size: 1.5rem;
 }
 
-/* Kapatma Butonu */
+
 .close-button {
     position: absolute;
     top: 20px;
@@ -269,14 +197,6 @@
     font-size: 2rem;
     color: white;
     cursor: pointer;
-}
-
-/* ddcdcd */
-
-/* Genel sıfırlamalar ve stil ayarları */
-* {
-    margin: 0;
-    box-sizing: border-box;
 }
 
 .TopHeader{
@@ -296,7 +216,6 @@
     margin: 0;
 }
 
-/* Search Icon */
 .SearchIcon{
     box-sizing: border-box;
     width: 25.5px;
@@ -307,7 +226,6 @@
     cursor: pointer;
 }
 
-/* Search Bar */
 .header-search {
     position: fixed;
     top: 0;
@@ -321,7 +239,7 @@
 .header-search.active {
     opacity: 1;
     pointer-events: auto;
-    height: 50px; /* Arama kutusunun görünür uzunluğu */
+    height: 50px; 
     cursor: pointer;
 }
 
@@ -329,12 +247,10 @@
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    /* border-radius: 4px; */
     height: 59px;
     border: 1px solid #ccc;
 }
 
-/* Close Search Icon */
 .close-search-icon {
     position: absolute;
     top: 60%;
@@ -345,29 +261,22 @@
     color: #000;
 }
 
-/* Hamburger Menu */
 .hamburger-menu {
     display: none;
     cursor: pointer;
     margin-left: 20px;
 }
 
-
-
 .menu-content.active {
     transform: translateX(0);
 }
 
-
-
 .menu-content li {
-    /* padding: 15px 0; */
     opacity: 0;
     transform: translateY(20px);
     animation: slideIn 0.5s ease forwards;
 }
 
-/* Link Animations */
 .menu-content li:nth-child(1) { animation-delay: 0.1s; }
 .menu-content li:nth-child(2) { animation-delay: 0.2s; }
 
@@ -388,7 +297,6 @@
     font-size: 1.5rem;
 }
 
-/* Close Button */
 .close-button {
     position: absolute;
     top: 20px;
@@ -396,4 +304,164 @@
     font-size: 2rem;
     color: white;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+    .TopHeader{
+        max-width: 1392px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .topheader-text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 10px 20px 0px 20px ;
+       
+    }
+    .me-4{
+        margin-right: 0px;
+    }
+
+    .header-search{
+        /* position: fixed; */
+        top: 0;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        height: 0;
+        transition: all 0.4s linear;
+        cursor: pointer;
+    }
+    .close-search-icon {
+        position: absolute;
+        top: 60%;
+        right: -150px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 20px;
+        color: #000; 
+    }
+
+}
+@media (min-width: 200px) and (max-width: 768px) {
+    .TopHeader{
+        max-width: 1392px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .topheader-text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 10px 20px 0px 20px ;
+       
+    }
+    .irtmac{
+        display:block;
+    }
+
+    .me-4{
+        margin-right: 0px;
+    }
+
+    .hamburger-menu{
+        display: block;
+        margin-left: 0;
+        margin-right: 25px;
+    }
+
+    .header-search{
+        top: 0;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        height: 0;
+        transition: all 0.4s linear;
+        cursor: pointer;
+    }
+    .close-search-icon {
+        position: absolute;
+        top: 60%;
+        right: -150px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 20px;
+        color: #000;
+    } 
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+ 
+    .hamburger-menu{
+        display: block;
+        margin-left: 0;
+        margin-right: 25px;
+    }
+    .close-search-icon {
+        position: absolute;
+        top: 60%;
+        right: -460px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 20px;
+        color: #000;
+    } 
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+/*     
+    .TopHeader {
+       align-items: center;
+       padding: 10px 20px;
+     } */
+     
+     .irtmac {
+        margin: 10px auto;
+    }
+    .hamburger-menu{
+        display: block;
+        margin-left: 0;
+        margin-right: 25px;
+    }
+
+    .close-search-icon {
+        position: absolute;
+        top: 60%;
+        right: -660px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 20px;
+        color: #000;
+    }  
+}
+
+@media (min-width: 1200px) and (max-width: 3200px){
+  
+         
+    .irtmac{
+        margin: 10px auto;
+    }
+    .hamburger-menu {
+        margin-top: 10px;
+    }
+
+      .close-search-icon {
+        position: absolute;
+        top: 60%;
+        right: -440px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 20px;
+        color: #000;
+    }  
 }

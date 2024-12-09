@@ -1,5 +1,4 @@
 import './about.css'
-import '../../res.css'
 import Image from '../../assets/aboutimage2.svg'
 import {Helmet} from "react-helmet";
 import {useTranslation} from "react-i18next";
