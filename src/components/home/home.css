@@ -293,7 +293,7 @@
 
     .banner{
         flex-direction: column;
-        height: auto;
+        height: 820px;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -359,9 +359,15 @@
 @media  (min-width: 769px) and (max-width: 992px) {
     .banner{
         flex-direction: column;
-        height: auto;
+        height: 820px;
         margin-left: 20px;
         margin-right: 20px;
+    }
+    .banright{
+        background-image: url(../../assets/Group3rotated.svg);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+      
     }
     .Group4 {
         margin-left: 15px;

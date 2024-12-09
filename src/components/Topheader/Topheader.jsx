@@ -2,6 +2,7 @@ import{ useState, useEffect } from 'react';
 import './topheader.css';
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
+// import { AiOutlineSearch } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import irtmacc from '../../assets/Irtmac.svg';
 import { useTranslation  } from "react-i18next";
@@ -14,7 +15,10 @@ function Topheader() {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
     const [isMenuDropdownOpen, setMenuIsDropdownOpen] = useState(false);
     const [isMenuTwoDropdownOpen, setMenuTwoIsDropdownOpen] = useState(false);
-
+    
+    // const closeSearch = () => {
+    //     setIsOpenSearch(false);  // Search inputu gizlədəcək
+    // };
     const toggleDropdown = () => {
         setMenuIsDropdownOpen(!isMenuDropdownOpen);
     };
@@ -75,6 +79,7 @@ function Topheader() {
                     <div onClick={handleClick} className="me-4">
                         <CiSearch className="SearchIcon" />
                     </div>
+
                     <div className="vl"></div>
                     <select onChange={handleChange} defaultValue={i18n.language} >
                         <option value="az">AZ</option>
@@ -128,13 +133,28 @@ function Topheader() {
             </div>
 
             {/* Search Input */}
-            <div className={`row m-0 header-search ${isOpenSearch && 'active'}`}>
+            {/* <div className={`row m-0 header-search ${isOpenSearch && 'active'}`}>
+                <AiOutlineSearch className="search-icon-lop" />
                 <input type="text" placeholder="Search..." />
-                {/* Close Icon to close the search */}
+                Close Icon to close the search
                 {isOpenSearch && (
-                    <AiOutlineClose className="close-search-icon" onClick={closeSearch} />
+                    <AiOutlineClose className="close" onClick={closeSearch} />
                 )}
-            </div>
+            </div> */}
+
+            <div className={`row m-0 header-search ${isOpenSearch && 'active'}`}>
+            {isOpenSearch && (
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    className="search-input"
+                />
+            )}
+            {/* CSS ilə background-ı qoyub, onClick ilə input-u bağlamaq */}
+            {isOpenSearch && (
+                <div className="close-icon" onClick={closeSearch}></div>
+            )}
+        </div>
         </div>
     );
 }

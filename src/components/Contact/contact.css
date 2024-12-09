@@ -329,3 +329,24 @@
 
 
 }
+
+@media (min-width: 200px) and (max-width: 390px){
+    #textarea {
+        width: 290px;
+    }
+    #email {
+        width: 290px;
+        padding-left: 30px;
+    }
+    #text {
+        width: 290px;
+        padding-left: 30px;
+    }
+
+    #name{
+      max-width: 290px;
+    }
+    .contactBtn {
+        width: 290px;
+    } 
+}

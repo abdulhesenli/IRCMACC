@@ -245,11 +245,34 @@
 
 .header-search input {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 60px;
     font-size: 16px;
-    height: 59px;
+    height: 60px;
     border: 1px solid #ccc;
+    background: url(../../assets/search-lg.svg);
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-position: 20px center, calc(100% - 20px) center; /* Soldan və sağdan 20px */
+    
+    /* background-position: left, right; */
+   
 }
+.header-search input:focus{
+    border: none !important;
+}
+.close-icon {
+    position: absolute;
+    top: 59%;
+    right: 20px; /* Sağ tərəfdən məsafə */
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: url(../../assets/x-close.svg) no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
 
 .close-search-icon {
     position: absolute;
@@ -321,7 +344,7 @@
         font-size: 10px;
         color: #FFFFFF;
         margin: 0;
-        padding: 10px 20px 0px 20px ;
+        padding: 10px 0px 0px 20px ;
        
     }
     .me-4{
@@ -364,7 +387,7 @@
         font-size: 10px;
         color: #FFFFFF;
         margin: 0;
-        padding: 10px 20px 0px 20px ;
+        padding: 10px 0px 0px 20px ;
        
     }
     .irtmac{
@@ -372,7 +395,7 @@
     }
 
     .me-4{
-        margin-right: 0px;
+        margin-right: 16px !important;
     }
 
     .hamburger-menu{
@@ -398,7 +421,16 @@
         cursor: pointer;
         font-size: 20px;
         color: #000;
-    } 
+    }
+    .TopHeader select{
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px){
+    .TopHeader select{
+        margin-right: 16px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -458,10 +490,26 @@
       .close-search-icon {
         position: absolute;
         top: 60%;
-        right: -440px;
+        right: -677px;
         transform: translateY(-50%);
         cursor: pointer;
         font-size: 20px;
         color: #000;
     }  
+
+    .search-icon-lop{
+        position: absolute;
+        top: 63%;
+        left: -690px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 25px;
+        color: #5B748D;
+    }
+
+
+}
+
+@media (min-width: 1200px) and (max-width: 3200px){
+
 }

@@ -32,7 +32,7 @@ function Registration() {
 
 
                         <div className="custom-select-wrapper">
-                            <select id="message" className="custom-select" placeholder="Təlimi seç">
+                            <select id="message" className="custom-select inputtext"  placeholder="Təlimi seç">
                                 <option  value="option1" >Təlimi seç</option>
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>

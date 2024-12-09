@@ -11,11 +11,11 @@ import LogoIpsum4 from '../../assets/image4.svg'
 import Group2 from '../../assets/Group2.svg'
 import Group4 from '../../assets/Group4.svg'
 import Arrow from '../../assets/arrow-right.svg'
-// import Trainers from "../Trainers/Trainers";
-// import Training from "../training/Training";
-// import Registration from "../registration/Registration";
+import Trainers from "../Trainers/Trainers";
+import Training from "../training/Training";
+import Registration from "../registration/Registration";
 import Testimonials from "../Testimonials/Testimonials";
-// import News from "../News/News";
+import News from "../News/News";
 // import InsideNews from '../İnsideNews/Insidenews';
 // import NewsPage from "../NewsPage/newspage";
 // import Questions from "../Questions/questions";
@@ -140,11 +140,11 @@ function Home(){
      
             </div>
           
-            {/* <Training/>  */}
-            {/* <Trainers/> */}
-            {/* <Registration/> */}
+            <Training/> 
+            <Trainers/>
+            <Registration/>
             <Testimonials/>
-            {/* <News/>  */}
+            <News/> 
             {/* <InsideNews/> */}
             {/* <NewsPage/> */}
 
