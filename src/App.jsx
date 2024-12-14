@@ -30,7 +30,7 @@ function App() {
     const {loading} = useSelector((state)=>state.uiSlice);
     const dispatch = useDispatch();
 
-
+    console.log('testt')
     useEffect(()=>{
         dispatch(setLoading(true));
         setTimeout(()=>{console.log('App component rendered');
