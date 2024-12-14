@@ -52,16 +52,24 @@
 
 .aboutcircle{
     position: absolute;
-    width: 330px;
-    height: 330px;
+    width: 290px;
+    height: 290px;
     background-color: #009ADE;
     border-radius: 50%;
     left: -13px;
+    /* background-image: url(../../assets/rehber.png); */
+    background-repeat: no-repeat;
+    background-size: 300px;
+    /* background-position: center; */
 }
 .AboutImage{
-    position: absolute;
-    width: 330px;
-    height: 330px;
+    width: 348px;
+    height: 372px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 37% 53%;
+    margin-top: -95px;
+    margin-left: -17px;
 
 }
 .about{

@@ -16,7 +16,16 @@ export const education = api.injectEndpoints({
         getEducation:build.query({
             query : ()=>{
                 return {
-                    url : '/posts',
+                    url : '/trainings',
+                    method : 'GET',
+                }
+            }
+        }),
+
+        getEducationSingle:build.query({
+            query : (id)=>{
+                return {
+                    url : `/trainings/${id}`,
                     method : 'GET',
                 }
             }
@@ -24,4 +33,4 @@ export const education = api.injectEndpoints({
     })
 })
 
-export const { useGetEducationQuery } = education;
+export const { useGetEducationQuery,useGetEducationSingleQuery } = education;

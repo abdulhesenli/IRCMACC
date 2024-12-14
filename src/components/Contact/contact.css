@@ -50,7 +50,7 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-left: 40px;
+    /* margin-left: 40px; */
    
 }
 .ContactForm input{
