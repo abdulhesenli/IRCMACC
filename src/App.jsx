@@ -36,6 +36,11 @@ function App() {
         console.log('Loading state:', loading);
             dispatch(setLoading(false));
         }, 1000)
+    }, []);
+
+    useEffect(()=>{
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }, [])
 
   return (
