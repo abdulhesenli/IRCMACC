@@ -16,7 +16,7 @@ import Training from "../training/Training";
 import Registration from "../registration/Registration";
 import Testimonials from "../Testimonials/Testimonials";
 import News from "../News/News";
-// import InsideNews from '../İnsideNews/Insidenews';
+// import InsideNews from '../InsideNews/Insidenews';
 // import NewsPage from "../NewsPage/newspage";
 // import Questions from "../Questions/questions";
 

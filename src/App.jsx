@@ -18,10 +18,10 @@ import Topheader from './components/Topheader/Topheader.jsx';
 import Header from './components/Header.jsx';
 import Home from './components/home/Home.jsx';
 import About from './components/About/About.jsx'
-import InsideNews from './components/İnsideNews/Insidenews.jsx';
 import Telimcidaxili from './components/Telimcidaxili/Telimcidaxili.jsx'
 import Telimdaxili from './components/Telimler daxili/Telimdaxili.jsx'
 import Searchresult from './components/searchresult/SearchResult.jsx';
+import InsideNews from "./components/InsideNews/Insidenews.jsx";
 
 
 
@@ -30,7 +30,7 @@ function App() {
     const {loading} = useSelector((state)=>state.uiSlice);
     const dispatch = useDispatch();
 
-
+    console.log('testt')
     useEffect(()=>{
         dispatch(setLoading(true));
         setTimeout(()=>{console.log('App component rendered');
