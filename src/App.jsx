@@ -71,6 +71,8 @@ function App() {
                   <Route path="/Searchresult" element={<Searchresult/>}/>
                   <Route path="*" element={<Error/>}/>
               </Routes>
+
+              
            
               <Footer/>
 
