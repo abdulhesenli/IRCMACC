@@ -26,13 +26,18 @@ background-color: #009ADE;
     color: #ffffff ; /* Beyaz renk */
 }
 
-.Traningtext{
-    margin-left: 36px;
+
+.Traningtext {
+  position: absolute;
+    top: 194px;
+  margin-left: 36px;
 }
+
+
+
 
 .Trainingcard h2 {
     max-width: 367px;
-    height: 58px;
     margin-left: 40px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -40,6 +45,12 @@ background-color: #009ADE;
     color: #003B71;
     padding-top: 30px;
     margin-bottom: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 3 satırda sınırla */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 
@@ -54,6 +65,11 @@ background-color: #009ADE;
     color: #003B71;
     text-align: left;
     margin-bottom: 0 !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 3 satırda sınırla */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
 }
 
@@ -76,22 +92,6 @@ background-color: #009ADE;
     font-size: 16px;
 
 }
-
-
-
-
-.Trainingtext2{
-    position: absolute;
-    top: 7px;
-    padding: 0 5px 0 5px;
-    left: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-
-
 
   .Trainingcard:hover .cta img  {
     filter: brightness(0) invert(1); /* İkonu beyaza çevirir */
@@ -175,5 +175,9 @@ background-color: #009ADE;
     .Trainingcard{
       margin-left: 20px;
       margin-right: 20px;
+   }
+   .Tcard{
+    display: flex !important;
+    flex-direction: column !important;
    }
   }

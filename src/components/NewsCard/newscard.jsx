@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import  Newsphoto from '../../assets/newsphoto.png'
 import ArrowIcon from '../../assets/Icon-right.svg'
 import {Link} from 'react-router-dom';
-// import InsideNews from "../İnsideNews/Insidenews";
+// import InsideNews from "../InsideNews/Insidenews";
 
 
 

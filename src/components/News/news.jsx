@@ -3,7 +3,7 @@ import './news.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Ellipse from '../../assets/Ellipse.svg'
 import IconRight from '../../assets/Icon-right.svg'
-import NewsCard from "../NewsCard/newscard";
+import NewsCard from "../NewsCard/Newscard";
 
 
 
