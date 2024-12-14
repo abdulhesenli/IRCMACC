@@ -4,23 +4,23 @@ import {useSelector, useDispatch} from "react-redux";
 import {useEffect} from "react";
 import {setLoading} from "./store/Slice/ui.js";
 import { Routes, Route } from 'react-router-dom';
-import Footer from './components/Footer/Footer.jsx'
-import Telimler from "./components/Telimler/Telimler.jsx"
-import Telimciler from './components/Telimciler/Telimciler.jsx';
-import Media from './components/Media/Media.jsx';
-import Contact from './components/Contact/Contact.jsx';
-import Error from './components/error/Error.jsx';
-import Questions from './components/Questions/Questions.jsx';
-import NewsPage from './components/NewsPage/Newspage.jsx';
-import Mission from './components/Mission/Mission.jsx';
+import Footer from './components/Footer/footer.jsx'
+import Telimler from "./components/Telimler/telimler.jsx"
+import Telimciler from './components/Telimciler/telimciler.jsx';
+import Media from './components/Media/media.jsx';
+import Contact from './components/Contact/contact.jsx';
+import Error from './components/error/error.jsx';
+import Questions from './components/Questions/questions.jsx';
+import NewsPage from './components/NewsPage/newspage.jsx';
+import Mission from './components/Mission/mission.jsx';
 import Loading from "./components/Ui/Loading.jsx";
 import Topheader from './components/Topheader/Topheader.jsx';
-import Header from './components/Header.jsx';
-import Home from './components/home/Home.jsx';
-import About from './components/About/About.jsx'
-import InsideNews from './components/İnsideNews/Insidenews.jsx';
-import Telimcidaxili from './components/Telimcidaxili/Telimcidaxili.jsx'
-import Telimdaxili from './components/Telimler daxili/Telimdaxili.jsx'
+import Header from './components/header.jsx';
+import Home from './components/home/home.jsx';
+import About from './components/About/about.jsx'
+import InsideNews from './components/İnsideNews/insidenews.jsx';
+import Telimcidaxili from './components/Telimcidaxili/telimcidaxili.jsx'
+import Telimdaxili from './components/Telimler daxili/telimdaxili.jsx'
 
 
 

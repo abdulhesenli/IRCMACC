@@ -1,7 +1,7 @@
 import './newspage.css'
 import NewsArrowRight from '../../assets/arrow-narrow-right.svg'
 import NewsArrowLeft from '../../assets/arrow-narrow-left.svg'
-import NewsCard from '../NewsCard/Newscard'
+import NewsCard from '../NewsCard/newscard'
 
 function NewsPage (){
     return(

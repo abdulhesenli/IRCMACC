@@ -1,7 +1,7 @@
 import "../../header.css"
 import './trainers.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TrainersCard from '../Trainerscard/Trainerscard';
+import TrainersCard from '../Trainerscard/trainerscard';
 import IconRight from '../../assets/Icon-right.svg'
 
 

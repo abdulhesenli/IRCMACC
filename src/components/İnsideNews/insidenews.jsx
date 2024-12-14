@@ -1,5 +1,5 @@
 import './insidenews.css'
-import News from '../News/News'
+import News from '../News/news'
 // import NewsImage from '../../assets/newsimage.svg'
 // import ArrorRight from '../../assets/arrow-circle-right.svg'
 // import ArrorLeft from '../../assets/arrow-circle-left.svg'

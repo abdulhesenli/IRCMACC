@@ -1,5 +1,5 @@
 import './telimler.css'
-import Trainingcard from '../TrainingCard/Trainingcard';
+import Trainingcard from '../TrainingCard/trainingcard';
 
 
 
