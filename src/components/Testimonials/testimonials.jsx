@@ -5,48 +5,49 @@ import RedCircle from '../../assets/RedCircle.svg';
 import WhiteComma from '../../assets/WhiteComma.svg';
 import ArrowCircleRight from '../../assets/arrow-circle-right.svg';
 import ArrowCircleLeft from '../../assets/arrow-circle-left.svg';
+import { useGetTestimonilasQuery } from '../../store/Api/testimonials';
+import Loading from '../Ui/Loading';
 
 import { useState } from 'react';
 
 function Testimonials() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchEndX, setTouchEndX] = useState(0);
 
-  const testimonials = [
-    {
-      name: 'Name Surname',
-      title: 'Student',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    },
-    {
-      name: 'Name Surname',
-      title: 'Student',
-      text: 'Lorem Ipsum has been the industry standard dummy text ever since the 1500s.',
-    },
-    {
-      name: 'Name Surname',
-      title: 'Student',
-      text: 'When an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    },
-    {
-      name: 'Name Surname',
-      title: 'Student',
-      text: 'Lorem Ipsum is simply dummy text with its roots in classical Latin literature.',
-    },
-    {
-      name: 'Name Surname',
-      title: 'Student',
-      text: 'Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting.',
-    },
-  ];
+  const {data, isLoading, isError} = useGetTestimonilasQuery();
+
+
+        let content;
+
+     if(isError){
+        content = "Xeta bas verdi";
+     }else if(isLoading){
+         content = <Loading/>
+     }else {
+    
+         content = data.testimonials.map((item,index)=> (
+
+          <div className="col-4" style={{ width: '370px' }} key={index}>
+          <div className="TestimonialsCard">
+            <img src={Comma} alt="Comma" className="Comma" />
+            <p className="TestimonialsCardText">{item.desc}</p>
+            <div className="BottomCircle"></div>
+          </div>
+          <h6 className="CardTitle">{item.name1}</h6>
+          <h6 className="CardText">{item.name2}</h6>
+        </div>
+        ))
+     }
+
+  
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    // setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+    // setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
   };
 
   const handleTouchStart = (e) => {
@@ -76,7 +77,9 @@ function Testimonials() {
       </p>
 
       <div id="Testimonials" className="row">
-        <div className="col-4" style={{ width: '370px' }}>
+        {content}
+
+        {/* <div className="col-4" style={{ width: '370px' }}>
           <div className="TestimonialsCard">
             <img src={Comma} alt="Comma" className="Comma" />
             <p className="TestimonialsCardText">{testimonials[(currentIndex) % testimonials.length].text}</p>
@@ -84,9 +87,9 @@ function Testimonials() {
           </div>
           <h6 className="CardTitle">{testimonials[(currentIndex) % testimonials.length].name}</h6>
           <h6 className="CardText">{testimonials[(currentIndex) % testimonials.length].title}</h6>
-        </div>
+        </div> */}
 
-        <div className="col-4" style={{ width: '370px' }}>
+        {/* <div className="col-4" style={{ width: '370px' }}>
           <div className="TestimonialsCard">
             <img src={Comma} alt="Comma" className="Comma" />
             <p className="TestimonialsCardText">{testimonials[(currentIndex + 1) % testimonials.length].text}</p>
@@ -104,7 +107,7 @@ function Testimonials() {
           </div>
           <h6 className="CardTitle">{testimonials[(currentIndex + 2) % testimonials.length].name}</h6>
           <h6 className="CardText">{testimonials[(currentIndex + 2) % testimonials.length].title}</h6>
-        </div>
+        </div> */}
 
         <div className="carousel-controls">
         <a href="#" onClick={(e) => { e.preventDefault(); handlePrev(); }}>

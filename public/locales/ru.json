@@ -1,6 +1,15 @@
 {
-  "education" : "Образование",
-  "register" : "ЗАРЕГИСТРИРОВАТЬСЯ",
-  "about" : "Onas",
-  "home" : "ДОМАШНЯЯ СТРАНИЦА" 
+ "home" : "ДОМ",
+  "about" : "ОНАС",
+  "trainings":" ОБУЧЕНИЕ",
+  "trainers":"ТРЕНЕРЫ",
+  "media center":"МЕДИА-ЦЕНТР",
+  "contact":"СВЯЗЬ",
+  "media":"СМИ",
+  "news":"НОВОСТИ",
+  "leaders address":"Адрес руководителя",
+  "frequently asked questions":"Часто задаваемые вопросы",
+  "mission and values":"Миссия и ценности",
+  "education" : "Təlimlər",
+  "register" : "QEYDİYYAT"
 }

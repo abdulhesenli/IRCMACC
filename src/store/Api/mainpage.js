@@ -1,11 +1,11 @@
 import {api} from "./api.js";
 
-export const faq = api.injectEndpoints({
+export const MainPage = api.injectEndpoints({
     endpoints:(build ) => ({
-        getFaq:build.query({
+        getMainPage:build.query({
             query : ()=>{
                 return {
-                    url : '/faqs',
+                    url : '/main_page',
                     method : 'GET',
                 }
             }
@@ -15,4 +15,4 @@ export const faq = api.injectEndpoints({
     })
 })
 
-export const { useGetFaqQuery } = faq;
+export const { useGetMainPageQuery } = MainPage;

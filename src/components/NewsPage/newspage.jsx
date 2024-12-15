@@ -9,8 +9,8 @@ function NewsPage (){
                 <h1 className='newspage-title'>Xəbərlər</h1>
                 <p className='newspage-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <NewsCard/>
-                <NewsCard/>
-                <NewsCard/>
+                {/* <NewsCard/>
+                <NewsCard/> */}
                 <div className='Newspage'>
                     <ul className='newspagelist'>
                     <a href="#"><img src={NewsArrowLeft} alt="NewsArrowLeft" className='NewsArrowLeft' /></a>

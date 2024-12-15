@@ -1,18 +1,18 @@
 import {api} from "./api.js";
 
-export const faq = api.injectEndpoints({
+export const testimonilas = api.injectEndpoints({
     endpoints:(build ) => ({
-        getFaq:build.query({
+        getTestimonilas:build.query({
             query : ()=>{
                 return {
-                    url : '/faqs',
+                    url : '/testimonials',
                     method : 'GET',
                 }
             }
         }),
 
-       
+     
     })
 })
 
-export const { useGetFaqQuery } = faq;
+export const { useGetTestimonilasQuery } = testimonilas;

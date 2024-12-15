@@ -30,28 +30,28 @@ function Header() {
                             </li>
                             <li className=" dropdown dropdown-2 nav-item" id='about'>
 
-                                <Link className="nav nav-link" >HAQQIMIZDA</Link>
+                                <Link className="nav nav-link" > {t('about')}</Link>
                                 <div className="dropdown-content dropdown-menu dropdown-menu-white">
-                                    <Link className=" dropdown-item nav " to="/about">Rəhbərin Müraciəti</Link>
-                                    <Link className=" dropdown-item nav " to="/Questions">Ən çox verilən suallar</Link>
-                                    <Link className="dropdown-item  nav " to="/Mission">Missiya və Dəyərlər</Link>
+                                    <Link className=" dropdown-item nav " to="/about">{t('leaders address')}</Link>
+                                    <Link className=" dropdown-item nav " to="/Questions"> {t('frequently asked questions')}</Link>
+                                    <Link className="dropdown-item  nav " to="/Mission"> {t('mission and values')}</Link>
                              
                                 </div>
 
 
                             </li>
                             <li className="nav-item">
-                                <Link className="nav nav-link" to="/Telimler">TƏLİMLƏR</Link>
+                                <Link className="nav nav-link" to="/Telimler">{t('trainings')}</Link>
 
                             </li>
                             <li className="nav-item">
-                                <Link className="nav nav-link" to="/Telimciler">TƏLİMÇİLƏR</Link>
+                                <Link className="nav nav-link" to="/Telimciler">{t('trainers')} </Link>
                             </li>
                             <li className=" dropdown dropdown-2 nav-item">
-                                <Link className="nav nav-link">MEDİA MƏRKƏZİ</Link>
+                                <Link className="nav nav-link">{t('media center')}</Link>
                                 <div className="dropdown-content dropdown-menu dropdown-menu-white">
-                                    <Link className="nav " to="/Media">KİV</Link>
-                                    <Link className="nav " to="/NewsPage">Xəbərlər</Link>
+                                    <Link className="nav " to="/Media"> {t('media')}</Link>
+                                    <Link className="nav " to="/NewsPage">{t('news')} </Link>
                                     
                          
                                 </div>
@@ -59,7 +59,7 @@ function Header() {
                                 
                             </li>
                             <li className="nav-item">
-                                <Link className="nav nav-link" to="/Contact">ƏLAQƏ</Link>
+                                <Link className="nav nav-link" to="/Contact">{t('contact')}</Link>
                             </li>
 
 

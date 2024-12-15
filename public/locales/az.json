@@ -1,7 +1,15 @@
-{
+{ "home" : "ANA SƏHİFƏ",
+  "about" : "HAQQIMIZDA",
+  "trainings":" TƏLİMLƏR",
+  "trainers":"TƏLİMÇİLƏR",
+  "media center":"MEDİA MƏRKƏZİ",
+  "contact":"ƏLAQƏ",
+  "media":"KIV",
+  "news":"XƏBƏRLƏR",
+  "leaders address":"Rəhbərin Müraciəti",
+  "frequently asked questions":"Ən çox verilən suallar",
+  "mission and values":"Missiya və Dəyərlər",
   "education" : "Təlimlər",
-  "register" : "QEYDİYYAT",
-  "about" : "Haqqimzida",
-  "home" : "ANA SƏHİFƏ"
+  "register" : "QEYDİYYAT"
 
 }

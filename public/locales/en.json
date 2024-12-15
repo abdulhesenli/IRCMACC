@@ -1,6 +1,15 @@
 {
-  "education" : "Education",
-  "register" : "REGİSTER",
-  "about" : "About",
-  "home" : "HOMEPAGE"   
+ "home" : "HOMEPAGE",
+  "about" : "ABOUT",
+  "trainings":" TRAININGS",
+  "trainers":"TRAINERS",
+  "media center":"MEDIA CENTER",
+  "contact":"CONTACT",
+  "media":"MEDIA",
+  "news":"NEWS",
+  "leaders address":"Leader's Address",
+  "frequently asked questions":"Frequently asked questions",
+  "mission and values":"Mission and Values",
+  "education" : "Təlimlər",
+  "register" : "QEYDİYYAT"   
 }

@@ -11,9 +11,18 @@ export const contact = api.injectEndpoints({
                     body : JSON.stringify(message)
                 }
             }
+        }),
+        registerPostMessage:build.mutation({
+            query : (message)=>{
+                return {
+                    url : '/homepage_post',
+                    method : 'POST',
+                    body : JSON.stringify(message)
+                }
+            }
         })
     })
 
 })
 
-export const {useContactPostMessageMutation } = contact;
+export const {useContactPostMessageMutation,useRegisterPostMessageMutation } = contact;

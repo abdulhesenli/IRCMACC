@@ -62,9 +62,14 @@ function Contact() {
                                value={formik.values.fullname}
                                style={{marginBottom: '10px'}}
                                placeholder="Ad, Soyad"/>
-                        <input type="text" name="number" onChange={formik.handleChange}
-                               value={formik.values.number} id="text" style={{marginBottom: '10px'}}
+
+                        <input type="text" 
+                        name="number" 
+                        onChange={formik.handleChange}
+                               value={formik.values.number}
+                                id="text" style={{marginBottom: '10px'}}
                                placeholder=" +994 00 000 00 00"/>
+                               
                         <input type="email" name="email"
                                onChange={formik.handleChange}
                                value={formik.values.email} id="email" placeholder=" E-mail"/>

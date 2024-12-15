@@ -5,7 +5,7 @@ export const mission = api.injectEndpoints({
         getMission:build.query({
             query : ()=>{
                 return {
-                    url : '/purposes',
+                    url : '/prupose-values',
                     method : 'GET',
                 }
             }

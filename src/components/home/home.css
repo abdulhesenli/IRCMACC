@@ -153,6 +153,8 @@
 }
 
 .banner{
+    max-width: 1392px;
+    margin: auto;
     display: flex;
     align-items: center;
     height: 307px;

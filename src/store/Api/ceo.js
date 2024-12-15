@@ -1,11 +1,11 @@
 import {api} from "./api.js";
 
-export const faq = api.injectEndpoints({
+export const Ceo = api.injectEndpoints({
     endpoints:(build ) => ({
-        getFaq:build.query({
+        getCeo:build.query({
             query : ()=>{
                 return {
-                    url : '/faqs',
+                    url : '/ceo-text',
                     method : 'GET',
                 }
             }
@@ -15,4 +15,4 @@ export const faq = api.injectEndpoints({
     })
 })
 
-export const { useGetFaqQuery } = faq;
+export const { useGetCeoQuery } = Ceo;
