@@ -5,7 +5,16 @@ export const mentor = api.injectEndpoints({
         getMentor:build.query({
             query : ()=>{
                 return {
-                    url : '/photos',
+                    url : '/trainers',
+                    method : 'GET',
+                }
+            }
+        }),
+
+        getMentorSingle:build.query({
+            query : (id)=>{
+                return {
+                    url : `/trainers/${id}`,
                     method : 'GET',
                 }
             }
@@ -13,4 +22,4 @@ export const mentor = api.injectEndpoints({
     })
 })
 
-export const { useGetMentorQuery } = mentor;
+export const { useGetMentorQuery,useGetMentorSingleQuery } = mentor;

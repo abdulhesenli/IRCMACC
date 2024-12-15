@@ -6,6 +6,7 @@ import Mail from '../../assets/mail.svg'
 import {useFormik} from "formik";
 import {useContactPostMessageMutation} from "../../store/Api/contact.js";
 import SpinnerBlock from "../Ui/SpinnerBlock.jsx";
+import Swal from 'sweetalert2'
 
 function Contact() {
     const [contactPost, {isLoading}] = useContactPostMessageMutation();
@@ -19,10 +20,24 @@ function Contact() {
         onSubmit: async values => {
            const response = await contactPost(values);
            if(response.data){
-               alert(response.data.success);
+            //    alert(response.data.success);
+               Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Mesajınız göndərildi. Biz ən qısa zamanda sizinlə əlaqə saxlayacağıq..",
+                showConfirmButton: false,
+                timer: 2500
+              });
                formik.resetForm();
            }else {
-               alert('Xeta bas verdi')
+            //    alert('Xeta bas verdi')
+               Swal.fire({
+                icon: "error",
+                title: "Xəta baş verdi",
+                text: "Something went wrong!",
+              
+              });
+               
            }
 
         },

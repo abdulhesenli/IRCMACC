@@ -64,7 +64,7 @@ function Topheader() {
         <div>
             <div className="TopHeader">
                 {i18n.language==="ru"? <h1 className="topheader-text textru">
-                    INTERNATIONAL 
+                    МЕЖДУНАРОДНЫЙ НАУЧНО-УЧЕБНЫЙ МЕДИЦИНСКИЙ СБОРОЧНЫЙ ЦЕНТР
                 </h1>: <h1 className="topheader-text">
                     INTERNATIONAL RESEARCH TRAINING MEDICAL ASSEMBLY CENTER
                 </h1>}

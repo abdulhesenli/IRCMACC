@@ -1,33 +1,57 @@
 import './telimcidaxili.css'
 import TelimciImg from '../../assets/doctor1.svg'
+import { useParams } from 'react-router-dom'
+import { useGetMentorSingleQuery } from '../../store/Api/mentor'
+import Loading from "../Ui/Loading.jsx";
 
+  
 
 
 
 
 function TelimciDaxili(){
-    return(
-        <div style={{maxWidth:'1392px', margin:'auto'}}>
 
-            <div id='TelimciDaxili'>
-            <div className='Telimciimg'>
-                <img src={TelimciImg} alt="TelimciImg" className='TelimciImg'/>
+    const {id}=useParams()
+    const {data,isError,isLoading}=useGetMentorSingleQuery(id);
 
-            </div>
-            <div className='Intelimci-Title'>
-                <h1 className='intelimci-title'>Rəşad Şolan</h1>
-                <p className='intelimci-text'> Beynəlxalq Tibb Tədqiqatları və Təlim Mərkəzi - tanınmış cərrah və uroloq, Tibb Elmləri Doktoru</p>
-               
-            </div>
-            </div>
+    let content;
 
-            <div className='Intelimci-Text'>
-                <p className='intelimci-text' >Eksperimental təlim və tədqiqatlarda t.e.d. Rəşad Şolan böyük təcrübəyə sahibdir. Belə ki, elmi fəaliyyəti boyunca daha çox eksperimental tədqiqatlara üstünlük verməklə yanaşı heyvan üzərində müxtəlif cərrahi təlim modellərini işləyib hazırlamışdır.</p>
-            </div>
-           
+    if(isError){
+        content = "Xeta bas verdi";
+     }else if(isLoading){
+         content = <Loading/>
+     }else{
+        content=<div style={{maxWidth:'1392px', margin:'auto'}}>
 
+        <div id='TelimciDaxili'>
+
+        <div className='Telimciimg'>
+            <img src={TelimciImg} alt="TelimciImg" className='TelimciImg'/>
 
         </div>
+        
+        <div className='Intelimci-Title'>
+            <h1 className='intelimci-title'>{data.trainers.name1}</h1>
+            <p className='intelimci-text'>{data.trainers.name2}</p>
+           
+        </div>
+        
+        </div>
+
+        <div className='Intelimci-Text'>
+            <p className='intelimci-text' >{data.trainers.description}</p>
+        </div>
+       
+
+
+    </div>
+        
+     }
+    return(
+        <div style={{maxWidth:'1392px', margin:'auto'}}>
+        {content}
+        </div>
+       
   
         
     )

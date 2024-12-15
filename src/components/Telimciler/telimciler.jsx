@@ -15,7 +15,7 @@ function Telimciler(){
 
             <Trainerscard/>
            {/* <div style={{marginTop:'125px'}}></div> */}
-            <Trainerscard/>
+            {/* <Trainerscard/> */}
 
         </div>
   

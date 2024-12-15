@@ -70,7 +70,7 @@ function App() {
                   <Route path="/Mission" element={<Mission/>}/>
                   <Route path="/NewsPage" element={<NewsPage/>}/>
                   <Route path="/InsideNews" element={<InsideNews/>}/>
-                  <Route path="/Telimcidaxili" element={<Telimcidaxili/>}/>
+                  <Route path="/telimciler/:id" element={<Telimcidaxili/>}/>
                   <Route path="/telimler/:id" element={<Telimdaxili/>}/>
                   <Route path="/Searchresult" element={<Searchresult/>}/>
                   <Route path="*" element={<Error/>}/>

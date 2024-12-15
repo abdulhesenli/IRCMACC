@@ -18,7 +18,7 @@ function About (){
                     <h2 className='Name-title'>Rəşad Şolan</h2>
                 </div>
        
-                <div className='about'>
+                <div className=' about'>
                     
                     <div className='aboutcircle'>
                         <img src={Image} alt="Image" className='AboutImage' />
@@ -48,7 +48,7 @@ function About (){
                 </div>
 
                 <div className='abouttext3'>
-                    <p>
+                    
                         Rəşad Şolan 27 iyun 1980-ci ildə Azərbaycan SSR-in İmişli şəhərində ziyalı ailəsində dünyaya göz
                         açmışdır. 1987–1993-cü illərdə Bakı şəhəri 264 saylı orta məktəbdə təhsil almış, 1993-cü ildə
                         isə müsabiqə yolu ilə akademik Azad Mirzəcanzadənin fəxri rəhbərliyi altında Həbibbəy
@@ -138,7 +138,7 @@ function About (){
                         Eyni ildə Rəşad Şolana digər universitetin — Mərkəzi Asiya Tibb Universitetinin (Özbəkistan
                         Respublikası) Böyük Elmi Şurasının 8 iyun 2023-cü il tarixli, 8 saylı qərarı ilə”Fəxri
                         Professor” elmi adı verilmişdir.
-                    </p>
+                 
 
                 </div>
 

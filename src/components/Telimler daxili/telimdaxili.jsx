@@ -12,7 +12,7 @@ function TelimDaxili (){
     }else if(isLoading){
         content = <Loading/>
     }else{
-        content=    <div style={{maxWidth:'1392px', margin:'auto'}}>
+        content=<div style={{maxWidth:'1392px', margin:'auto'}}>
         <div className='TelimDaxili-Title'>
             <h1 className='telim-title'> {data.training.title} </h1>
         </div>
