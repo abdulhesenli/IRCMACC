@@ -3,7 +3,7 @@ import i18n from "i18next";
 
 
 const baseQuery = fetchBaseQuery({
-    baseUrl : 'http://technostore.az/api',
+    baseUrl : 'https://technostore.az/api',
     prepareHeaders: (headers) => {
         headers.set('Content-Type', 'application/json');
         headers.set('Accept-language', i18n.language);
