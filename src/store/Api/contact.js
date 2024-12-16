@@ -1,28 +1,38 @@
-import {api} from "./api.js";
+import { api } from "./api.js";
 
 export const contact = api.injectEndpoints({
-    endpoints:(build ) => ({
-    
-        contactPostMessage:build.mutation({
-            query : (message)=>{
-                return {
-                    url : '/contact_post',
-                    method : 'POST',
-                    body : JSON.stringify(message)
-                }
-            }
+    endpoints: (build) => ({
+        // Contact Post Message Mutation
+        contactPostMessage: build.mutation({
+            query: (message) => ({
+                url: '/contact_post',
+                method: 'POST',
+                body: JSON.stringify(message),
+            }),
         }),
-        registerPostMessage:build.mutation({
-            query : (message)=>{
-                return {
-                    url : '/homepage_post',
-                    method : 'POST',
-                    body : JSON.stringify(message)
-                }
-            }
-        })
-    })
 
-})
+        // Register Post Message Mutation
+        registerPostMessage: build.mutation({
+            query: (message) => ({
+                url: '/homepage_post',
+                method: 'POST',
+                body: JSON.stringify(message),
+            }),
+        }),
 
-export const {useContactPostMessageMutation,useRegisterPostMessageMutation } = contact;
+        // Register Contact Single Query
+        getRegisterContactSingle: build.query({
+            query: () => ({
+                url: '/services-id',
+                method: 'GET',
+            }),
+        }),
+    }),
+});
+
+// Export Hooks
+export const {
+    useContactPostMessageMutation,
+    useRegisterPostMessageMutation,
+    useGetRegisterContactSingleQuery,
+} = contact;

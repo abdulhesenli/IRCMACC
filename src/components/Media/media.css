@@ -64,6 +64,10 @@
     margin-bottom: 55px;
     text-align: center;
 }
+.Media1{
+    border-radius: 20px;
+    object-fit: cover;
+}
 #Media{
     margin-top: 40px;
     display: flex;

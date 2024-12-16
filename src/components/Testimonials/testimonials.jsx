@@ -79,35 +79,7 @@ function Testimonials() {
       <div id="Testimonials" className="row">
         {content}
 
-        {/* <div className="col-4" style={{ width: '370px' }}>
-          <div className="TestimonialsCard">
-            <img src={Comma} alt="Comma" className="Comma" />
-            <p className="TestimonialsCardText">{testimonials[(currentIndex) % testimonials.length].text}</p>
-            <div className="BottomCircle"></div>
-          </div>
-          <h6 className="CardTitle">{testimonials[(currentIndex) % testimonials.length].name}</h6>
-          <h6 className="CardText">{testimonials[(currentIndex) % testimonials.length].title}</h6>
-        </div> */}
-
-        {/* <div className="col-4" style={{ width: '370px' }}>
-          <div className="TestimonialsCard">
-            <img src={Comma} alt="Comma" className="Comma" />
-            <p className="TestimonialsCardText">{testimonials[(currentIndex + 1) % testimonials.length].text}</p>
-            <div className="BottomCircle"></div>
-          </div>
-          <h6 className="CardTitle">{testimonials[(currentIndex + 1) % testimonials.length].name}</h6>
-          <h6 className="CardText">{testimonials[(currentIndex + 1) % testimonials.length].title}</h6>
-        </div>
-
-        <div className="col-4" style={{ width: '370px' }}>
-          <div className="TestimonialsCard">
-            <img src={Comma} alt="Comma" className="Comma" />
-            <p className="TestimonialsCardText">{testimonials[(currentIndex + 2) % testimonials.length].text}</p>
-            <div className="BottomCircle"></div>
-          </div>
-          <h6 className="CardTitle">{testimonials[(currentIndex + 2) % testimonials.length].name}</h6>
-          <h6 className="CardText">{testimonials[(currentIndex + 2) % testimonials.length].title}</h6>
-        </div> */}
+        
 
         <div className="carousel-controls">
         <a href="#" onClick={(e) => { e.preventDefault(); handlePrev(); }}>

@@ -14,24 +14,28 @@ import Loading from '../Ui/Loading';
 
 function InsideNews (){
     const {id}=useParams()
+    const { data, isError, isLoading } = useGetNewsSingleQuery(id);
 
-    const {data,isError,isLoading}=useGetNewsSingleQuery(id);
     let content;
-
-    if(isError){
-       content = "Xeta bas verdi";
-    }else if(isLoading){
-        content = <Loading/>
-    }else{
-        <div className='InsideNews-Title'>
-        <h1 className='insidenews-title'>{data.blog.name}</h1>
-        <p className='insidenews-text'>
-        {data.blog.short_title}
-        </p>
-    </div>
+    
+    if (isError) {
+        content = "Xəta baş verdi";
+    } else if (isLoading) {
+        content = <Loading />;
+    } else {
+        const blog = data.blog;
+    
+        content = (
+            <div className='InsideNews-Title'>
+                <h1 className='insidenews-title'>{blog.name || "Ad mövcud deyil"}</h1>
+                {/* <p className='insidenews-short'>{blog.short_title || "Qısa başlıq mövcud deyil"}</p> */}
+                <div
+                    className='insidenews-text'
+                    dangerouslySetInnerHTML={{ __html: blog.text || "<p>Mətn mövcud deyil</p>" }}
+                ></div>
+            </div>
+        );
     }
-
-
 
     return(
         <div style={{maxWidth:'1392px', margin:'auto'}}>

@@ -254,9 +254,13 @@
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     background-position: 20px center, calc(100% - 20px) center; /* Soldan və sağdan 20px */
-    
-    /* background-position: left, right; */
-   
+
+}
+.dropdown_topheaderList{
+    background: url(../../assets/search-lg.svg);
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-position: 20px center, calc(100% - 20px) center; /* Soldan və sağdan 20px */
 }
 .header-search input:focus{
     border: none;
@@ -517,4 +521,3 @@
 @media (min-width: 1200px) and (max-width: 3200px){
 
 }
-

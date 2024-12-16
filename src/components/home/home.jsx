@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import "../../header.css"
 import './home.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Rectangle from '../../assets/doctors.jpeg'
+// import Rectangle from '../../assets/doctors.jpeg'
 // import LogoIpsum from '../../assets/image1.svg'
 // import LogoIpsum2 from '../../assets/image2.svg'
 // import LogoIpsum3 from '../../assets/image3.svg'
@@ -28,59 +28,36 @@ import Box from '../Homebox/Box';
 
 
 function Home(){
-    const { isLoading,isError } = useGetMainPageQuery();
+    const { data,isLoading,isError } = useGetMainPageQuery();
     const [counter, setCounter] = useState(0);
-
+    const baseUrl = import.meta.env.VITE__BASE_URL_IMAGE
     let content;
-
     if (isError) {
       content = "Xeta bas verdi";
     } else if (isLoading) {
-      content = <Loading/>;
+      content = <Loading />;
     } else {
-        
+      const slider = data.slayder; // Slider verisini alıyoruz
+    
+      content = (
         <div id="home">
-        <div style={{width:"100%",position:"relative"}} className=''>
-        <img id="Rec_img" src={Rectangle}  alt="Rectangle" className="Rectangle" />
-        <div className="group2">
-      
-         <img src={Group2}  alt="Group2" className="Group2" />
-           </div>
-
-        </div>
-
-
-        <div className="banner banright">
-          <div>
-          <img src={Group4} alt="Group4" className="Group4" />
+          <div style={{ width: "100%", position: "relative" }}>
+            {/* Slider görseli */}
+            <img
+              id="Rec_img"
+              src={`${baseUrl}/${slider.image}`} // Görselin tam yolunu alıyoruz
+              alt="Rectangle"
+              className="Rectangle"
+            />
+            <div className="group2">
+              <img src={Group2} alt="Group2" className="Group2" />
+            </div>
           </div>
-          
-          <div className="HRline"></div>
-
-          <div id='BanText' className='Bantext'>
-
-              <h1 className="BanTitle">Mauris laoreet ante at nunc dictum.</h1>
-              <p className="BanTitle2"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Vivamus luctus, neque at posuere tincidunt, nibh lorem hendrerit lectus, 
-                ac facilisis sem diam eget sapien. Sed justo enim, rutrum sit amet rutrum non, 
-                luctus vel magna.   Nam quis blandit odio. Mauris maximus diam a enim consequat lacinia. 
-                Mauris at auctor neque. 
-              </p>
-
-                  <button className="Ban-btn">Ətraflı <span>
-                  <img src={Arrow} alt="Arrow"  className="Arrow" />
-                  </span> </button>
-
-          </div>
-
-        </div>
-
-      </div>
-   
-    }
     
 
+        </div>
+      );
+    }
 
 
     useEffect(() => {
@@ -105,13 +82,13 @@ function Home(){
          
          <div id="home">
         
-              <div style={{width:"100%",position:"relative"}} className=''>
+              {/* <div style={{width:"100%",position:"relative"}} className=''>
               <img id="Rec_img" src={Rectangle}  alt="Rectangle" className="Rectangle" />
               <div className="group2">
                <img src={Group2}  alt="Group2" className="Group2" />
               </div>
 
-              </div>
+              </div> */}
               </div>
               {content}
               <Partners/>

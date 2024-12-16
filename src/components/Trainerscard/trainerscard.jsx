@@ -32,7 +32,9 @@ function TrainersCard() {
                 </Link>
                     <div className="card-content ">
                         <h2> {item.name1} </h2>
-                        <p>{item.name2}</p>
+                        <h2> {item.name2} </h2>
+                        <p style={{marginTop:"12px"}} >{item.name3}</p>
+                        <p>{item.name4}</p>
 
                     </div>
 

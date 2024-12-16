@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 // import "../../header.css"
 // import './home.css'
+import '../home/home.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useGetMainPageQuery } from '../../store/Api/mainpage';
 import Loading from '../Ui/Loading';

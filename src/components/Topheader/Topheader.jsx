@@ -14,11 +14,11 @@
 //     const [isOpenMenu, setIsOpenMenu] = useState(false);
 //     const [isMenuDropdownOpen, setMenuIsDropdownOpen] = useState(false);
 //     const [isMenuTwoDropdownOpen, setMenuTwoIsDropdownOpen] = useState(false);
-    
+
 //     // const closeSearch = () => {
 //     //     setIsOpenSearch(false);  // Search inputu gizlədəcək
 //     // };
-    
+
 //     const toggleDropdown = () => {
 //         setMenuIsDropdownOpen(!isMenuDropdownOpen);
 //     };
@@ -91,7 +91,7 @@
 //                 </div>
 //                 </div>
 
-           
+
 
 //                 <div className={`menu-content ${isOpenMenu ? 'active' : ''}`}>
 //                     <div className="close-button" onClick={toggleMenu}>
@@ -162,6 +162,7 @@ import { Link } from "react-router-dom";
 import irtmacc from "../../assets/Irtmac.svg";
 import { useTranslation } from "react-i18next";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineDown } from "react-icons/ai";
 
 
 function Topheader() {
@@ -170,6 +171,8 @@ function Topheader() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [searchQuery, setSearchQuery] = useState(""); // Input kontrolü
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
+  const [isMenuDropdownOpen, setMenuIsDropdownOpen] = useState(false);
+  const [isMenuTwoDropdownOpen, setMenuTwoIsDropdownOpen] = useState(false);
 
   const suggestions = [
     "Apple",
@@ -181,6 +184,19 @@ function Topheader() {
     "Grape",
   ];
 
+  const toggleDropdown = () => {
+    setMenuIsDropdownOpen(!isMenuDropdownOpen);
+  };
+  const toggleDropdownTwo = () => {
+    setMenuTwoIsDropdownOpen(!isMenuTwoDropdownOpen);
+  };
+  const toggleMenu = () => {
+    setIsOpenMenu(!isOpenMenu);
+    if (isOpenMenu) {
+      setMenuIsDropdownOpen(false);
+      setMenuTwoIsDropdownOpen(false);
+    }
+  };
   const handleSearchChange = (e) => {
     const value = e.target.value;
     setSearchQuery(value);
@@ -249,11 +265,38 @@ function Topheader() {
             <AiOutlineClose color="white" />
           </div>
           <ul>
-            <li>
-              <Link to="/" onClick={() => setIsOpenMenu(false)}>
-                Ana Səhifə
-              </Link>
-            </li>
+            <ul>
+              <li><Link to="/" onClick={toggleMenu}>Ana Səhifə</Link></li>
+
+
+              <li className=" dropdown dropdown-2 nav-item" id='about'>
+                <Link className="nav nav-link" onClick={toggleDropdown} style={{ padding: "0" }} >Haqqımızda
+                  <span className={`dropdown-arrow ${isMenuDropdownOpen ? 'rotate' : ''}`}>
+                    <AiOutlineDown />
+                  </span></Link>
+                <div className={`Menu-dropdown-content ${isMenuDropdownOpen ? 'active' : ''}`}>
+                  <Link className=" dropdown-item nav " onClick={toggleMenu} to="/about">Rəhbərin Müraciəti</Link>
+                  <Link className=" dropdown-item nav " onClick={toggleMenu} to="/Questions">Ən çox verilən suallar</Link>
+                  <Link className="dropdown-item  nav " onClick={toggleMenu} to="/Mission">Missiya və Dəyərlər</Link>
+                </div>
+              </li>
+
+
+              <li><Link to="/Telimler" onClick={toggleMenu}>Təlimlər</Link></li>
+              <li><Link to="/Telimciler" onClick={toggleMenu}>Təlimçilər</Link></li>
+
+              <li className=" dropdown dropdown-2 nav-item" id='about'>
+                <Link className="nav nav-link" onClick={toggleDropdownTwo} style={{ padding: "0" }} >Media Mərkəzi
+                  <span className={`dropdown-arrow ${isMenuTwoDropdownOpen ? 'rotate' : ''}`}>
+                    <AiOutlineDown />
+                  </span></Link>
+                <div className={`Menu-dropdown-content ${isMenuTwoDropdownOpen ? 'active' : ''}`}>
+                  <Link className=" dropdown-item nav " onClick={toggleMenu} to="/Media">KİV</Link>
+                  <Link className=" dropdown-item nav " onClick={toggleMenu} to="/NewsPage">Xəbərlər</Link>
+                </div>
+              </li>
+              <li><Link to="/Contact" onClick={toggleMenu}>Əlaqə</Link></li>
+            </ul>
           </ul>
         </div>
       </div>
@@ -261,40 +304,28 @@ function Topheader() {
       {/* Search Input ve Dropdown */}
       <div className={`row m-0 header-search ${isOpenSearch && "active"}`}>
         {isOpenSearch && (
-          <div style={{padding:0}} >
+          <div style={{ padding: 0 }} >
             <input
               type="text"
               placeholder="Search..."
               value={searchQuery}
               onChange={handleSearchChange}
               className="search-input"
-              
+
             />
 
             {/* Dropdown */}
             {filteredSuggestions.length > 0 && (
-              <div
-                className="dropdown"
-                style={{
-                  position: "absolute",
-                  top: "100%",
-                  left: "",
-                  width: "100%",
-                  background: "#fff",
-                  borderRadius: "4px",
-         
-                  zIndex: "1000",
-                }}
-              >
+              <div  className="dropdown_topheader"style={{position: "absolute", top: "100%",left: "",width: "100%",  background: "#fff", borderRadius: "4px", zIndex: "1000",}}>
                 {filteredSuggestions.map((item, index) => (
-                  <div
+                  <div className="dropdown_topheaderList"
                     key={index}
-                    onClick={() => setSearchQuery(item)} 
+                    onClick={() => setSearchQuery(item)}
                     style={{
-                      padding: "8px 12px",
+                      padding: "8px 55px",
                       cursor: "pointer",
-                      marginLeft:"45px",
-                      zIndex:"1000"
+
+                      zIndex: "1000"
                     }}
                     onMouseOver={(e) => (e.target.style.backgroundColor = "#f1f1f1")}
                     onMouseOut={(e) => (e.target.style.backgroundColor = "white")}
