@@ -1,7 +1,7 @@
 import "../../header.css"
 import './trainerscard.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Doctor1 from '../../assets/doctor1.svg'
+// import Doctor1 from '../../assets/doctor1.svg'
 // import Doctor2 from '../../assets/doctor2.svg'
 // import Doctor3 from '../../assets/doctor3.svg'
 // import Doctor4 from '../../assets/doctor4.svg'
@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 function TrainersCard() {
     const {data, isLoading, isError} = useGetMentorQuery();
-  
+    const baseUrl = import.meta.env.VITE__BASE_URL_IMAGE
 
     let content;
 
@@ -28,7 +28,7 @@ function TrainersCard() {
             <div className="col-12 col-sm-6 col-lg-3" key={index}>
                 <div className="card">
                     <Link to={`/telimciler/${item.id}`}>
-                <img src={Doctor1} alt="Doctor2" className="Doctor" style={{borderRadius:"19px"}} />  
+                <img src={`${baseUrl}/${item.file}`} alt="Doctor2" className="Doctor" style={{borderRadius:"19px"}} />  
                 </Link>
                     <div className="card-content ">
                         <h2> {item.name1} </h2>

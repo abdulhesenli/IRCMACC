@@ -31,7 +31,7 @@
     color: #009ADE;
     text-align: center;
 }
-.newspagelist{
+/* .newspagelist{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +48,38 @@
     list-style: none;
     padding-left: 20px;
     padding-right: 30px;
+} */
+
+.newspagelist {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.newspagelist li {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.newspagelist li:hover {
+    background-color: #f0f0f0; /* Hover sırasında arka plan rengi */
+}
+
+.newspagelist .active {
+    color: red; /* Aktif sayfa numarası kırmızı */
+    font-weight: bold;
+    cursor: default; /* Tıklanamaz */
+}
+
+.newspagelist .dots {
+    pointer-events: none; /* ... işaretleri tıklanamaz */
+    cursor: default;
 }
 
 #active{

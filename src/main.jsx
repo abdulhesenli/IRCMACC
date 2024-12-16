@@ -6,6 +6,9 @@ import {BrowserRouter} from 'react-router-dom';
 import '../i18n.js';
 import {Provider} from "react-redux";
 import store from "./store/store.js";
+// import 'dotenv/config';
+// dotenv.config();
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <Provider store={store}>

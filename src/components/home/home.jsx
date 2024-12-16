@@ -108,9 +108,8 @@ function Home(){
               <div style={{width:"100%",position:"relative"}} className=''>
               <img id="Rec_img" src={Rectangle}  alt="Rectangle" className="Rectangle" />
               <div className="group2">
-            
                <img src={Group2}  alt="Group2" className="Group2" />
-                 </div>
+              </div>
 
               </div>
               </div>

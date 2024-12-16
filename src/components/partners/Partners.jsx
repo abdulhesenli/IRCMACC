@@ -10,8 +10,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useGetMainPageQuery } from '../../store/Api/mainpage';
 import Loading from '../Ui/Loading';
 
+const baseUrl = import.meta.env.VITE__BASE_URL_IMAGE
 
 
+console.log(import.meta.env)
 
 function Partners(){
     const { data,isLoading,isError } = useGetMainPageQuery();
@@ -25,7 +27,8 @@ function Partners(){
       
     } else {
 
-        const baseUrl = import.meta.env.IMAGE_VITE_BASE_URL
+        // const baseUrl = import.meta.env.IMAGE_VITE_BASE_URL
+  
 
 
         console.log(baseUrl)
@@ -34,7 +37,7 @@ function Partners(){
           
               <div className="logo col-3" key={index}>
             
-                  <img src={`${baseUrl}/${item.image}`} alt="LogoIpsum" className="LogoIpsum" />
+                  <img src={`${baseUrl}/${item.image}`} alt="LogoIpsum" className="LogoIpsum LogoIpsum3"  />
                   <h1>{item.name1}</h1>
               </div>
       
@@ -42,13 +45,6 @@ function Partners(){
     }
     
 
-
-
-    
-    
-    
-    
-    
     return(
         <div id="Homelogo" className="Homelogo row">
          

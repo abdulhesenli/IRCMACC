@@ -234,6 +234,7 @@
     pointer-events: none;
     height: 0;
     transition: all 0.4s linear;
+    
 }
 
 .header-search.active {
@@ -258,12 +259,14 @@
    
 }
 .header-search input:focus{
-    border: none !important;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 .close-icon {
     position: absolute;
     top: 59%;
-    right: 20px; /* Sağ tərəfdən məsafə */
+    right: 40px; /* Sağ tərəfdən məsafə */
     transform: translateY(-50%);
     width: 24px;
     height: 24px;
@@ -271,6 +274,7 @@
     background-size: contain;
     cursor: pointer;
     transition: all 0.4s linear;
+
 }
 
 
@@ -513,3 +517,4 @@
 @media (min-width: 1200px) and (max-width: 3200px){
 
 }
+

@@ -32,7 +32,7 @@ function TelimciDaxili(){
         
         <div className='Intelimci-Title'>
             <h1 className='intelimci-title'>{data.trainers.name1}</h1>
-            <p className='intelimci-text'>{data.trainers.name2}</p>
+            <p className='intelimci-text'>{data.trainers.name3}</p>
            
         </div>
         
