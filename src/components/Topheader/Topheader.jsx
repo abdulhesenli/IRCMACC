@@ -154,7 +154,7 @@
 
 
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./topheader.css";
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
@@ -163,6 +163,7 @@ import irtmacc from "../../assets/Irtmac.svg";
 import { useTranslation } from "react-i18next";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineDown } from "react-icons/ai";
+import { useGetSearchQuery } from "../../store/Api/search";
 
 
 function Topheader() {
@@ -173,6 +174,14 @@ function Topheader() {
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const [isMenuDropdownOpen, setMenuIsDropdownOpen] = useState(false);
   const [isMenuTwoDropdownOpen, setMenuTwoIsDropdownOpen] = useState(false);
+  const {data,isError,isLoading,isSuccess}= useGetSearchQuery(searchQuery);
+
+  useEffect(()=>{
+    if(isSuccess){
+      console.log(data);
+      
+    }
+  },[])
 
   const suggestions = [
     "Apple",
@@ -324,7 +333,6 @@ function Topheader() {
                     style={{
                       padding: "8px 55px",
                       cursor: "pointer",
-
                       zIndex: "1000"
                     }}
                     onMouseOver={(e) => (e.target.style.backgroundColor = "#f1f1f1")}
