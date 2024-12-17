@@ -30,8 +30,8 @@ function NewsCard(){
             <div className="NewsCard">
             <img src={`${baseUrl}/${item.cover}`} alt="Newsphoto" className="Newsphoto"  />
                 
-            <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-2'>{item.name}</h2>
-                   <p  className='text-custom  fs-2-xxl mt-3 line-clamp-2'>{item.short_title} </p>
+            <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-3'>{item.name}</h2>
+                   <p  className='text-custom  fs-2-xxl mt-3 line-clamp-3'>{item.short_title} </p>
                    <div className="Newstext">
                       <h6 className="Newtext">Xəbər / 17.04.24</h6>
 
