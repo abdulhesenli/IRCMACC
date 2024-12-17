@@ -51,7 +51,7 @@ function Header() {
                                 <Link className="nav nav-link">{t('media center')}</Link>
                                 <div className="dropdown-content dropdown-menu dropdown-menu-white">
                                     <Link className="nav " to="/Media"> {t('media')}</Link>
-                                    <Link className="nav " to="/NewsPage">{t('news')} </Link>
+                                    <Link className="nav " to="/Newspage">{t('news')} </Link>
                                     
                          
                                 </div>

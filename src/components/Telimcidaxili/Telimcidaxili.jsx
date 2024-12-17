@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useGetMentorSingleQuery } from '../../store/Api/mentor';
 import Loading from "../Ui/Loading.jsx";
 
-function TelimciDaxili() {
+function Telimcidaxili() {
     const { id } = useParams();
     const { data, isError, isLoading } = useGetMentorSingleQuery(id);
     const baseUrl = import.meta.env.VITE__BASE_URL_IMAGE
@@ -55,4 +55,4 @@ function TelimciDaxili() {
     );
 }
 
-export default TelimciDaxili;
+export default Telimcidaxili;

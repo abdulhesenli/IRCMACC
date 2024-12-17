@@ -1,5 +1,5 @@
 import './telimciler.css'
-import Trainerscard from '../Trainerscard/Trainerscard';
+import Trainerscard from '../Trainerscard/Trainerscard.jsx';
 
 
 

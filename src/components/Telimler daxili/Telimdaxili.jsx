@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 import { useGetEducationSingleQuery } from '../../store/Api/education'
 import './telimdaxili.css'
 import Loading from "../Ui/Loading.jsx";
-function TelimDaxili (){
+function Telimdaxili (){
     const {id}=useParams()
     const {data,isError,isLoading}=useGetEducationSingleQuery(id);
     let content;
@@ -66,4 +66,4 @@ function TelimDaxili (){
     )
 }
 
-export default TelimDaxili
+export default Telimdaxili

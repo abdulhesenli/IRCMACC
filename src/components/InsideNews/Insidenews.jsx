@@ -1,5 +1,5 @@
 import './insidenews.css'
-import News from '../News/News'
+import News from '../News/News.jsx'
 import Newsfacebook from '../../assets/Newsfacebook.svg';
 import Newsinstagram from '../../assets/Newsinstagram.svg';
 import Newslinkedin from '../../assets/Newslinkedin.svg';

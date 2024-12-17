@@ -19,6 +19,7 @@ function Registration() {
             service_id: '' // Seçilen hizmet buraya kaydedilecek
         },
         onSubmit: async (values) => {
+            console.log(values)
             const response = await registerPost(values);
             if (response.data) {
                 Swal.fire({
@@ -97,9 +98,9 @@ function Registration() {
                         <div className="custom-select-wrapper">
                             <select
                                 id="message"
-                                name="telim"
+                                name="service_id"
                                 onChange={formik.handleChange}
-                                value={formik.values.telim} // Backend'e gönderilecek ID burada saklanır
+                                value={formik.values.service_id} // Backend'e gönderilecek ID burada saklanır
                                 className="custom-select inputtext"
                             >
                                 <option value="">

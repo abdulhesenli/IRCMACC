@@ -1,7 +1,7 @@
 import '../../header.css'
 import './training.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TrainingCard from '../TrainingCard/Trainingcard';
+import Trainingcard from '../TrainingCard/Trainingcard.jsx';
 
 import IconRight from '../../assets/Icon-right.svg'
 import {useTranslation} from "react-i18next";
@@ -31,7 +31,7 @@ function Training(){
         </Link>
          </div>
          <p className="Traning-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-         <TrainingCard/>
+         <Trainingcard/>
          
       </div>
 

@@ -1,7 +1,7 @@
 import "../../header.css"
 import './trainers.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TrainersCard from '../Trainerscard/Trainerscard';
+import Trainerscard from '../Trainerscard/Trainerscard.jsx';
 import IconRight from '../../assets/Icon-right.svg'
 import { Link } from "react-router-dom";
 
@@ -30,7 +30,7 @@ function Trainers(){
      </div>
      <p className="Traniners-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <TrainersCard/>
+      <Trainerscard/>
           
 
        

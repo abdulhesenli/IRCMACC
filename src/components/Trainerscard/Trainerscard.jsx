@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 // import ArrowIcon from "../../assets/Icon-right.svg";
 
 
-function TrainersCard() {
+function Trainerscard() {
     const {data, isLoading, isError} = useGetMentorQuery();
     const baseUrl = import.meta.env.VITE__BASE_URL_IMAGE
 
@@ -119,4 +119,4 @@ function TrainersCard() {
     )
 }
 
-export default TrainersCard
+export default Trainerscard

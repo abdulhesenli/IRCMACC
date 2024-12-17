@@ -11,7 +11,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 
 
-function TrainingCard() {
+function Trainingcard() {
 
         const location=useLocation()
      const {data, isLoading, isError} = useGetEducationQuery();
@@ -83,4 +83,4 @@ function TrainingCard() {
     )
 }
 
-export default TrainingCard
+export default Trainingcard

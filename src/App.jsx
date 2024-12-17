@@ -11,7 +11,7 @@ import Media from './components/Media/Media.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Error from './components/error/Error.jsx';
 import Questions from './components/Questions/Questions.jsx';
-import NewsPage from './components/NewsPage/Newspage.jsx';
+import Newspage from './components/NewsPage/Newspage.jsx';
 import Mission from './components/Mission/Mission.jsx';
 import Loading from "./components/Ui/Loading.jsx";
 import Topheader from './components/Topheader/Topheader.jsx';
@@ -68,11 +68,11 @@ function App() {
                   <Route path="/Contact" element={<Contact/>}/>
                   <Route path="/Questions" element={<Questions/>}/>
                   <Route path="/Mission" element={<Mission/>}/>
-                  <Route path="/NewsPage" element={<NewsPage/>}/>
+                  <Route path="/Newspage" element={<Newspage/>}/>
                   <Route path="/InsideNews/:id" element={<InsideNews/>}/>
                   <Route path="/telimciler/:id" element={<Telimcidaxili/>}/>
                   <Route path="/telimler/:id" element={<Telimdaxili/>}/>
-                  <Route path="/Searchresult" element={<Searchresult/>}/>
+                  <Route path="/search-result" element={<Searchresult/>}/>
                   <Route path="*" element={<Error/>}/>
               </Routes>
 

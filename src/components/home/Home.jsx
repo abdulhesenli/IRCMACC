@@ -11,13 +11,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Group2 from '../../assets/Group2.svg'
 import Group4 from '../../assets/Group4.svg'
 import Arrow from '../../assets/arrow-right.svg'
-import Trainers from "../Trainers/Trainers";
-import Training from "../training/Training";
-import Registration from "../registration/Registration";
-import Testimonials from "../Testimonials/Testimonials";
-import News from "../News/News";
+import Trainers from "../Trainers/Trainers.jsx";
+import Training from "../training/Training.jsx";
+import Registration from "../registration/Registration.jsx";
+import Testimonials from "../Testimonials/Testimonials.jsx";
+import News from "../News/News.jsx";
 // import InsideNews from '../InsideNews/Insidenews';
-// import NewsPage from "../NewsPage/newspage";
+// import Newspage from "../Newspage/newspage";
 // import Questions from "../Questions/questions";
 import { useGetMainPageQuery } from '../../store/Api/mainpage';
 import Loading from '../Ui/Loading';
@@ -133,7 +133,7 @@ function Home(){
             <Testimonials/>
             <News/> 
             {/* <InsideNews/> */}
-            {/* <NewsPage/> */}
+            {/* <Newspage/> */}
 
             {/* <Questions/> */}
         </div>
