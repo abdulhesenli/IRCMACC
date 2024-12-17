@@ -7,7 +7,9 @@
 
 
 .Newspage{
-
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     max-width: 448px;
     height: 56px;
     margin: auto;
@@ -57,7 +59,7 @@
     justify-content: center;
     gap: 10px;
     padding: 0;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .newspagelist li {
@@ -94,3 +96,5 @@
       
     }
 }
+
+

@@ -12,19 +12,19 @@ import Loading from '../Ui/Loading';
 
 
 
-function InsideNews (){
-    const {id}=useParams()
+function InsideNews() {
+    const { id } = useParams()
     const { data, isError, isLoading } = useGetNewsSingleQuery(id);
 
     let content;
-    
+
     if (isError) {
         content = "Xəta baş verdi";
     } else if (isLoading) {
         content = <Loading />;
     } else {
         const blog = data.blog;
-    
+
         content = (
             <div className='InsideNews-Title'>
                 <h1 className='insidenews-title'>{blog.name || "Ad mövcud deyil"}</h1>
@@ -37,14 +37,12 @@ function InsideNews (){
         );
     }
 
-    return(
-        <div style={{maxWidth:'1392px', margin:'auto'}}>
+    return (
+        <div style={{ maxWidth: '1392px', margin: 'auto' }}>
             {content}
 
             <div className='InsideImage'>
-                
-                    <NewsCarousel/>
-             
+                <NewsCarousel />
                 <div className='ContactSosial'>
                     <h1 className='sosialtext'>Paylaş</h1>
                     <ul>
@@ -54,24 +52,10 @@ function InsideNews (){
                         <li> <a href="#"><img src={Newssubtract} alt="Newssubtract" /></a></li>
                     </ul>
                 </div>
-               
-
             </div>
 
-            <News/>
-
-
-            
-            
-           
-
-            
-            
-
-
+            <News />
         </div>
-  
-        
     )
 }
 
