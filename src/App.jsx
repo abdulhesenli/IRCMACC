@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import {useSelector, useDispatch} from "react-redux";
 import {useEffect} from "react";
 import {setLoading} from "./store/Slice/ui.js";
-import { Routes, Route } from 'react-router-dom';
+import { HashRouter as Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer.jsx'
 import Telimler from "./components/Telimler/Telimler.jsx"
 import Telimciler from './components/Telimciler/Telimciler.jsx';
