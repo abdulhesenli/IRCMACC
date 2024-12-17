@@ -27,11 +27,10 @@ function InsideNews() {
 
         content = (
             <div className='InsideNews-Title'>
-                <h1 className='insidenews-title'>{blog.name || "Ad mövcud deyil"}</h1>
-                {/* <p className='insidenews-short'>{blog.short_title || "Qısa başlıq mövcud deyil"}</p> */}
+                <h1 className='insidenews-title'>{blog.name}</h1>
                 <div
                     className='insidenews-text'
-                    dangerouslySetInnerHTML={{ __html: blog.text || "<p>Mətn mövcud deyil</p>" }}
+                    dangerouslySetInnerHTML={{ __html: blog.text}}
                 ></div>
             </div>
         );

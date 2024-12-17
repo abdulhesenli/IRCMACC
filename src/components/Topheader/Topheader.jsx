@@ -177,7 +177,7 @@ function Topheader() {
     const location = useLocation();
     const navigation = useNavigate()
     const [term, setTerm] = useState(null);
-    const {data, isError, isLoading, isSuccess, refetch} = useGetSearchQuery(term, {
+    const {data, isSuccess, refetch} = useGetSearchQuery(term, {
         skip: !term
     });
 
