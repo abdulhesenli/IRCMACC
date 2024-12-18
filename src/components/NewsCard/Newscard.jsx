@@ -47,7 +47,31 @@ function NewsCard(){
                 </div>
             </div>
             ))
-        }else{
+        }else if( location.pathname === "/InsideNews/:id"){
+            content = data.blogs.data.slice(0,3).map((item, index)=> (
+
+            
+                <div className="col-12 col-sm-6 col-lg-4" key={index}>
+                <div className="NewsCard">
+                <img src={`${baseUrl}/${item.cover}`} alt="Newsphoto" className="Newsphoto"  />
+                    
+                <h2 className='text-custom fs-4 fs-5-xxl mt-3 line-clamp-3'>{item.name}</h2>
+                       <p  className='text-custom  fs-2-xxl mt-3 line-clamp-3'>{item.short_title} </p>
+                       <div className="Newstext">
+                          <h6 className="Newtext">Xəbər / 17.04.24</h6>
+    
+                            <div>
+                            <Link to={`/InsideNews/${item.id}`} onClick={() => {
+                      window.scrollTo(0, 0); // Sayfanın en üstüne kaydırır
+                    }}className="ctaa"> <span>Ətraflı oxu</span> <img src={ArrowIcon} alt="ArrowIcon" /></Link>
+                            </div>
+                        </div>
+    
+                </div>
+            </div>
+            ))
+        }
+        else{
             content = data.blogs.data.map((item, index)=> (
 
             

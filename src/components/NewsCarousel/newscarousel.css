@@ -1,7 +1,8 @@
 /* Main container */
 .MainCarousel{
-    max-width: 800px;
+    max-width: 920px;
     height: 360px;
+    margin: auto;
 }
 .carousel {
     /* max-width: 600px; */

@@ -61,7 +61,8 @@
     height: 196px;
     border: 1px solid #C5CEE0;
     border-radius: 20px;
-    margin-left: 100px;
+    float: right;
+    margin-top: -280px;
 }
 .sosialtext{
     font-family: "Montserrat", sans-serif;
@@ -117,7 +118,15 @@
         width: 190px;
         height: 85px;
         margin-left: 0;
-        margin-top:100px ;
+        margin-top:100px !important;
+        float: o !important;
+        
+    }
+    .BodyInside{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
  
     .sosialtext{
