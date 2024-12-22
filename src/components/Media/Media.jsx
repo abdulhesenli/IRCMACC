@@ -25,7 +25,7 @@ function Media() {
                     <img src={`${baseUrl}/${item.cover}`} alt="Media1" className="Media1" />
                     <h2>{item.name || "Ad mövcud deyil"}</h2>
                     <div className="Mediatext">
-                        <button className="mediabtn">Məqalə</button>
+                        <button className="mediabtn">{item.kiv_type}</button>
                         <div>
                             <a href="#" className="mediactaa">
                                 <span>Ətraflı oxu</span>

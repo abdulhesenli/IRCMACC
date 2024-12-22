@@ -3,35 +3,35 @@ import NewsArrowRight from '../../assets/arrow-narrow-right.svg';
 import NewsArrowLeft from '../../assets/arrow-narrow-left.svg';
 import NewsCard from '../NewsCard/Newscard.jsx';
 import { useState } from 'react';
+import { useGetNewsQuery } from "../../store/Api/news";
+import Loading from "../Ui/Loading";
 
 function Newspage() {
-    const [currentPage, setCurrentPage] = useState(1); // Aktif sayfa
-    const totalPages = 10; // Toplam sayfa sayısı
+    // const location=useLocation()
+    const {data, isLoading, isError} = useGetNewsQuery();
+    // const baseUrl = import.meta.env.VITE__BASE_URL_IMAGE
+    const [currentPage, setCurrentPage] = useState(1);
+    const totalPages = 10; 
 
-    // Sayfa numarasına tıklama
     const handlePageClick = (page) => {
         setCurrentPage(page);
     };
 
-    // Sol ok butonuna tıklama
     const handlePreviousClick = () => {
         if (currentPage > 1) {
             setCurrentPage((prev) => prev - 1);
         }
     };
 
-    // Sağ ok butonuna tıklama
     const handleNextClick = () => {
         if (currentPage < totalPages) {
             setCurrentPage((prev) => prev + 1);
         }
     };
 
-    // Dinamik sayfa numaralarını oluştur
     const renderPageNumbers = () => {
         let pages = [];
 
-        // İlk sayfa her zaman gösterilir
         pages.push(
             <li
                 key={1}
@@ -51,7 +51,6 @@ function Newspage() {
             );
         }
 
-        // Ortadaki sayfa numaraları (aktif ve çevresi)
         for (let i = Math.max(2, currentPage - 1); i <= Math.min(totalPages - 1, currentPage + 1); i++) {
             pages.push(
                 <li
@@ -64,7 +63,6 @@ function Newspage() {
             );
         }
 
-        // Eğer mevcut sayfa toplam sayfa sayısından 2'den küçükse '...' ekle
         if (currentPage < totalPages - 2) {
             pages.push(
                 <li key="dots-right" className="dots">
@@ -72,8 +70,6 @@ function Newspage() {
                 </li>
             );
         }
-
-        // Son sayfa her zaman gösterilir
         pages.push(
             <li
                 key={totalPages}
@@ -87,16 +83,34 @@ function Newspage() {
         return pages;
     };
 
+
+
+        let content;
+
+     if(isError){
+        content = "Xeta bas verdi";
+     }else if(isLoading){
+         content = <Loading/>
+     }else {
+        content = data.blogs.data.map((item,index)=> (
+            <> 
+            <h1 className="newspage-title" key={index}>{item.page_head}</h1><p className="newspage-text">
+                {item.page_desc}
+            </p>
+            </>
+        ))
+     }
+
     return (
         <div>
-            <h1 className="newspage-title">Xəbərlər</h1>
+            {content}
+            {/* <h1 className="newspage-title">Xəbərlər</h1>
             <p className="newspage-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <NewsCard /> {/* Haber kartları */}
+            </p> */}
+            <NewsCard /> 
 
             <div className="Newspage">
-                {/* Sol ok butonu */}
                 <a href="#" onClick={handlePreviousClick}>
                     <img
                         src={NewsArrowLeft}
@@ -105,10 +119,7 @@ function Newspage() {
                     />
                 </a>
 
-                {/* Sayfa numaraları */}
                 <ul className="newspagelist">{renderPageNumbers()}</ul>
-
-                {/* Sağ ok butonu */}
                 <a href="#" onClick={handleNextClick}>
                     <img
                         src={NewsArrowRight}

@@ -44,15 +44,7 @@ function InsideNews() {
          
             <div className='InsideImage'>
                 <NewsCarousel />
-                {/* <div className='ContactSosial'>
-                    <h1 className='sosialtext'>Paylaş</h1>
-                    <ul>
-                        <li> <a href="#"><img src={Newsfacebook} alt="Newsfacebook" /></a></li>
-                        <li> <a href="#"><img src={Newsinstagram} alt="Newsinstagram" /></a></li>
-                        <li> <a href="#"><img src={Newslinkedin} alt="Newslinkedin" /></a></li>
-                        <li> <a href="#"><img src={Newssubtract} alt="Newssubtract" /></a></li>
-                    </ul>
-                </div> */}
+
             </div>
             <div className='ContactSosial'>
                     <h1 className='sosialtext'>Paylaş</h1>
